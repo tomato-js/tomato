@@ -1,2 +1,2 @@
 # tomato
-⚡️Simple, Modular utils for Web Applications
+⚡️Simple, Modular Utils for Web Applications
