@@ -4,7 +4,9 @@
   "private": true,
   "description": "simple, modular utils for web applications",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "lerna bootstrap",
+    "prettier": "prettier \"**/**/**/*.+(js|json|jsx|ts|tsx|md|mdx)\"",
+    "format": "npm run prettier --write"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,15 @@
       "@commitlint/config-angular"
     ]
   },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ],
+    "**/**/**/*.+(js|json|jsx|ts|tsx|mdx|md)": [
+      "prettier --write",
+      "git add "
+    ]
+  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
@@ -31,7 +42,11 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-angular": "^8.3.4",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
     "husky": "^1.3.0",
-    "lerna": "^3.20.2"
+    "lerna": "^3.20.2",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1"
   }
 }
