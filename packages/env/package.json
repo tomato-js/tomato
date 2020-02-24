@@ -1,11 +1,12 @@
 {
-  "name": "@tomato-js/element",
-  "version": "0.0.1",
+  "name": "@tomato-js/env",
+  "version": "0.0.0",
   "description": "simple, modular utils for web applications",
   "author": "brizer <brizer@163.com>",
-  "homepage": "https://github.com/tomato-js/tomato/tree/master/packages/element#readme",
+  "homepage": "https://github.com/tomato-js/tomato/tree/master/packages/path#readme",
   "license": "MIT",
-  "main": "lib/element.js",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
   "directories": {
     "test": "__tests__"
   },

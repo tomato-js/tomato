@@ -1,6 +1,6 @@
 # `@tomato-js/element`
 
-> TODO: description
+> TODO: description2
 
 ## Usage
 
