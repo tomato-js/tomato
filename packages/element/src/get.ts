@@ -18,7 +18,7 @@
  * @param str - id或者是提供给query的字符串
  * @returns 获取到的dom节点
  */
-export default function get(str: string): HTMLElement | null {
+export default function get(str: string) {
   let node = document.getElementById(str);
   if (node === null) {
     node = document.querySelector(str);
