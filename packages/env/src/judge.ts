@@ -1,4 +1,8 @@
 /**
+ * @packageDocumentation
+ * @module @tomato-js/env
+ */
+/**
  * 判断是否有该全局变量
  *
  *

@@ -1,3 +1,7 @@
+/**
+ * @packageDocumentation
+ * @module @tomato-js/element
+ */
 import { ObjectType } from "@tomato-js/shared";
 import { HTMLElementKey } from "@tomato-js/shared";
 import get from "./get";
