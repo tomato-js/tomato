@@ -5,7 +5,7 @@
 import { isURLSearchParamsExist } from "@tomato-js/env";
 import { isEmptyObject } from "@tomato-js/shared";
 function getQueryString(str: string = window.location.search) {
-  return str.substring(1);
+  return str.includes("?") ? str.substring(1) : str;
 }
 
 function parseByURLSearchParams(queryString: string) {
@@ -41,7 +41,7 @@ function parseBySplit(queryString: string) {
  * @returns 解析完成的对象
  */
 export default function parse(str: string) {
-  const queryString = str.includes("?") ? getQueryString(str) : str;
+  const queryString = getQueryString(str);
   let parsedObj: { [key: string]: string };
   if (isURLSearchParamsExist()) {
     parsedObj = parseByURLSearchParams(queryString);
