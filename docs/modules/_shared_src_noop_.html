@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@tomato-js/path | @tomato-js</title>
+	<title>&quot;shared/src/noop&quot; | @tomato-js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_tomato_js_path.html">@tomato-js/path</a>
+					<a href="_shared_src_noop_.html">&quot;shared/src/noop&quot;</a>
 				</li>
 			</ul>
-			<h1>External module @tomato-js/path</h1>
+			<h1>External module &quot;shared/src/noop&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_path.html#parse" class="tsd-kind-icon">parse</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_shared_src_noop_.html#noop" class="tsd-kind-icon">noop</a></li>
 							</ul>
 						</section>
 					</div>
@@ -80,39 +80,25 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="parse" class="tsd-anchor"></a>
-					<h3>parse</h3>
+					<a name="noop" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> noop</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></li>
+						<li class="tsd-signature tsd-kind-icon">noop<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/3031540/packages/path/src/parse.ts#L43">path/src/parse.ts:43</a></li>
+									<li>Defined in shared/src/noop.ts:1</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>解析search字符串</p>
-								</div>
-								<p>脚本举例</p>
-								<pre><code>  <span class="hljs-keyword">import</span> { parse } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/path'</span>;
-  <span class="hljs-keyword">const</span> queryObj = parse()<span class="hljs-comment">//默认使用window.location.search;</span>
-  <span class="hljs-keyword">const</span> queryObj2 = parse(<span class="hljs-string">'?a=123&amp;b=456'</span>)<span class="hljs-comment">//{a:'123',b:'456'};</span>
-  <span class="hljs-keyword">const</span> queryObj3 = parse(<span class="hljs-string">'a=123&amp;b=456'</span>)<span class="hljs-comment">//{a:'123',b:'456'};</span></code></pre>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>待解析的字符串</p>
-									</div>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></h4>
-							<p>解析完成的对象</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -125,12 +111,18 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_shared_src_is_type_.html">&quot;shared/src/is-<wbr>type&quot;</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="_shared_src_noop_.html">&quot;shared/src/noop&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_element.html">@tomato-<wbr>js/element</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_env.html">@tomato-<wbr>js/env</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_path.html">@tomato-<wbr>js/path</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -141,7 +133,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_tomato_js_path.html#parse" class="tsd-kind-icon">parse</a>
+						<a href="_shared_src_noop_.html#noop" class="tsd-kind-icon">noop</a>
 					</li>
 				</ul>
 			</nav>

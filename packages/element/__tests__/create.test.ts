@@ -13,11 +13,10 @@ describe("element util", () => {
     test("create(p)", () => {
       const none = element.create("p");
       none.innerHTML = "I am p";
-      const testNode: any = element.get("p");
-      expect(testNode.innerHTML).toBe("I am p");
+      expect(none.innerHTML).toBe("I am p");
     });
     test("create(p,id) create p with id", () => {
-      const none = element.create("p", "j-id-p");
+      const none = element.create("p", "j-id-p", "body");
       none.innerHTML = "I am p";
       const testNode: any = element.get("j-id-p");
       expect(testNode.innerHTML).toBe("I am p");
@@ -28,7 +27,7 @@ describe("element util", () => {
       expect(testNode.type).toBe("text/css");
     });
     test("create(script,id) create style with id", () => {
-      const none = element.create("script", "j-id-script");
+      const none = element.create("script", "j-id-script", "id");
       const testNode: any = element.get("#j-id-script");
       expect(testNode.type).toBe("text/javascript");
     });

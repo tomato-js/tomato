@@ -2,6 +2,7 @@
  * @packageDocumentation
  * @module @tomato-js/element
  */
+import { HTMLSelector, isString } from "@tomato-js/shared";
 /**
  * 获取dom节点
  *
@@ -22,13 +23,16 @@
  * @param str - id或者是提供给query的字符串
  * @returns 获取到的dom节点
  */
-export default function get(str: string) {
+export default function get(str: HTMLSelector) {
   if (!str) {
     return null;
   }
-  let node = document.getElementById(str);
+  if (!isString(str)) {
+    return str as HTMLElement;
+  }
+  let node = document.getElementById(str as string);
   if (node === null) {
-    node = document.querySelector(str);
+    node = document.querySelector(str as string);
   }
   return node;
 }
