@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;path/src/parse&quot; | @tomato-js</title>
+	<title>&quot;shared/src/types&quot; | @tomato-js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_path_src_parse_.html">&quot;path/src/parse&quot;</a>
+					<a href="_shared_src_types_.html">&quot;shared/src/types&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;path/src/parse&quot;</h1>
+			<h1>External module &quot;shared/src/types&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -69,52 +69,31 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Functions</h3>
+							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_path_src_parse_.html#parse" class="tsd-kind-icon">parse</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_shared_src_types_.objecttype.html" class="tsd-kind-icon">Object<wbr>Type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_shared_src_types_.html#htmlelementkey" class="tsd-kind-icon">HTMLElement<wbr>Key</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="parse" class="tsd-anchor"></a>
-					<h3>parse</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1fbc294/packages/path/src/parse.ts#L39">path/src/parse.ts:39</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>解析search字符串</p>
-								</div>
-								<p>脚本举例</p>
-								<pre><code>  import { <span class="hljs-keyword">parse</span> } from '@tomato-js/path';
-  <span class="hljs-keyword">const</span> queryObj = <span class="hljs-keyword">parse</span>()<span class="hljs-comment">//默认使用window.location.search;</span>
-  <span class="hljs-keyword">const</span> queryObj2 = <span class="hljs-keyword">parse</span>('?a=123&amp;b=456)<span class="hljs-comment">//{a:'123',b:'456'};</span>
-  <span class="hljs-keyword">const</span> queryObj3 = <span class="hljs-keyword">parse</span>('a=123&amp;b=456)<span class="hljs-comment">//{a:'123',b:'456'};</span></code></pre>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>待解析的字符串</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></h4>
-							<p>解析完成的对象</p>
-						</li>
-					</ul>
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="htmlelementkey" class="tsd-anchor"></a>
+					<h3>HTMLElement<wbr>Key</h3>
+					<div class="tsd-signature tsd-kind-icon">HTMLElement<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">HTMLElementTagNameMap</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in shared/src/types.ts:1</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -133,21 +112,24 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_env_src_judge_.html">&quot;env/src/judge&quot;</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_path_src_parse_.html">&quot;path/src/parse&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_shared_src_is_empty_.html">&quot;shared/src/is-<wbr>empty&quot;</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="_shared_src_types_.html">&quot;shared/src/types&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_path_src_parse_.html#parse" class="tsd-kind-icon">parse</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../interfaces/_shared_src_types_.objecttype.html" class="tsd-kind-icon">Object<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_shared_src_types_.html#htmlelementkey" class="tsd-kind-icon">HTMLElement<wbr>Key</a>
 					</li>
 				</ul>
 			</nav>

@@ -19,6 +19,9 @@
  * @returns 获取到的dom节点
  */
 export default function get(str: string) {
+  if (!str) {
+    return null;
+  }
   let node = document.getElementById(str);
   if (node === null) {
     node = document.querySelector(str);
