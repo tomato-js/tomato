@@ -1,3 +1,5 @@
+## [0.0.5](https://github.com/tomato-js/tomato/compare/v0.0.4...v0.0.5) (2020-02-27)
+
 ## [0.0.4](https://github.com/tomato-js/tomato/compare/v0.0.3...v0.0.4) (2020-02-27)
 
 ### Features
