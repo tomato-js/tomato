@@ -13,7 +13,7 @@
     "coverage-generator": "jest --coverage",
     "coverage-viewer": "http-server coverage/lcov-report -o",
     "doc": "npm run doc-generator && npm run doc-viewer",
-    "doc-generator": "typedoc --exclude '**/__tests__/*' --exclude '**/index.ts' --name @tomato-js --readme ./README.md --excludeNotExported",
+    "doc-generator": "typedoc --disableOutputCheck --exclude '**/__tests__/*' --exclude '**/index.ts' --name @tomato-js --readme ./README.md --excludeNotExported",
     "doc-viewer": "http-server docs -o",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
@@ -73,6 +73,7 @@
     "rollup-plugin-terser": "^5.2.0",
     "ts-jest": "^25.2.1",
     "typedoc": "^0.16.10",
+    "typedoc-plugin-external-module-name": "^3.0.0",
     "typescript": "^3.8.2"
   }
 }

@@ -1,3 +1,7 @@
+/**
+ * @packageDocumentation
+ * @module @tomato-js/path
+ */
 import { isURLSearchParamsExist } from "@tomato-js/env";
 import { isEmptyObject } from "@tomato-js/shared";
 function getQueryString(str: string = window.location.search) {
@@ -29,8 +33,8 @@ function parseBySplit(queryString: string) {
  * ```
  *   import { parse } from '@tomato-js/path';
  *   const queryObj = parse()//默认使用window.location.search;
- *   const queryObj2 = parse('?a=123&b=456)//{a:'123',b:'456'};
- *   const queryObj3 = parse('a=123&b=456)//{a:'123',b:'456'};
+ *   const queryObj2 = parse('?a=123&b=456')//{a:'123',b:'456'};
+ *   const queryObj3 = parse('a=123&b=456')//{a:'123',b:'456'};
  * ```
  *
  * @param str - 待解析的字符串

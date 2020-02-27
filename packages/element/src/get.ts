@@ -1,4 +1,8 @@
 /**
+ * @packageDocumentation
+ * @module @tomato-js/element
+ */
+/**
  * 获取dom节点
  *
  *

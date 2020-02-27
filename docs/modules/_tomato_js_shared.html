@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;shared/src/types&quot; | @tomato-js</title>
+	<title>@tomato-js/shared | @tomato-js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_shared_src_types_.html">&quot;shared/src/types&quot;</a>
+					<a href="_tomato_js_shared.html">@tomato-js/shared</a>
 				</li>
 			</ul>
-			<h1>External module &quot;shared/src/types&quot;</h1>
+			<h1>External module @tomato-js/shared</h1>
 		</div>
 	</div>
 </header>
@@ -71,13 +71,19 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_shared_src_types_.objecttype.html" class="tsd-kind-icon">Object<wbr>Type</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_tomato_js_shared.objecttype.html" class="tsd-kind-icon">Object<wbr>Type</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_shared_src_types_.html#htmlelementkey" class="tsd-kind-icon">HTMLElement<wbr>Key</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_tomato_js_shared.html#htmlelementkey" class="tsd-kind-icon">HTMLElement<wbr>Key</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_shared.html#isemptyobject" class="tsd-kind-icon">is<wbr>Empty<wbr>Object</a></li>
 							</ul>
 						</section>
 					</div>
@@ -91,9 +97,47 @@
 					<div class="tsd-signature tsd-kind-icon">HTMLElement<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">HTMLElementTagNameMap</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4728d8a/packages/shared/src/types.ts#L1">shared/src/types.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4728d8a/packages/shared/src/types.ts#L5">shared/src/types.ts:5</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="isemptyobject" class="tsd-anchor"></a>
+					<h3>is<wbr>Empty<wbr>Object</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Empty<wbr>Object<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4728d8a/packages/shared/src/is-empty.ts#L17">shared/src/is-empty.ts:17</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>是否为空对象</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  import { isEmptyObject } from '@tomato-js/shared'
+  const <span class="hljs-keyword">node</span> <span class="hljs-title">= isEmptyObject</span>({});//<span class="hljs-literal">true</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>需要判断的对象</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>是否为没有属性的空对象如{}</p>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -104,29 +148,29 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_shared_src_is_empty_.html">&quot;shared/src/is-<wbr>empty&quot;</a>
+						<a href="_tomato_js_element.html">@tomato-<wbr>js/element</a>
 					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="_shared_src_types_.html">&quot;shared/src/types&quot;</a>
+					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_env.html">@tomato-<wbr>js/env</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_path.html">@tomato-<wbr>js/path</a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="element.html">Element</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="env.html">Env</a>
+					<li class="current tsd-kind-external-module">
+						<a href="_tomato_js_shared.html">@tomato-<wbr>js/shared</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../interfaces/_shared_src_types_.objecttype.html" class="tsd-kind-icon">Object<wbr>Type</a>
+						<a href="../interfaces/_tomato_js_shared.objecttype.html" class="tsd-kind-icon">Object<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="_shared_src_types_.html#htmlelementkey" class="tsd-kind-icon">HTMLElement<wbr>Key</a>
+						<a href="_tomato_js_shared.html#htmlelementkey" class="tsd-kind-icon">HTMLElement<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_shared.html#isemptyobject" class="tsd-kind-icon">is<wbr>Empty<wbr>Object</a>
 					</li>
 				</ul>
 			</nav>
