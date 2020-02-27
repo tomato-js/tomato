@@ -1,3 +1,10 @@
+## [0.0.4](https://github.com/tomato-js/tomato/compare/v0.0.3...v0.0.4) (2020-02-27)
+
+### Features
+
+-   **element:** add method to create dom ([#3](https://github.com/tomato-js/tomato/issues/3)) ([b7bafe1](https://github.com/tomato-js/tomato/commit/b7bafe11475fb680894cdbdee9c0d48d4a210255))
+-   **shared:** add ObjectType and HTMLElementKey ([#3](https://github.com/tomato-js/tomato/issues/3)) ([b7bafe1](https://github.com/tomato-js/tomato/commit/b7bafe11475fb680894cdbdee9c0d48d4a210255))
+
 ## [0.0.3](https://github.com/tomato-js/tomato/compare/v0.0.2...v0.0.3) (2020-02-25)
 
 ### Bug Fixes
