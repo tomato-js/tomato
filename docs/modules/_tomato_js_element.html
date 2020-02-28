@@ -71,6 +71,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_element.html#addstyle" class="tsd-kind-icon">add<wbr>Style</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_element.html#append" class="tsd-kind-icon">append</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_element.html#create" class="tsd-kind-icon">create</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_element.html#get" class="tsd-kind-icon">get</a></li>
@@ -85,6 +86,47 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="addstyle" class="tsd-anchor"></a>
+					<h3>add<wbr>Style</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Style<span class="tsd-signature-symbol">(</span>styleContent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/element/src/addStyle.ts#L28">element/src/addStyle.ts:28</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>增加一段样式到head底部</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { addStyle } from <span class="hljs-string">'@tomato-js/element'</span>
+  <span class="hljs-comment">// 创建一段样式到页面head</span>
+  addStyle(<span class="hljs-string">'body{background:red;}'</span>);
+  <span class="hljs-comment">// 创建一段多行样式到页面head</span>
+  <span class="hljs-keyword">const</span> cssStr = `body{<span class="hljs-built_in">background</span>:<span class="hljs-built_in">red</span>;}
+     .class { <span class="hljs-built_in">color</span>:<span class="hljs-built_in">red</span>; }`;
+  element.addStyle(cssStr);
+</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> styleContent: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>样式内容</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span></h4>
+							<p>创建的style节点</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="append" class="tsd-anchor"></a>
 					<h3>append</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -94,7 +136,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in element/src/insert.ts:47</li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/element/src/insert.ts#L47">element/src/insert.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -136,7 +178,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/3031540/packages/element/src/create.ts#L27">element/src/create.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/element/src/create.ts#L27">element/src/create.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -186,7 +228,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/3031540/packages/element/src/get.ts#L26">element/src/get.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/element/src/get.ts#L26">element/src/get.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -225,7 +267,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in element/src/insert.ts:98</li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/element/src/insert.ts#L98">element/src/insert.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -267,7 +309,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in element/src/insert.ts:81</li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/element/src/insert.ts#L81">element/src/insert.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -309,7 +351,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in element/src/insert.ts:64</li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/element/src/insert.ts#L64">element/src/insert.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -365,6 +407,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_element.html#addstyle" class="tsd-kind-icon">add<wbr>Style</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_element.html#append" class="tsd-kind-icon">append</a>
 					</li>
