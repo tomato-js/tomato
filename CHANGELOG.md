@@ -1,3 +1,17 @@
+## [0.0.6](https://github.com/tomato-js/tomato/compare/v0.0.5...v0.0.6) (2020-02-29)
+
+### Bug Fixes
+
+-   **path:** use location.search when parse without params ([3031540](https://github.com/tomato-js/tomato/commit/303154053f63c36a2fb3a6824f1be79d43e5940a))
+
+### Features
+
+-   **element:** addStyle ([1d230ab](https://github.com/tomato-js/tomato/commit/1d230abbc12e872caee1c9caa20566d859a93ff9))
+-   **element:** append prepend insertBefore insertAfter ([#5](https://github.com/tomato-js/tomato/issues/5)) ([a475b5d](https://github.com/tomato-js/tomato/commit/a475b5d392194f34562af75bdb4df81d4433c8a1))
+-   **path:** add decode logic for parse ([06e4da8](https://github.com/tomato-js/tomato/commit/06e4da83b7203f09142d8eed8fb2677186af643e))
+-   **path:** add stringify method in path ([e46e8bf](https://github.com/tomato-js/tomato/commit/e46e8bfe73a041b4b52679dafa3501973cf743cd))
+-   **shared:** add isObject forEach ([4055f71](https://github.com/tomato-js/tomato/commit/4055f719d9d46b77f65ba6262e32cfe4df0fe9ce))
+
 ## [0.0.5](https://github.com/tomato-js/tomato/compare/v0.0.4...v0.0.5) (2020-02-27)
 
 ## [0.0.4](https://github.com/tomato-js/tomato/compare/v0.0.3...v0.0.4) (2020-02-27)
