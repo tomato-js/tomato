@@ -19,3 +19,8 @@ export function isNumber(str: any) {
 export function isArray(value: any) {
   return Array.isArray ? Array.isArray(value) : isType(value, "Array");
 }
+
+export function isObject(value: any) {
+  const type = typeof value;
+  return (value !== null && type === "object") || type === "function";
+}

@@ -36,4 +36,18 @@ describe("is-empty util", () => {
       expect(result).toBe(false);
     });
   });
+  describe("isObject", () => {
+    test("isObject([]) return true", () => {
+      const result = shared.isObject([]);
+      expect(result).toBe(true);
+    });
+    test("isObject({}) return true", () => {
+      const result = shared.isObject({});
+      expect(result).toBe(true);
+    });
+    test("isObject(null) retur nfalse", () => {
+      const result = shared.isObject(null);
+      expect(result).toBe(false);
+    });
+  });
 });
