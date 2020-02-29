@@ -77,6 +77,7 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_tomato_js_shared.html#eachable" class="tsd-kind-icon">Eachable</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_tomato_js_shared.html#htmlelementkey" class="tsd-kind-icon">HTMLElement<wbr>Key</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_tomato_js_shared.html#htmlselector" class="tsd-kind-icon">HTMLSelector</a></li>
 							</ul>
@@ -90,9 +91,11 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_shared.html#foreach" class="tsd-kind-icon">for<wbr>Each</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_shared.html#isarray" class="tsd-kind-icon">is<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_shared.html#isemptyobject" class="tsd-kind-icon">is<wbr>Empty<wbr>Object</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_shared.html#isnumber" class="tsd-kind-icon">is<wbr>Number</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_shared.html#isobject" class="tsd-kind-icon">is<wbr>Object</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_shared.html#isstring" class="tsd-kind-icon">is<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_shared.html#istype" class="tsd-kind-icon">is<wbr>Type</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_shared.html#noop" class="tsd-kind-icon">noop</a></li>
@@ -103,13 +106,29 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="eachable" class="tsd-anchor"></a>
+					<h3>Eachable</h3>
+					<div class="tsd-signature tsd-kind-icon">Eachable&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_tomato_js_shared.objecttype.html" class="tsd-signature-type">ObjectType</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/06e4da8/packages/shared/src/types.ts#L10">shared/src/types.ts:10</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T</h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="htmlelementkey" class="tsd-anchor"></a>
 					<h3>HTMLElement<wbr>Key</h3>
 					<div class="tsd-signature tsd-kind-icon">HTMLElement<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">HTMLElementTagNameMap</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/shared/src/types.ts#L8">shared/src/types.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/06e4da8/packages/shared/src/types.ts#L8">shared/src/types.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -119,7 +138,7 @@
 					<div class="tsd-signature tsd-kind-icon">HTMLSelector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/shared/src/types.ts#L6">shared/src/types.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/06e4da8/packages/shared/src/types.ts#L6">shared/src/types.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -132,13 +151,81 @@
 					<div class="tsd-signature tsd-kind-icon">blank<wbr>Reg<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> = /[\s\r\n]+/gi</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/shared/src/regexp.ts#L5">shared/src/regexp.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/06e4da8/packages/shared/src/regexp.ts#L5">shared/src/regexp.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="foreach" class="tsd-anchor"></a>
+					<h3>for<wbr>Each</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">for<wbr>Each<span class="tsd-signature-symbol">(</span>elements<span class="tsd-signature-symbol">: </span><a href="_tomato_js_shared.html#eachable" class="tsd-signature-type">Eachable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, func<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/06e4da8/packages/shared/src/for-each.ts#L49">shared/src/for-each.ts:49</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>遍历对象或数组</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { forEach } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/shared'</span>
+  <span class="hljs-keyword">const</span> obj = {
+    a: <span class="hljs-number">1</span>,
+    b: <span class="hljs-number">2</span>
+  };
+  <span class="hljs-keyword">const</span> obj2 = {};
+  <span class="hljs-keyword">const</span> arr = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>];
+  forEach(obj, (k, v) =&gt; (obj2[v] = k));
+  forEach(obj, (k, v) =&gt; console.log(v));</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>elements: <a href="_tomato_js_shared.html#eachable" class="tsd-signature-type">Eachable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>需要遍历的值</p>
+									</div>
+								</li>
+								<li>
+									<h5>func: <span class="tsd-signature-symbol">(</span>k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>执行函数</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>k<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, v<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>k: <span class="tsd-signature-type">any</span></h5>
+														</li>
+														<li>
+															<h5>v: <span class="tsd-signature-type">any</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="isarray" class="tsd-anchor"></a>
 					<h3>is<wbr>Array</h3>
@@ -149,7 +236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/shared/src/is-type.ts#L19">shared/src/is-type.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/06e4da8/packages/shared/src/is-type.ts#L19">shared/src/is-type.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -172,7 +259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/shared/src/is-empty.ts#L17">shared/src/is-empty.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/06e4da8/packages/shared/src/is-empty.ts#L17">shared/src/is-empty.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -207,13 +294,36 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/shared/src/is-type.ts#L15">shared/src/is-type.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/06e4da8/packages/shared/src/is-type.ts#L15">shared/src/is-type.ts:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>str: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="isobject" class="tsd-anchor"></a>
+					<h3>is<wbr>Object</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Object<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/06e4da8/packages/shared/src/is-type.ts#L23">shared/src/is-type.ts:23</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -230,7 +340,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/shared/src/is-type.ts#L11">shared/src/is-type.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/06e4da8/packages/shared/src/is-type.ts#L11">shared/src/is-type.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -253,7 +363,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/shared/src/is-type.ts#L7">shared/src/is-type.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/06e4da8/packages/shared/src/is-type.ts#L7">shared/src/is-type.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -279,7 +389,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/1d230ab/packages/shared/src/noop.ts#L5">shared/src/noop.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/06e4da8/packages/shared/src/noop.ts#L5">shared/src/noop.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -319,6 +429,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../interfaces/_tomato_js_shared.objecttype.html" class="tsd-kind-icon">Object<wbr>Type</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_tomato_js_shared.html#eachable" class="tsd-kind-icon">Eachable</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_tomato_js_shared.html#htmlelementkey" class="tsd-kind-icon">HTMLElement<wbr>Key</a>
 					</li>
@@ -329,6 +442,9 @@
 						<a href="_tomato_js_shared.html#blankreg" class="tsd-kind-icon">blank<wbr>Reg</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_shared.html#foreach" class="tsd-kind-icon">for<wbr>Each</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_shared.html#isarray" class="tsd-kind-icon">is<wbr>Array</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
@@ -336,6 +452,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_shared.html#isnumber" class="tsd-kind-icon">is<wbr>Number</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_shared.html#isobject" class="tsd-kind-icon">is<wbr>Object</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_shared.html#isstring" class="tsd-kind-icon">is<wbr>String</a>
