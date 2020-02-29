@@ -1,7 +1,21 @@
-import { ObjectType } from "@tomato-js/shared";
+import { ObjectType, forEach } from "@tomato-js/shared";
 
-export default function stringify(queryObj: ObjectType<string | number>) {
-  let queryString: string = `?`;
-  // Object.keys(queryObj).forEach()
-  // return parsedObj;
+interface StringifyOptions {
+  encode: boolean;
+}
+export default function stringify(
+  queryObj: ObjectType<string | number>,
+  options: StringifyOptions = {
+    encode: true
+  }
+) {
+  let queryString: string = "";
+  forEach(queryObj, (queryKey, queryValue) => {
+    if (options.encode) {
+      queryValue = encodeURIComponent(queryValue);
+      queryKey = encodeURIComponent(queryKey);
+    }
+    queryString = queryString ? `${queryString}&${queryKey}=${queryValue}` : `${queryKey}=${queryValue}`;
+  });
+  return queryString;
 }
