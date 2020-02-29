@@ -48,6 +48,7 @@ function parseBySplit(queryString: string, encode: boolean = true) {
  *
  * @param str - 待解析的字符串
  * @param options - 其他解析参数
+ * @param options.encode - 是否编码和解码，默认true
  * @returns 解析完成的对象
  */
 export default function parse(

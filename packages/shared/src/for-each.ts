@@ -43,8 +43,8 @@ function forEachObject(elements: ObjectType<any>, func: (k: any, v: any) => any)
  *   forEach(obj, (k, v) => console.log(v));
  * ```
  *
- * @param object - 需要判断的对象
- * @returns 是否为没有属性的空对象如{}
+ * @param elements - 需要遍历的值
+ * @param func - 执行函数
  */
 export function forEach(elements: Eachable<any>, func: (k: any, v: any) => any) {
   if (!elements) {
