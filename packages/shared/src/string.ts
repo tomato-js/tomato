@@ -29,6 +29,7 @@ export function substringFromChar(
   }
 ) {
   const { itself } = options;
+  if (string.indexOf(char) === -1) return "";
   const indexOfChar = itself ? string.indexOf(char) : string.indexOf(char) + 1;
   return string.substring(indexOfChar);
 }
@@ -55,6 +56,7 @@ export function substringToChar(
   }
 ) {
   const { itself } = options;
+  if (string.indexOf(char) === -1) return "";
   const indexOfChar = itself ? string.indexOf(char) + 1 : string.indexOf(char);
   return string.substring(0, indexOfChar);
 }

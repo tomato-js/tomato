@@ -46,4 +46,14 @@ describe("path util", () => {
       });
     });
   });
+  describe("getSearch", () => {
+    test("getSearch() without search", () => {
+      const search = path.getSearch("https://www.baidu.com");
+      expect(search).toBe("");
+    });
+    test("getSearch() with search", () => {
+      const search = path.getSearch("https://www.baidu.com?a=b&c=d");
+      expect(search).toBe("?a=b&c=d");
+    });
+  });
 });
