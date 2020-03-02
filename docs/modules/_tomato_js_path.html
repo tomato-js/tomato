@@ -71,6 +71,8 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_path.html#getsearch" class="tsd-kind-icon">get<wbr>Search</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_path.html#merge" class="tsd-kind-icon">merge</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_path.html#parse" class="tsd-kind-icon">parse</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_path.html#stringify" class="tsd-kind-icon">stringify</a></li>
 							</ul>
@@ -81,6 +83,84 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getsearch" class="tsd-anchor"></a>
+					<h3>get<wbr>Search</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Search<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/ca74f18/packages/path/src/parse.ts#L28">path/src/parse.ts:28</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>获取url中的search字符串</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { getSearch } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/path'</span>;
+  <span class="hljs-keyword">const</span> search = parse()<span class="hljs-comment">//默认使用window.location.href;</span>
+  <span class="hljs-keyword">const</span> search2 = parse(<span class="hljs-string">"https://www.baidu.com?a=123&amp;e=f"</span>)<span class="hljs-comment">//?a=123&amp;e=f;</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = window.location.href</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>待解析的url</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>search字符串</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="merge" class="tsd-anchor"></a>
+					<h3>merge</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/ca74f18/packages/path/src/merge.ts#L22">path/src/merge.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>将form和to的queryString进行merge合并到to</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { merge } from <span class="hljs-string">'@tomato-js/path'</span>;
+  merge(<span class="hljs-string">"https://tomato-js.github.io?a=b&amp;c=d"</span>, <span class="hljs-string">"https://www.baidu.com?a=123&amp;e=f"</span>);
+  <span class="hljs-regexp">//https</span><span class="hljs-symbol">://www</span>.baidu.com?a=<span class="hljs-number">123</span>&amp;c=d&amp;e=f</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>解析的url</p>
+									</div>
+								</li>
+								<li>
+									<h5>to: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>待合并的url</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>合并后的url</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="parse" class="tsd-anchor"></a>
 					<h3>parse</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -90,7 +170,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/06e4da8/packages/path/src/parse.ts#L54">path/src/parse.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/ca74f18/packages/path/src/parse.ts#L70">path/src/parse.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -133,7 +213,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/06e4da8/packages/path/src/stringify.ts#L28">path/src/stringify.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/ca74f18/packages/path/src/stringify.ts#L28">path/src/stringify.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -191,6 +271,12 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_path.html#getsearch" class="tsd-kind-icon">get<wbr>Search</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_path.html#merge" class="tsd-kind-icon">merge</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_path.html#parse" class="tsd-kind-icon">parse</a>
 					</li>

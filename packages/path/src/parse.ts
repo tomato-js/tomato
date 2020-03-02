@@ -3,7 +3,7 @@
  * @module @tomato-js/path
  */
 import { isURLSearchParamsExist } from "@tomato-js/env";
-import { isEmptyObject } from "@tomato-js/shared";
+import { isEmptyObject, substringFromChar } from "@tomato-js/shared";
 
 interface ParseOptions {
   encode: boolean;
@@ -11,6 +11,22 @@ interface ParseOptions {
 
 function getQueryString(str: string = window.location.search) {
   return str.includes("?") ? str.substring(1) : str;
+}
+/**
+ * 获取url中的search字符串
+ *
+ * 脚本举例
+ * ```
+ *   import { getSearch } from '@tomato-js/path';
+ *   const search = parse()//默认使用window.location.href;
+ *   const search2 = parse("https://www.baidu.com?a=123&e=f")//?a=123&e=f;
+ * ```
+ *
+ * @param url - 待解析的url
+ * @returns search字符串
+ */
+export function getSearch(url: string = window.location.href) {
+  return substringFromChar(url, "?", { itself: true });
 }
 
 function parseByURLSearchParams(queryString: string, encode: boolean = true) {
