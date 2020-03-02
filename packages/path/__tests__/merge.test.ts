@@ -6,6 +6,10 @@ describe("merge util", () => {
       const search = path.merge("https://tomato-js.github.io/tomato/index.html?a=b&c=d", "https://www.baidu.com");
       expect(search).toBe("https://www.baidu.com?a=b&c=d");
     });
+    test("merge() without search both", () => {
+      const search = path.merge("https://tomato-js.github.io/tomato/index.html", "https://www.baidu.com");
+      expect(search).toBe("https://www.baidu.com");
+    });
     test("merge() with search", () => {
       const search = path.merge("https://tomato-js.github.io/tomato/index.html?a=b&c=d", "https://www.baidu.com?a=123&e=f");
       expect(search).toBe("https://www.baidu.com?a=123&c=d&e=f");

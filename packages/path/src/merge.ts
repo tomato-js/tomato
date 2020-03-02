@@ -27,5 +27,5 @@ export default function merge(from: string, to: string) {
   const toQueryObj = parse(toSearch);
   const finalQueryObj = Object.assign({}, fromQueryObj, toQueryObj);
   const finalSearch = stringify(finalQueryObj);
-  return `${toOrigin}?${finalSearch}`;
+  return finalSearch ? `${toOrigin}?${finalSearch}` : toOrigin;
 }
