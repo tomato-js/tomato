@@ -1,3 +1,10 @@
+## [0.0.7](https://github.com/tomato-js/tomato/compare/v0.0.6...v0.0.7) (2020-03-02)
+
+### Features
+
+-   **path:** merge method for url queryString merging ([ca74f18](https://github.com/tomato-js/tomato/commit/ca74f18128e3fa7a23767143595e10d4cc52c767))
+-   **shared:** substring from char and to char ([d176cea](https://github.com/tomato-js/tomato/commit/d176cea8309175edad2d322ddf250e3615db9f47))
+
 ## [0.0.6](https://github.com/tomato-js/tomato/compare/v0.0.5...v0.0.6) (2020-02-29)
 
 ### Bug Fixes
