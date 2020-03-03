@@ -217,6 +217,38 @@ typedoc.search.data = {
     },
     {
       id: 30,
+      kind: 32,
+      name: "asReg",
+      url: "modules/_tomato_js_shared.html#asreg",
+      classes: "tsd-kind-variable tsd-parent-kind-external-module",
+      parent: "@tomato-js/shared"
+    },
+    {
+      id: 31,
+      kind: 64,
+      name: "deepGet",
+      url: "modules/_tomato_js_shared.html#deepget",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: "@tomato-js/shared"
+    },
+    {
+      id: 32,
+      kind: 64,
+      name: "pick",
+      url: "modules/_tomato_js_shared.html#pick",
+      classes: "tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter",
+      parent: "@tomato-js/shared"
+    },
+    {
+      id: 33,
+      kind: 64,
+      name: "pickX",
+      url: "modules/_tomato_js_shared.html#pickx",
+      classes: "tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter",
+      parent: "@tomato-js/shared"
+    },
+    {
+      id: 34,
       kind: 64,
       name: "substringFromChar",
       url: "modules/_tomato_js_shared.html#substringfromchar",
@@ -224,7 +256,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 31,
+      id: 35,
       kind: 64,
       name: "substringToChar",
       url: "modules/_tomato_js_shared.html#substringtochar",

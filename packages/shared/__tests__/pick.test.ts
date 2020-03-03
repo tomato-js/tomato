@@ -161,7 +161,7 @@ describe("pick util", () => {
         b: "456"
       });
     });
-    test.only("pickX({}) deep object", () => {
+    test("pickX({}) deep object", () => {
       const obj = {
         a: "123",
         b: {
@@ -174,7 +174,7 @@ describe("pick util", () => {
         "b.c": "d"
       });
     });
-    test.only("pickX({}) deep object with alias", () => {
+    test("pickX({}) deep object with alias", () => {
       const obj = {
         a: "123",
         b: {
@@ -187,7 +187,7 @@ describe("pick util", () => {
         d: "d"
       });
     });
-    test.only("pickX({}) deep object with alias and  handler", () => {
+    test("pickX({}) deep object with alias and  handler", () => {
       const obj = {
         a: "123",
         b: {
