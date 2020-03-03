@@ -3,6 +3,5 @@ export * from "./is-empty";
 export * from "./is-type";
 export * from "./types";
 export * from "./noop";
-export * from "./pick";
 export * from "./string";
 export * from "./regexp";

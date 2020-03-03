@@ -1,75 +1,6 @@
-import * as shared from "../src";
+import * as object from "../src";
 
-describe("pick util", () => {
-  describe("pick", () => {
-    test("pick({}) normal object", () => {
-      const obj = {
-        a: "123",
-        b: "456",
-        c: "789"
-      };
-      const result = shared.pick(obj, ["a", "b"]);
-      expect(result).toStrictEqual({
-        a: "123",
-        b: "456"
-      });
-    });
-    test("pick({}) normal object with not-in keys", () => {
-      const obj = {
-        a: "123",
-        b: "456",
-        c: "789"
-      };
-      const result = shared.pick(obj, ["a", "b", "d"]);
-      expect(result).toStrictEqual({
-        a: "123",
-        b: "456"
-      });
-    });
-    test("pick({}) normal object with all not-in keys", () => {
-      const obj = {
-        a: "123",
-        b: "456",
-        c: "789"
-      };
-      const result = shared.pick(obj, ["d", "e"]);
-      expect(result).toStrictEqual({});
-    });
-    test("pick({}) normal object without keys", () => {
-      const obj = {
-        a: "123",
-        b: "456",
-        c: "789"
-      };
-      const result = shared.pick(obj);
-      expect(result).toStrictEqual({});
-    });
-    test("pick({}) normal object whose value's type is same", () => {
-      const obj = {
-        a: "123",
-        b: 456,
-        c: "789"
-      };
-      const result = shared.pick(obj, ["a", "b"]);
-      expect(result).toStrictEqual({
-        a: "123",
-        b: 456
-      });
-    });
-    test("pick({}) normal object with handler", () => {
-      const obj = {
-        a: "123",
-        b: "456",
-        c: "789"
-      };
-      const result = shared.pick(obj, ["a", "b"], (key, value) => (key === "b" ? value + 1 : value));
-      expect(result).toStrictEqual({
-        a: "123",
-        b: "4561"
-      });
-    });
-  });
-
+describe("pick-x util", () => {
   describe("pickX", () => {
     test("pickX({}) normal object", () => {
       const obj = {
@@ -77,7 +8,7 @@ describe("pick util", () => {
         b: "456",
         c: "789"
       };
-      const result = shared.pickX(obj, ["a", "b"]);
+      const result = object.pickX(obj, ["a", "b"]);
       expect(result).toStrictEqual({
         a: "123",
         b: "456"
@@ -89,7 +20,7 @@ describe("pick util", () => {
         b: "456",
         c: "789"
       };
-      const result = shared.pickX(obj, ["a", "b", "d"]);
+      const result = object.pickX(obj, ["a", "b", "d"]);
       expect(result).toStrictEqual({
         a: "123",
         b: "456"
@@ -101,7 +32,7 @@ describe("pick util", () => {
         b: "456",
         c: "789"
       };
-      const result = shared.pickX(obj, ["d", "e"]);
+      const result = object.pickX(obj, ["d", "e"]);
       expect(result).toStrictEqual({});
     });
     test("pickX({}) normal object without keys", () => {
@@ -110,7 +41,7 @@ describe("pick util", () => {
         b: "456",
         c: "789"
       };
-      const result = shared.pickX(obj);
+      const result = object.pickX(obj);
       expect(result).toStrictEqual({});
     });
     test("pickX({}) normal object whose value's type is same", () => {
@@ -119,7 +50,7 @@ describe("pick util", () => {
         b: 456,
         c: "789"
       };
-      const result = shared.pickX(obj, ["a", "b"]);
+      const result = object.pickX(obj, ["a", "b"]);
       expect(result).toStrictEqual({
         a: "123",
         b: 456
@@ -131,7 +62,7 @@ describe("pick util", () => {
         b: "456",
         c: "789"
       };
-      const result = shared.pickX(obj, ["a", "b"], (key, value) => (key === "b" ? value + 1 : value));
+      const result = object.pickX(obj, ["a", "b"], (key, value) => (key === "b" ? value + 1 : value));
       expect(result).toStrictEqual({
         a: "123",
         b: "4561"
@@ -143,7 +74,7 @@ describe("pick util", () => {
         b: "456",
         c: "789"
       };
-      const result = shared.pickX(obj, ["a as c", "b"]);
+      const result = object.pickX(obj, ["a as c", "b"]);
       expect(result).toStrictEqual({
         c: "123",
         b: "456"
@@ -155,7 +86,7 @@ describe("pick util", () => {
         b: "456",
         c: "789"
       };
-      const result = shared.pickX(obj, ["a as c", "b"], (key, value) => (key === "c" ? value + 1 : value));
+      const result = object.pickX(obj, ["a as c", "b"], (key, value) => (key === "c" ? value + 1 : value));
       expect(result).toStrictEqual({
         c: "1231",
         b: "456"
@@ -168,7 +99,7 @@ describe("pick util", () => {
           c: "d"
         }
       };
-      const result = shared.pickX(obj, ["b.c", "a"]);
+      const result = object.pickX(obj, ["b.c", "a"]);
       expect(result).toStrictEqual({
         a: "123",
         "b.c": "d"
@@ -181,7 +112,7 @@ describe("pick util", () => {
           c: "d"
         }
       };
-      const result = shared.pickX(obj, ["b.c as d", "a"]);
+      const result = object.pickX(obj, ["b.c as d", "a"]);
       expect(result).toStrictEqual({
         a: "123",
         d: "d"
@@ -194,7 +125,7 @@ describe("pick util", () => {
           c: "d"
         }
       };
-      const result = shared.pickX(obj, ["b.c as d", "a"], (key, value) => (key === "d" ? "handler" : value));
+      const result = object.pickX(obj, ["b.c as d", "a"], (key, value) => (key === "d" ? "handler" : value));
       expect(result).toStrictEqual({
         a: "123",
         d: "handler"

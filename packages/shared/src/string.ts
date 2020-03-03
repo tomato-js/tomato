@@ -12,6 +12,7 @@ interface SubstringOptions {
  * 脚本举例
  * ```
  *   import { substringFromChar } from '@tomato-js/shared'
+ *   const str = substringFromChar('hello world','l');//'lo world'
  *   const str = substringFromChar('hello world','l',{itself:true});//'llo world'
  * ```
  *
