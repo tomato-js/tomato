@@ -13,6 +13,7 @@ interface SubstringOptions {
  * ```
  *   import { substringFromChar } from '@tomato-js/shared'
  *   const str = substringFromChar('hello world','l');//'lo world'
+ *   const str = substringFromChar('hello world','l',{itself:true});//'llo world'
  * ```
  *
  * @param string - 原来的字符串
@@ -40,6 +41,7 @@ export function substringFromChar(
  * ```
  *   import { substringToChar } from '@tomato-js/shared'
  *   const str = substringToChar('hello world','l');//'he'
+ *   const str = substringToChar('hello world','l',{itself:true});//'hel'
  * ```
  *
  * @param string - 原来的字符串
