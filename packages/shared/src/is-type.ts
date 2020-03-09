@@ -24,3 +24,51 @@ export function isObject(value: any) {
   const type = typeof value;
   return (value !== null && type === "object") || type === "function";
 }
+
+/**
+ * 是否是Null
+ *
+ * 脚本举例
+ * ```
+ *   import { isNull } from '@tomato-js/shared'
+ *   const node = isNull(null);//true
+ * ```
+ *
+ * @param val - 需要判断的值
+ * @returns 是否为null
+ */
+export function isNull(val: any) {
+  return val === null;
+}
+
+/**
+ * 是否是undefined
+ *
+ * 脚本举例
+ * ```
+ *   import { isUndefined } from '@tomato-js/shared'
+ *   const node = isNull(undefined);//true
+ * ```
+ *
+ * @param val - 需要判断的值
+ * @returns 是否为undefined
+ */
+export function isUndefined(val: any) {
+  return val === undefined;
+}
+
+/**
+ * 是否为 null 或 undefined 类型
+ *
+ * 脚本举例
+ * ```
+ *   import { isNil } from '@tomato-js/shared'
+ *   const node = isNil(undefined);//true
+ * ```
+ *
+ * @param val - 需要判断的值
+ * @returns 是否为undefined或null
+ */
+export function isNil(val: any) {
+  return isUndefined(val) || isNull(val);
+}

@@ -50,4 +50,30 @@ describe("is-empty util", () => {
       expect(result).toBe(false);
     });
   });
+  describe("isNull", () => {
+    test("isNull(null)", () => {
+      const result = shared.isNull(null);
+      expect(result).toBe(true);
+    });
+  });
+  describe("isUndefined", () => {
+    test("isUndefined(undefined)", () => {
+      const result = shared.isUndefined(undefined);
+      expect(result).toBe(true);
+    });
+  });
+  describe("isNil", () => {
+    test("isNil(undefined)", () => {
+      const result = shared.isNil(undefined);
+      expect(result).toBe(true);
+    });
+    test("isNil(null)", () => {
+      const result = shared.isNil(null);
+      expect(result).toBe(true);
+    });
+    test("isNil({})", () => {
+      const result = shared.isNil({});
+      expect(result).toBe(false);
+    });
+  });
 });
