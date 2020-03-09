@@ -1,3 +1,20 @@
+## [0.0.8](https://github.com/tomato-js/tomato/compare/v0.0.7...v0.0.8) (2020-03-09)
+
+### Bug Fixes
+
+-   **path:** fix merge without querystring both ([522bc45](https://github.com/tomato-js/tomato/commit/522bc452450b41a12d92645fc924ae637f944c90))
+
+### Features
+
+-   **array:** allEqual ([4612ca9](https://github.com/tomato-js/tomato/commit/4612ca9fde0d457b0bc585b651498e7757d6bc73))
+-   deep-flatten count-occurrences bottom-visible ([0075e42](https://github.com/tomato-js/tomato/commit/0075e4223c224dca53194cf958f0b98b259b1fd0))
+-   filter-non-unique is-json reverse is-nil is-browser ([13e4546](https://github.com/tomato-js/tomato/commit/13e4546b45077da47aa4b434ba651dce110e62e6))
+-   **array:** sample and sample-size ([e0f4265](https://github.com/tomato-js/tomato/commit/e0f42658da4832654085c6221fcd53eab2a8e2e1))
+-   **element:** scroll-to-top ([e9f9fc0](https://github.com/tomato-js/tomato/commit/e9f9fc03eaac936bb8d88a7f2ef1c91b50a8d1c2))
+-   **math:** average ([95ba30c](https://github.com/tomato-js/tomato/commit/95ba30c134249fc6183083f5aaea6da1e034f893))
+-   **object:** add pick in object package ([c66df72](https://github.com/tomato-js/tomato/commit/c66df727be912e4c03957b8d267f8ceabf225a13))
+-   **shared:** pick and pickX ([384c1a3](https://github.com/tomato-js/tomato/commit/384c1a3ed1bf9c886d6b44b610afb6d9fb3ba7ab))
+
 ## [0.0.7](https://github.com/tomato-js/tomato/compare/v0.0.6...v0.0.7) (2020-03-02)
 
 ### Features
