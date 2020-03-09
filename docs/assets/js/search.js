@@ -248,21 +248,22 @@ typedoc.search.data = {
       classes: "tsd-kind-variable tsd-parent-kind-external-module",
       parent: "@tomato-js/shared"
     },
-    {
-      id: 35,
-      kind: 64,
-      name: "substringFromChar",
-      url: "modules/_tomato_js_shared.html#substringfromchar",
-      classes: "tsd-kind-function tsd-parent-kind-external-module",
-      parent: "@tomato-js/shared"
-    },
+    { id: 35, kind: 1, name: "@tomato-js/string", url: "modules/_tomato_js_string.html", classes: "tsd-kind-external-module" },
     {
       id: 36,
       kind: 64,
-      name: "substringToChar",
-      url: "modules/_tomato_js_shared.html#substringtochar",
+      name: "substringFromChar",
+      url: "modules/_tomato_js_string.html#substringfromchar",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
-      parent: "@tomato-js/shared"
+      parent: "@tomato-js/string"
+    },
+    {
+      id: 37,
+      kind: 64,
+      name: "substringToChar",
+      url: "modules/_tomato_js_string.html#substringtochar",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: "@tomato-js/string"
     }
   ]
 };

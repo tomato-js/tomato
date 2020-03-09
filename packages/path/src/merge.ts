@@ -3,7 +3,7 @@
  * @module @tomato-js/path
  */
 import parse, { getSearch } from "./parse";
-import { substringToChar } from "@tomato-js/shared";
+import { substringToChar } from "@tomato-js/string";
 import stringify from "./stringify";
 /**
  * 将form和to的queryString进行merge合并到to

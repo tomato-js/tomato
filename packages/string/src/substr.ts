@@ -1,6 +1,6 @@
 /**
  * @packageDocumentation
- * @module @tomato-js/shared
+ * @module @tomato-js/string
  */
 
 interface SubstringOptions {
@@ -11,7 +11,7 @@ interface SubstringOptions {
  *
  * 脚本举例
  * ```
- *   import { substringFromChar } from '@tomato-js/shared'
+ *   import { substringFromChar } from '@tomato-js/string'
  *   const str = substringFromChar('hello world','l');//'lo world'
  *   const str = substringFromChar('hello world','l',{itself:true});//'llo world'
  * ```
@@ -39,7 +39,7 @@ export function substringFromChar(
  *
  * 脚本举例
  * ```
- *   import { substringToChar } from '@tomato-js/shared'
+ *   import { substringToChar } from '@tomato-js/string'
  *   const str = substringToChar('hello world','l');//'he'
  *   const str = substringToChar('hello world','l',{itself:true});//'hel'
  * ```

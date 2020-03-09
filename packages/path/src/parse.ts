@@ -3,7 +3,8 @@
  * @module @tomato-js/path
  */
 import { isURLSearchParamsExist } from "@tomato-js/env";
-import { isEmptyObject, substringFromChar } from "@tomato-js/shared";
+import { isEmptyObject } from "@tomato-js/shared";
+import { substringFromChar } from "@tomato-js/string";
 
 interface ParseOptions {
   encode: boolean;
