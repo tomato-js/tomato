@@ -75,6 +75,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#countoccurrences" class="tsd-kind-icon">count<wbr>Occurrences</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#deepflatten" class="tsd-kind-icon">deep<wbr>Flatten</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#filternonunique" class="tsd-kind-icon">filter<wbr>Non<wbr>Unique</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#samplesize" class="tsd-kind-icon">sample<wbr>Size</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,7 +93,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/13e4546/packages/array/src/all-equal.ts#L18">array/src/all-equal.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/e9f9fc0/packages/array/src/all-equal.ts#L18">array/src/all-equal.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -133,7 +134,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/13e4546/packages/array/src/count-occurrences.ts#L20">array/src/count-occurrences.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/e9f9fc0/packages/array/src/count-occurrences.ts#L20">array/src/count-occurrences.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -175,7 +176,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/13e4546/packages/array/src/deep-flatten.ts#L18">array/src/deep-flatten.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/e9f9fc0/packages/array/src/deep-flatten.ts#L18">array/src/deep-flatten.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -210,7 +211,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/13e4546/packages/array/src/filter-non-unique.ts#L17">array/src/filter-non-unique.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/e9f9fc0/packages/array/src/filter-non-unique.ts#L17">array/src/filter-non-unique.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -235,6 +236,45 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="samplesize" class="tsd-anchor"></a>
+					<h3>sample<wbr>Size</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">sample<wbr>Size<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">]</span>, n<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/e9f9fc0/packages/array/src/sample-size.ts#L20">array/src/sample-size.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>在数组中随机生选择 n 个元素生成新的数组
+									基于Fisher–Yates shuffle 洗牌算法</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { sampleSize } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/array'</span>
+  sampleSize([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-number">2</span>); <span class="hljs-comment">// [3,1]</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> n: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>新数组元素个数</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>随机新数组</p>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -242,6 +282,9 @@
 				<ul>
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_array_src_sample_.html">&quot;array/src/sample&quot;</a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="_tomato_js_array.html">@tomato-<wbr>js/array</a>
@@ -282,6 +325,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_array.html#filternonunique" class="tsd-kind-icon">filter<wbr>Non<wbr>Unique</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_array.html#samplesize" class="tsd-kind-icon">sample<wbr>Size</a>
 					</li>
 				</ul>
 			</nav>
