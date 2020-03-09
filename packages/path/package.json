@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "@tomato-js/env": "^0.0.7",
-    "@tomato-js/shared": "^0.0.7"
+    "@tomato-js/shared": "^0.0.7",
+    "@tomato-js/string": "^0.0.7"
   }
 }
