@@ -1,4 +1,4 @@
-# tomato-js
+# tomato-js [![npm](https://img.shields.io/npm/v/@tomato-js/entry.svg?maxAge=2592000)](https://www.npmjs.com/package/@tomato-js/entry)
 
 ⚡️Simple, Modular Utils for Web Applications. [API Docs](https://tomato-js.github.io/tomato/index.html)
 

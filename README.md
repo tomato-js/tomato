@@ -1,4 +1,4 @@
-# tomato-js
+# tomato-js [![npm](https://img.shields.io/npm/v/@tomato-js/entry.svg?maxAge=2592000)](https://www.npmjs.com/package/@tomato-js/entry)
 
 [English Document](./README_EN.md)
 
