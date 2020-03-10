@@ -1,4 +1,4 @@
-# tomato-js [![npm](https://img.shields.io/npm/v/@tomato-js/entry.svg?maxAge=2592000)](https://www.npmjs.com/package/@tomato-js/entry)
+# tomato-js [![npm](https://img.shields.io/npm/v/@tomato-js/entry.svg?maxAge=2592000)](https://www.npmjs.com/package/@tomato-js/entry) [![Build Status](https://travis-ci.org/tomato-js/tomato.svg?branch=master)](https://travis-ci.org/tomato-js/tomato) [![Test coverage](https://img.shields.io/codecov/c/github/tomato-js/tomato.svg?style=flat-square)](https://codecov.io/gh/tomato-js/tomato) [![npm download](https://img.shields.io/npm/dm/@tomato-js/shared.svg?style=flat-square)]()
 
 [English Document](./README_EN.md)
 

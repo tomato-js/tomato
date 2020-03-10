@@ -1,3 +1,9 @@
+## [0.0.9](https://github.com/tomato-js/tomato/compare/v0.0.8...v0.0.9) (2020-03-10)
+
+### Features
+
+-   **cookie:** add cookie handle ([676142c](https://github.com/tomato-js/tomato/commit/676142c66f42176af99924713adac64f50f9379d))
+
 ## [0.0.8](https://github.com/tomato-js/tomato/compare/v0.0.7...v0.0.8) (2020-03-09)
 
 ### Bug Fixes
