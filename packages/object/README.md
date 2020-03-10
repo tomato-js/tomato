@@ -1,11 +1,3 @@
 # `@tomato-js/object`
 
-> TODO: description
-
-## Usage
-
-```
-const object = require('@tomato-js/object');
-
-// TODO: DEMONSTRATE API
-```
+Read more details in [API Docs](https://tomato-js.github.io/tomato/index.html)

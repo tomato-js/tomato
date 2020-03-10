@@ -1,9 +1,9 @@
-import { sampleSize } from "./sample-size";
-
 /**
  * @packageDocumentation
  * @module @tomato-js/array
  */
+
+import { sampleSize } from "./sample-size";
 
 /**
  * 在数组中随机取1个值

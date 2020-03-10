@@ -1,11 +1,3 @@
 # `@tomato-js/math`
 
-> TODO: description
-
-## Usage
-
-```
-const string = require('@tomato-js/math');
-
-// TODO: DEMONSTRATE API
-```
+Read more details in [API Docs](https://tomato-js.github.io/tomato/index.html)

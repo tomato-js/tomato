@@ -1,11 +1,3 @@
 # `@tomato-js/array`
 
-> TODO: description
-
-## Usage
-
-```
-const string = require('@tomato-js/array');
-
-// TODO: DEMONSTRATE API
-```
+Read more details in [API Docs](https://tomato-js.github.io/tomato/index.html)

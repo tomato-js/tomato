@@ -1,11 +1,3 @@
 # `@tomato-js/element`
 
-> TODO: description2
-
-## Usage
-
-```
-const element = require('@tomato-js/element');
-
-// TODO: DEMONSTRATE API
-```
+Read more details in [API Docs](https://tomato-js.github.io/tomato/index.html)
