@@ -44,6 +44,10 @@ import { element, path } from "@tomato-js/entry";
 
 Methods for array, [API Docs](https://tomato-js.github.io/tomato/modules/_tomato_js_array.html)
 
+### @tomato-js/cookie
+
+Methods for cookie, [API Docs](https://tomato-js.github.io/tomato/modules/_tomato_js_cookie.html)
+
 ### @tomato-js/element
 
 Methods for dom, [API Docs](https://tomato-js.github.io/tomato/modules/_tomato_js_element.html)

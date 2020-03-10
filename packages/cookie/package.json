@@ -1,5 +1,5 @@
 {
-  "name": "@tomato-js/entry",
+  "name": "@tomato-js/cookie",
   "version": "0.0.8",
   "description": "simple, modular utils for web applications",
   "author": "brizer <brizer@163.com>",
@@ -28,27 +28,15 @@
     "build": "npm run clean && run-p build:*",
     "build:esm": "tsc -p tsconfig.json --target ES5 --module ESNext --outDir dist/esm",
     "build:cjs": "tsc -p tsconfig.json --target ES5 --module commonjs --outDir dist/lib",
-    "build:umd": "rollup -c",
-    "build:umd-p": "cross-env NODE_ENV=production rollup -c",
     "clean": "rm -rf dist"
   },
   "bugs": {
     "url": "https://github.com/tomato-js/tomato/issues"
   },
   "devDependencies": {
-    "cross-env": "^7.0.0",
-    "npm-run-all": "^4.1.5",
-    "rollup-plugin-terser": "^5.2.0"
+    "npm-run-all": "^4.1.5"
   },
   "dependencies": {
-    "@tomato-js/array": "^0.0.8",
-    "@tomato-js/cookie": "^0.0.8",
-    "@tomato-js/element": "^0.0.8",
-    "@tomato-js/env": "^0.0.8",
-    "@tomato-js/math": "^0.0.8",
-    "@tomato-js/object": "^0.0.8",
-    "@tomato-js/path": "^0.0.8",
-    "@tomato-js/shared": "^0.0.8",
-    "@tomato-js/string": "^0.0.8"
+    "@tomato-js/shared": "^0.0.8"
   }
 }

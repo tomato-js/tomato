@@ -46,6 +46,10 @@ import { element, path } from "@tomato-js/entry";
 
 数组方法，[文档](https://tomato-js.github.io/tomato/modules/_tomato_js_array.html)
 
+### @tomato-js/cookie
+
+cookie 方法，[文档](https://tomato-js.github.io/tomato/modules/_tomato_js_cookie.html)
+
 ### @tomato-js/element
 
 DOM 方法，[文档](https://tomato-js.github.io/tomato/modules/_tomato_js_element.html)
