@@ -3,3 +3,12 @@ node_js:
   - '11'
   - '10'
   - '9'
+  
+scripts:
+  - npm install codecov -g 
+  - npm run prebuild
+  - npm run build
+  - npm start
+  - npm run coverage-generator
+after_success:
+  - codecov
