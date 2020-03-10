@@ -6,6 +6,7 @@ node_js:
   
 scripts:
   - npm install codecov -g 
+  - npm run build
   - npm start
   - npm run coverage-generator
 after_success:
