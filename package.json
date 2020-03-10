@@ -8,6 +8,7 @@
     "prettier": "prettier \"**/**/**/*.+(js|json|jsx|ts|tsx|md|mdx)\"",
     "format": "npm run prettier --write",
     "build": "lerna run build",
+    "prebuild": "lerna exec npm i",
     "test": "jest",
     "coverage": "npm run coverage-generator && npm run coverage-viewer",
     "coverage-generator": "jest --coverage",
