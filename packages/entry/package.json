@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "@tomato-js/array": "^0.0.10",
+    "@tomato-js/async": "^0.0.10",
     "@tomato-js/cookie": "^0.0.10",
     "@tomato-js/element": "^0.0.10",
     "@tomato-js/env": "^0.0.10",

@@ -1,4 +1,5 @@
 import * as array from "@tomato-js/array";
+import * as async from "@tomato-js/async";
 import * as cookie from "@tomato-js/cookie";
 import * as element from "@tomato-js/element";
 import * as env from "@tomato-js/env";
@@ -8,4 +9,4 @@ import * as object from "@tomato-js/object";
 import * as path from "@tomato-js/path";
 import * as shared from "@tomato-js/shared";
 import * as string from "@tomato-js/string";
-export { array, cookie, element, object, env, func, math, path, shared, string };
+export { array, async, cookie, element, object, env, func, math, path, shared, string };
