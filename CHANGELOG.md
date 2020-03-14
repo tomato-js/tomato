@@ -1,3 +1,15 @@
+## [0.0.11](https://github.com/tomato-js/tomato/compare/v0.0.10...v0.0.11) (2020-03-14)
+
+### Features
+
+-   **array:** union ([c7f6a64](https://github.com/tomato-js/tomato/commit/c7f6a6421ce2a29813548a5ff461df7bbf496a8a))
+-   **async:** sleep ([6fd8331](https://github.com/tomato-js/tomato/commit/6fd8331cf41d317cecc791ed5d8d248e7a2e2d5d))
+-   **entry:** import async ([c2e39c9](https://github.com/tomato-js/tomato/commit/c2e39c93bb8a10c5c19397f3e2dd340eec54d418))
+-   **function:** takeTime and import jest-mock-console ([8737f28](https://github.com/tomato-js/tomato/commit/8737f28983dcff682fb3f0b938e339c8f6220572))
+-   **function:** times ([d5f65f0](https://github.com/tomato-js/tomato/commit/d5f65f041250a0bd66a4711551b854212afd7985))
+-   **math:** sum sumBy ([1ea5987](https://github.com/tomato-js/tomato/commit/1ea59879b7fde56d88b01239c393568ebffff853))
+-   **shared:** isNumberLike ([8864769](https://github.com/tomato-js/tomato/commit/88647691783cbf030ada6e009c5aeacf8b19aabb))
+
 ## [0.0.10](https://github.com/tomato-js/tomato/compare/v0.0.9...v0.0.10) (2020-03-14)
 
 ### Features
