@@ -93,7 +93,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in function/src/after.ts:23</li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2ec0996/packages/function/src/after.ts#L23">function/src/after.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -137,7 +137,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in function/src/after-return.ts:23</li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2ec0996/packages/function/src/after-return.ts#L23">function/src/after-return.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -181,22 +181,43 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in function/src/aop.ts:20</li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2ec0996/packages/function/src/aop.ts#L37">function/src/aop.ts:37</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>AOP增强底层函数</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { aop } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/function'</span>
+  let origin = <span class="hljs-function"><span class="hljs-params">(str)</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(str);
+  const target = <span class="hljs-function"><span class="hljs-params">({args,value})</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'around'</span>);
+  origin = aop(origin, target,<span class="hljs-string">'around);
+  origin('</span>current<span class="hljs-string">');//around current around</span></code></pre>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>origin: <span class="tsd-signature-type">Function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>原始函数</p>
+									</div>
 								</li>
 								<li>
 									<h5>target: <span class="tsd-signature-type">Function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>注入的切片函数</p>
+									</div>
 								</li>
 								<li>
 									<h5>aopType: <span class="tsd-signature-type">AopType</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>切片方案，支持after/before/around/afterReturn</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>新函数</p>
 						</li>
 					</ul>
 				</section>
@@ -210,7 +231,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in function/src/around.ts:23</li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2ec0996/packages/function/src/around.ts#L23">function/src/around.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -254,7 +275,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in function/src/before.ts:23</li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2ec0996/packages/function/src/before.ts#L23">function/src/before.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
