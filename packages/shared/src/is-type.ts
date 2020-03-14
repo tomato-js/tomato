@@ -76,3 +76,19 @@ export function isUndefined(val: any) {
 export function isNil(val: any) {
   return isUndefined(val) || isNull(val);
 }
+/**
+ * 是否为 数字或字符串数字类型
+ *
+ * 脚本举例
+ * ```
+ *   import { isNumberLike } from '@tomato-js/shared'
+ *   isNumberLike(‘3’);//true
+ *   isNumberLike(3);//true
+ * ```
+ *
+ * @param val - 需要判断的值
+ * @returns 是否为数字或字符串数字类型
+ */
+export function isNumberLike(val: any) {
+  return !isNaN(parseFloat(val)) && isFinite(val) && Number(val) == val;
+}

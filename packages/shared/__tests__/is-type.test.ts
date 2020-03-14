@@ -76,4 +76,18 @@ describe("is-empty util", () => {
       expect(result).toBe(false);
     });
   });
+  describe("isNumberLike", () => {
+    test("isNumberLike(undefined)", () => {
+      const result = shared.isNumberLike(undefined);
+      expect(result).toBe(false);
+    });
+    test("isNumberLike(3)", () => {
+      const result = shared.isNumberLike(3);
+      expect(result).toBe(true);
+    });
+    test("isNumberLike('3')", () => {
+      const result = shared.isNumberLike("3");
+      expect(result).toBe(true);
+    });
+  });
 });
