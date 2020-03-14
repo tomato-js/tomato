@@ -4,3 +4,4 @@ export { deepFlatten } from "./deep-flatten";
 export { filterNonUnique } from "./filter-non-unique";
 export { sampleSize } from "./sample-size";
 export { sample } from "./sample";
+export { union } from "./union";
