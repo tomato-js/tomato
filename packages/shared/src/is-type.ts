@@ -25,6 +25,10 @@ export function isObject(value: any) {
   return (value !== null && type === "object") || type === "function";
 }
 
+export function isFunction(value: any) {
+  return isType(value, "Function");
+}
+
 /**
  * 是否是Null
  *
