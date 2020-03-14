@@ -1,6 +1,6 @@
 {
   "name": "@tomato-js/shared",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "simple, modular utils for web applications",
   "author": "brizer <brizer@163.com>",
   "homepage": "https://github.com/tomato-js/tomato/tree/master/packages/path#readme",
