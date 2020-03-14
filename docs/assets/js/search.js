@@ -183,9 +183,50 @@ typedoc.search.data = {
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: "@tomato-js/env"
     },
-    { id: 26, kind: 1, name: "@tomato-js/math", url: "modules/_tomato_js_math.html", classes: "tsd-kind-external-module" },
+    { id: 26, kind: 1, name: "@tomato-js/function", url: "modules/_tomato_js_function.html", classes: "tsd-kind-external-module" },
     {
       id: 27,
+      kind: 64,
+      name: "aop",
+      url: "modules/_tomato_js_function.html#aop",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: "@tomato-js/function"
+    },
+    {
+      id: 28,
+      kind: 64,
+      name: "afterReturn",
+      url: "modules/_tomato_js_function.html#afterreturn",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: "@tomato-js/function"
+    },
+    {
+      id: 29,
+      kind: 64,
+      name: "after",
+      url: "modules/_tomato_js_function.html#after",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: "@tomato-js/function"
+    },
+    {
+      id: 30,
+      kind: 64,
+      name: "around",
+      url: "modules/_tomato_js_function.html#around",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: "@tomato-js/function"
+    },
+    {
+      id: 31,
+      kind: 64,
+      name: "before",
+      url: "modules/_tomato_js_function.html#before",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: "@tomato-js/function"
+    },
+    { id: 32, kind: 1, name: "@tomato-js/math", url: "modules/_tomato_js_math.html", classes: "tsd-kind-external-module" },
+    {
+      id: 33,
       kind: 64,
       name: "averageBy",
       url: "modules/_tomato_js_math.html#averageby",
@@ -193,16 +234,16 @@ typedoc.search.data = {
       parent: "@tomato-js/math"
     },
     {
-      id: 28,
+      id: 34,
       kind: 64,
       name: "average",
       url: "modules/_tomato_js_math.html#average",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: "@tomato-js/math"
     },
-    { id: 29, kind: 1, name: "@tomato-js/object", url: "modules/_tomato_js_object.html", classes: "tsd-kind-external-module" },
+    { id: 35, kind: 1, name: "@tomato-js/object", url: "modules/_tomato_js_object.html", classes: "tsd-kind-external-module" },
     {
-      id: 30,
+      id: 36,
       kind: 64,
       name: "deepGet",
       url: "modules/_tomato_js_object.html#deepget",
@@ -210,7 +251,7 @@ typedoc.search.data = {
       parent: "@tomato-js/object"
     },
     {
-      id: 31,
+      id: 37,
       kind: 64,
       name: "pickX",
       url: "modules/_tomato_js_object.html#pickx",
@@ -218,16 +259,16 @@ typedoc.search.data = {
       parent: "@tomato-js/object"
     },
     {
-      id: 32,
+      id: 38,
       kind: 64,
       name: "pick",
       url: "modules/_tomato_js_object.html#pick",
       classes: "tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter",
       parent: "@tomato-js/object"
     },
-    { id: 33, kind: 1, name: "@tomato-js/path", url: "modules/_tomato_js_path.html", classes: "tsd-kind-external-module" },
+    { id: 39, kind: 1, name: "@tomato-js/path", url: "modules/_tomato_js_path.html", classes: "tsd-kind-external-module" },
     {
-      id: 34,
+      id: 40,
       kind: 64,
       name: "getSearch",
       url: "modules/_tomato_js_path.html#getsearch",
@@ -235,7 +276,7 @@ typedoc.search.data = {
       parent: "@tomato-js/path"
     },
     {
-      id: 35,
+      id: 41,
       kind: 64,
       name: "parse",
       url: "modules/_tomato_js_path.html#parse",
@@ -243,7 +284,7 @@ typedoc.search.data = {
       parent: "@tomato-js/path"
     },
     {
-      id: 36,
+      id: 42,
       kind: 64,
       name: "stringify",
       url: "modules/_tomato_js_path.html#stringify",
@@ -251,16 +292,16 @@ typedoc.search.data = {
       parent: "@tomato-js/path"
     },
     {
-      id: 37,
+      id: 43,
       kind: 64,
       name: "merge",
       url: "modules/_tomato_js_path.html#merge",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: "@tomato-js/path"
     },
-    { id: 38, kind: 1, name: "@tomato-js/shared", url: "modules/_tomato_js_shared.html", classes: "tsd-kind-external-module" },
+    { id: 44, kind: 1, name: "@tomato-js/shared", url: "modules/_tomato_js_shared.html", classes: "tsd-kind-external-module" },
     {
-      id: 39,
+      id: 45,
       kind: 64,
       name: "isType",
       url: "modules/_tomato_js_shared.html#istype",
@@ -268,7 +309,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 40,
+      id: 46,
       kind: 64,
       name: "isString",
       url: "modules/_tomato_js_shared.html#isstring",
@@ -276,7 +317,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 41,
+      id: 47,
       kind: 64,
       name: "isNumber",
       url: "modules/_tomato_js_shared.html#isnumber",
@@ -284,7 +325,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 42,
+      id: 48,
       kind: 64,
       name: "isArray",
       url: "modules/_tomato_js_shared.html#isarray",
@@ -292,7 +333,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 43,
+      id: 49,
       kind: 64,
       name: "isObject",
       url: "modules/_tomato_js_shared.html#isobject",
@@ -300,7 +341,15 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 44,
+      id: 50,
+      kind: 64,
+      name: "isFunction",
+      url: "modules/_tomato_js_shared.html#isfunction",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: "@tomato-js/shared"
+    },
+    {
+      id: 51,
       kind: 64,
       name: "isNull",
       url: "modules/_tomato_js_shared.html#isnull",
@@ -308,7 +357,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 45,
+      id: 52,
       kind: 64,
       name: "isUndefined",
       url: "modules/_tomato_js_shared.html#isundefined",
@@ -316,7 +365,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 46,
+      id: 53,
       kind: 64,
       name: "isNil",
       url: "modules/_tomato_js_shared.html#isnil",
@@ -324,7 +373,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 47,
+      id: 54,
       kind: 256,
       name: "ObjectType",
       url: "interfaces/_tomato_js_shared.objecttype.html",
@@ -332,7 +381,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 48,
+      id: 55,
       kind: 4194304,
       name: "HTMLSelector",
       url: "modules/_tomato_js_shared.html#htmlselector",
@@ -340,7 +389,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 49,
+      id: 56,
       kind: 4194304,
       name: "HTMLElementKey",
       url: "modules/_tomato_js_shared.html#htmlelementkey",
@@ -348,7 +397,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 50,
+      id: 57,
       kind: 4194304,
       name: "Eachable",
       url: "modules/_tomato_js_shared.html#eachable",
@@ -356,7 +405,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 51,
+      id: 58,
       kind: 64,
       name: "forEach",
       url: "modules/_tomato_js_shared.html#foreach",
@@ -364,7 +413,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 52,
+      id: 59,
       kind: 64,
       name: "isEmptyObject",
       url: "modules/_tomato_js_shared.html#isemptyobject",
@@ -372,7 +421,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 53,
+      id: 60,
       kind: 64,
       name: "noop",
       url: "modules/_tomato_js_shared.html#noop",
@@ -380,7 +429,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 54,
+      id: 61,
       kind: 32,
       name: "blankReg",
       url: "modules/_tomato_js_shared.html#blankreg",
@@ -388,16 +437,16 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 55,
+      id: 62,
       kind: 32,
       name: "asReg",
       url: "modules/_tomato_js_shared.html#asreg",
       classes: "tsd-kind-variable tsd-parent-kind-external-module",
       parent: "@tomato-js/shared"
     },
-    { id: 56, kind: 1, name: "@tomato-js/string", url: "modules/_tomato_js_string.html", classes: "tsd-kind-external-module" },
+    { id: 63, kind: 1, name: "@tomato-js/string", url: "modules/_tomato_js_string.html", classes: "tsd-kind-external-module" },
     {
-      id: 57,
+      id: 64,
       kind: 64,
       name: "isJson",
       url: "modules/_tomato_js_string.html#isjson",
@@ -405,7 +454,7 @@ typedoc.search.data = {
       parent: "@tomato-js/string"
     },
     {
-      id: 58,
+      id: 65,
       kind: 64,
       name: "reverse",
       url: "modules/_tomato_js_string.html#reverse",
@@ -413,7 +462,7 @@ typedoc.search.data = {
       parent: "@tomato-js/string"
     },
     {
-      id: 59,
+      id: 66,
       kind: 64,
       name: "substringFromChar",
       url: "modules/_tomato_js_string.html#substringfromchar",
@@ -421,7 +470,7 @@ typedoc.search.data = {
       parent: "@tomato-js/string"
     },
     {
-      id: 60,
+      id: 67,
       kind: 64,
       name: "substringToChar",
       url: "modules/_tomato_js_string.html#substringtochar",

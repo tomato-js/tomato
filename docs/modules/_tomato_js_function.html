@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@tomato-js/array | @tomato-js</title>
+	<title>@tomato-js/function | @tomato-js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_tomato_js_array.html">@tomato-js/array</a>
+					<a href="_tomato_js_function.html">@tomato-js/function</a>
 				</li>
 			</ul>
-			<h1>External module @tomato-js/array</h1>
+			<h1>External module @tomato-js/function</h1>
 		</div>
 	</div>
 </header>
@@ -71,12 +71,11 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_tomato_js_array.html#allequal" class="tsd-kind-icon">all<wbr>Equal</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#countoccurrences" class="tsd-kind-icon">count<wbr>Occurrences</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#deepflatten" class="tsd-kind-icon">deep<wbr>Flatten</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#filternonunique" class="tsd-kind-icon">filter<wbr>Non<wbr>Unique</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#sample" class="tsd-kind-icon">sample</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#samplesize" class="tsd-kind-icon">sample<wbr>Size</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#after" class="tsd-kind-icon">after</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#afterreturn" class="tsd-kind-icon">after<wbr>Return</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#aop" class="tsd-kind-icon">aop</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#around" class="tsd-kind-icon">around</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#before" class="tsd-kind-icon">before</a></li>
 							</ul>
 						</section>
 					</div>
@@ -84,227 +83,208 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-					<a name="allequal" class="tsd-anchor"></a>
-					<h3>all<wbr>Equal</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">all<wbr>Equal&lt;T&gt;<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="after" class="tsd-anchor"></a>
+					<h3>after</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">after<span class="tsd-signature-symbol">(</span>origin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span>, target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9b2c2ac/packages/array/src/all-equal.ts#L18">array/src/all-equal.ts:18</a></li>
+									<li>Defined in function/src/after.ts:23</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>判断数组内容是否一致</p>
+									<p>AOP增强之向后切片</p>
 								</div>
 								<p>脚本举例</p>
-								<pre><code>  <span class="hljs-keyword">import</span> { allEqual } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/array'</span>
-  allEqual([<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">3</span>]);<span class="hljs-comment">//true</span></code></pre>
+								<pre><code>  <span class="hljs-keyword">import</span> { after } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/function'</span>
+  <span class="hljs-keyword">let</span> origin = <span class="hljs-function">(<span class="hljs-params">str</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(str);
+  <span class="hljs-keyword">const</span> target = <span class="hljs-function">(<span class="hljs-params">{args,value}</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'after'</span>);
+  origin = after(origin, target);
+  origin(<span class="hljs-string">'current'</span>);<span class="hljs-comment">//current after</span></code></pre>
 							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>arr: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>origin: <span class="tsd-signature-type">Function</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>需要判断的数组</p>
+										<p>原始函数</p>
+									</div>
+								</li>
+								<li>
+									<h5>target: <span class="tsd-signature-type">Function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>注入的切片函数</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p>是否内容一致</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>新函数</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="countoccurrences" class="tsd-anchor"></a>
-					<h3>count<wbr>Occurrences</h3>
+					<a name="afterreturn" class="tsd-anchor"></a>
+					<h3>after<wbr>Return</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">count<wbr>Occurrences<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span>, val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">after<wbr>Return<span class="tsd-signature-symbol">(</span>origin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span>, target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9b2c2ac/packages/array/src/count-occurrences.ts#L20">array/src/count-occurrences.ts:20</a></li>
+									<li>Defined in function/src/after-return.ts:23</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>统计数组中某个值出现的次数</p>
+									<p>AOP增强之向后切片并透传返回值</p>
 								</div>
 								<p>脚本举例</p>
-								<pre><code>  <span class="hljs-keyword">import</span> { countOccurrences } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/array'</span>
-  countOccurrences([<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2</span>],<span class="hljs-number">3</span>);<span class="hljs-comment">//2</span>
-  countOccurrences([<span class="hljs-string">'3'</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2</span>],<span class="hljs-string">'3'</span>);<span class="hljs-comment">//1</span></code></pre>
+								<pre><code>  <span class="hljs-keyword">import</span> { afterReturn } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/function'</span>
+  <span class="hljs-keyword">let</span> origin = <span class="hljs-function">(<span class="hljs-params">str</span>) =&gt;</span> str;
+  <span class="hljs-keyword">const</span> target = <span class="hljs-function">(<span class="hljs-params">str</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(str);
+  origin = afterReturn(origin, target);
+  origin(<span class="hljs-string">'current'</span>);<span class="hljs-comment">//current</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>arr: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>origin: <span class="tsd-signature-type">Function</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>数组</p>
+										<p>原始函数</p>
 									</div>
 								</li>
 								<li>
-									<h5>val: <span class="tsd-signature-type">any</span></h5>
+									<h5>target: <span class="tsd-signature-type">Function</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>参考值</p>
+										<p>注入的切片函数</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-							<p>出现次数</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>新函数</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="deepflatten" class="tsd-anchor"></a>
-					<h3>deep<wbr>Flatten</h3>
+					<a name="aop" class="tsd-anchor"></a>
+					<h3>aop</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">deep<wbr>Flatten<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">aop<span class="tsd-signature-symbol">(</span>origin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span>, target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span>, aopType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AopType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9b2c2ac/packages/array/src/deep-flatten.ts#L18">array/src/deep-flatten.ts:18</a></li>
+									<li>Defined in function/src/aop.ts:20</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>将多维数组展平成一维数组</p>
-								</div>
-								<p>脚本举例</p>
-								<pre><code>  <span class="hljs-keyword">import</span> { deepFlatten } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/array'</span>
-  deepFlatten([<span class="hljs-number">1</span>, [<span class="hljs-number">2</span>], [[<span class="hljs-number">3</span>], <span class="hljs-number">4</span>], <span class="hljs-number">5</span>]); <span class="hljs-comment">// [1,2,3,4,5]</span></code></pre>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>arr: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>多维数组</p>
-									</div>
+									<h5>origin: <span class="tsd-signature-type">Function</span></h5>
+								</li>
+								<li>
+									<h5>target: <span class="tsd-signature-type">Function</span></h5>
+								</li>
+								<li>
+									<h5>aopType: <span class="tsd-signature-type">AopType</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-							<p>扁平化后的一维数组</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="filternonunique" class="tsd-anchor"></a>
-					<h3>filter<wbr>Non<wbr>Unique</h3>
+					<a name="around" class="tsd-anchor"></a>
+					<h3>around</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">filter<wbr>Non<wbr>Unique<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">around<span class="tsd-signature-symbol">(</span>origin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span>, target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9b2c2ac/packages/array/src/filter-non-unique.ts#L17">array/src/filter-non-unique.ts:17</a></li>
+									<li>Defined in function/src/around.ts:23</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>数组去重</p>
+									<p>AOP增强之前后切片</p>
 								</div>
 								<p>脚本举例</p>
-								<pre><code>  <span class="hljs-keyword">import</span> { filterNonUnique } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/array'</span>
-  filterNonUnique([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]); <span class="hljs-comment">// [1, 2, 3, 4, 5]</span></code></pre>
+								<pre><code>  <span class="hljs-keyword">import</span> { around } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/function'</span>
+  <span class="hljs-keyword">let</span> origin = <span class="hljs-function">(<span class="hljs-params">str</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(str);
+  <span class="hljs-keyword">const</span> target = <span class="hljs-function">(<span class="hljs-params">{args,value}</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'around'</span>);
+  origin = around(origin, target);
+  origin(<span class="hljs-string">'current'</span>);<span class="hljs-comment">//around current around</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>arr: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>origin: <span class="tsd-signature-type">Function</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>数组</p>
+										<p>原始函数</p>
+									</div>
+								</li>
+								<li>
+									<h5>target: <span class="tsd-signature-type">Function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>注入的切片函数</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
-							<p>去重后的数组</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>新函数</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="sample" class="tsd-anchor"></a>
-					<h3>sample</h3>
+					<a name="before" class="tsd-anchor"></a>
+					<h3>before</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">sample<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">before<span class="tsd-signature-symbol">(</span>origin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span>, target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9b2c2ac/packages/array/src/sample.ts#L20">array/src/sample.ts:20</a></li>
+									<li>Defined in function/src/before.ts:23</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>在数组中随机取1个值</p>
+									<p>AOP增强之向前切片</p>
 								</div>
 								<p>脚本举例</p>
-								<pre><code>  <span class="hljs-keyword">import</span> { sample } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/array'</span>
-  sample([<span class="hljs-number">3</span>, <span class="hljs-number">7</span>, <span class="hljs-number">9</span>, <span class="hljs-number">11</span>]); <span class="hljs-comment">// 9</span></code></pre>
+								<pre><code>  <span class="hljs-keyword">import</span> { before } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/function'</span>
+  <span class="hljs-keyword">let</span> origin = <span class="hljs-function">(<span class="hljs-params">str</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(str);
+  <span class="hljs-keyword">const</span> target = <span class="hljs-function">(<span class="hljs-params">{args,value}</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'before'</span>);
+  origin = before(origin, target);
+  origin(<span class="hljs-string">'current'</span>);<span class="hljs-comment">//before current</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-							<p>随机值</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="samplesize" class="tsd-anchor"></a>
-					<h3>sample<wbr>Size</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">sample<wbr>Size<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">]</span>, n<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9b2c2ac/packages/array/src/sample-size.ts#L20">array/src/sample-size.ts:20</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>在数组中随机生选择 n 个元素生成新的数组
-									基于Fisher–Yates shuffle 洗牌算法</p>
-								</div>
-								<p>脚本举例</p>
-								<pre><code>  <span class="hljs-keyword">import</span> { sampleSize } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/array'</span>
-  sampleSize([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], <span class="hljs-number">2</span>); <span class="hljs-comment">// [3,1]</span></code></pre>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">]</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> n: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
+									<h5>origin: <span class="tsd-signature-type">Function</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>新数组元素个数</p>
+										<p>原始函数</p>
+									</div>
+								</li>
+								<li>
+									<h5>target: <span class="tsd-signature-type">Function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>注入的切片函数</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
-							<p>随机新数组</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>新函数</p>
 						</li>
 					</ul>
 				</section>
@@ -316,7 +296,7 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_array.html">@tomato-<wbr>js/array</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -328,7 +308,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_env.html">@tomato-<wbr>js/env</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="_tomato_js_function.html">@tomato-<wbr>js/function</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -350,23 +330,20 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_tomato_js_array.html#allequal" class="tsd-kind-icon">all<wbr>Equal</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_function.html#after" class="tsd-kind-icon">after</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_tomato_js_array.html#countoccurrences" class="tsd-kind-icon">count<wbr>Occurrences</a>
+						<a href="_tomato_js_function.html#afterreturn" class="tsd-kind-icon">after<wbr>Return</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_tomato_js_array.html#deepflatten" class="tsd-kind-icon">deep<wbr>Flatten</a>
+						<a href="_tomato_js_function.html#aop" class="tsd-kind-icon">aop</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_tomato_js_array.html#filternonunique" class="tsd-kind-icon">filter<wbr>Non<wbr>Unique</a>
+						<a href="_tomato_js_function.html#around" class="tsd-kind-icon">around</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_tomato_js_array.html#sample" class="tsd-kind-icon">sample</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_tomato_js_array.html#samplesize" class="tsd-kind-icon">sample<wbr>Size</a>
+						<a href="_tomato_js_function.html#before" class="tsd-kind-icon">before</a>
 					</li>
 				</ul>
 			</nav>
