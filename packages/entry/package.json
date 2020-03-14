@@ -45,6 +45,7 @@
     "@tomato-js/cookie": "^0.0.10",
     "@tomato-js/element": "^0.0.10",
     "@tomato-js/env": "^0.0.10",
+    "@tomato-js/function": "^0.0.10",
     "@tomato-js/math": "^0.0.10",
     "@tomato-js/object": "^0.0.10",
     "@tomato-js/path": "^0.0.10",
