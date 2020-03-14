@@ -2,7 +2,9 @@
  * @packageDocumentation
  * @module @tomato-js/async
  */
-
+interface SleepOptions {
+  value?: any;
+}
 /**
  * 延迟
  *
@@ -19,6 +21,7 @@
  * @param ms - 延迟毫秒数
  * @returns 延迟Promise
  */
-export function sleep(ms: number) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+export function sleep(ms: number, options: SleepOptions = {}) {
+  const { value = undefined } = options;
+  return new Promise(resolve => setTimeout(() => resolve(value), ms));
 }
