@@ -56,6 +56,10 @@ Methods for dom, [API Docs](https://tomato-js.github.io/tomato/modules/_tomato_j
 
 Methods for judge environment, [API Docs](https://tomato-js.github.io/tomato/modules/_tomato_js_env.html)
 
+### @tomato-js/function
+
+Methods for function, [API Docs](https://tomato-js.github.io/tomato/modules/_tomato_js_function.html)
+
 ### @tomato-js/math
 
 Methods for math operation, [API Docs](https://tomato-js.github.io/tomato/modules/_tomato_js_math.html)

@@ -1,3 +1,9 @@
+## [0.0.10](https://github.com/tomato-js/tomato/compare/v0.0.9...v0.0.10) (2020-03-14)
+
+### Features
+
+-   **function:** aop methods ([549ba53](https://github.com/tomato-js/tomato/commit/549ba5325e3bfceaff8e74b0fe11857db36a961a))
+
 ## [0.0.9](https://github.com/tomato-js/tomato/compare/v0.0.8...v0.0.9) (2020-03-10)
 
 ### Features

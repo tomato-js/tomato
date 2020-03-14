@@ -58,6 +58,10 @@ DOM 方法，[文档](https://tomato-js.github.io/tomato/modules/_tomato_js_elem
 
 环境判断方法，[文档](https://tomato-js.github.io/tomato/modules/_tomato_js_env.html)
 
+### @tomato-js/function
+
+函数方法，[文档](https://tomato-js.github.io/tomato/modules/_tomato_js_function.html)
+
 ### @tomato-js/math
 
 数学运算方法，[文档](https://tomato-js.github.io/tomato/modules/_tomato_js_math.html)
