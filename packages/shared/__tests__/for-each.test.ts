@@ -8,6 +8,13 @@ describe("for-each util", () => {
       shared.forEach(array, (k, v) => arr2.push(v + 1));
       expect(arr2).toStrictEqual([2, 3, 4, 5, 6, 7, 8]);
     });
+    test("forEach() will not change itself", () => {
+      const array = [1, 2, 3, 4, 5, 6, 7];
+      shared.forEach(array, (k, v) => {
+        v = v + 1;
+      });
+      expect(array).toStrictEqual([1, 2, 3, 4, 5, 6, 7]);
+    });
     test("forEach({})", () => {
       const array = [1, 2, 3, 4, 5, 6, 7];
       const obj = {
