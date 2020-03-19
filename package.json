@@ -68,6 +68,7 @@
     "jest-mock-console": "^1.0.0",
     "lerna": "^3.20.2",
     "lint-staged": "^8.0.0",
+    "minimist": "^1.2.5",
     "prettier": "^1.19.1",
     "rollup": "^1.31.1",
     "rollup-plugin-babel": "^4.3.3",
