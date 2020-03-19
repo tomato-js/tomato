@@ -76,6 +76,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#aop" class="tsd-kind-icon">aop</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#around" class="tsd-kind-icon">around</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#before" class="tsd-kind-icon">before</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#inverse" class="tsd-kind-icon">inverse</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_tomato_js_function.html#once" class="tsd-kind-icon">once</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#taketime" class="tsd-kind-icon">take<wbr>Time</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#times" class="tsd-kind-icon">times</a></li>
 							</ul>
@@ -95,7 +97,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/function/src/after.ts#L23">function/src/after.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/after.ts#L23">function/src/after.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -139,7 +141,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/function/src/after-return.ts#L23">function/src/after-return.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/after-return.ts#L23">function/src/after-return.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -183,7 +185,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/function/src/aop.ts#L37">function/src/aop.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/aop.ts#L37">function/src/aop.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -233,7 +235,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/function/src/around.ts#L23">function/src/around.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/around.ts#L23">function/src/around.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -277,7 +279,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/function/src/before.ts#L23">function/src/before.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/before.ts#L23">function/src/before.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -312,6 +314,101 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="inverse" class="tsd-anchor"></a>
+					<h3>inverse</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">inverse<span class="tsd-signature-symbol">(</span>func<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/inverse.ts#L23">function/src/inverse.ts:23</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>反转函数逻辑，返回新函数。之前返回true的情况，新函数会返回false</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { inverse } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/function'</span>
+  <span class="hljs-keyword">const</span> isTrue = <span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span><span class="hljs-literal">true</span>;
+  <span class="hljs-keyword">const</span> isFalse = inverse(isTrue);
+  isTrue()<span class="hljs-comment">//true</span>
+  isFalse()<span class="hljs-comment">//false</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>func: <span class="tsd-signature-type">Function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>需要逻辑反转的函数</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>新函数</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="once" class="tsd-anchor"></a>
+					<h3>once</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">once&lt;T&gt;<span class="tsd-signature-symbol">(</span>func<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/once.ts#L22">function/src/once.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>控制函数执行一次</p>
+								</div>
+								<p>新增于v0.0.12</p>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { once } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/function'</span>
+  <span class="hljs-keyword">const</span> isTrue = <span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>conosle.log(<span class="hljs-string">'true'</span>);
+  <span class="hljs-keyword">const</span> onceExec = once(isTrue);
+  onceExec()<span class="hljs-comment">//true</span>
+  onceExec()</code></pre>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>func: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>只需执行一次的函数</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>新函数</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="taketime" class="tsd-anchor"></a>
 					<h3>take<wbr>Time</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -321,7 +418,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/function/src/take-time.ts#L18">function/src/take-time.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/take-time.ts#L18">function/src/take-time.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -356,7 +453,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/function/src/times.ts#L20">function/src/times.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/times.ts#L20">function/src/times.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -423,6 +520,9 @@
 						<a href="_tomato_js_math.html">@tomato-<wbr>js/math</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_not.html">@tomato-<wbr>js/not</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_object.html">@tomato-<wbr>js/object</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -452,6 +552,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_function.html#before" class="tsd-kind-icon">before</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_function.html#inverse" class="tsd-kind-icon">inverse</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_tomato_js_function.html#once" class="tsd-kind-icon">once</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_function.html#taketime" class="tsd-kind-icon">take<wbr>Time</a>
