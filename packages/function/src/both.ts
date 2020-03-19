@@ -3,7 +3,6 @@
  * @module @tomato-js/function
  */
 import { isFunction } from "@tomato-js/shared";
-import { curry } from "./curry";
 /**
  * both增强函数，相当于函数&&
  *
