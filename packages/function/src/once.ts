@@ -5,6 +5,8 @@
 /**
  * 控制函数执行一次
  *
+ * 新增于v0.0.12
+ *
  * 脚本举例
  * ```
  *   import { once } from '@tomato-js/function'
