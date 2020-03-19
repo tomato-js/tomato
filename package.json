@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "version": "0.0.4",
+  "version": "0.0.11",
   "private": true,
   "description": "simple, modular utils for web applications",
   "scripts": {
@@ -8,12 +8,14 @@
     "prettier": "prettier \"**/**/**/*.+(js|json|jsx|ts|tsx|md|mdx)\"",
     "format": "npm run prettier --write",
     "build": "lerna run build",
+    "pack": "lerna run build",
+    "prebuild": "lerna exec npm i",
     "test": "jest",
     "coverage": "npm run coverage-generator && npm run coverage-viewer",
     "coverage-generator": "jest --coverage",
     "coverage-viewer": "http-server coverage/lcov-report -o",
     "doc": "npm run doc-generator && npm run doc-viewer",
-    "doc-generator": "typedoc --exclude '**/__tests__/*' --exclude '**/index.ts' --name @tomato-js --readme ./README.md --excludeNotExported",
+    "doc-generator": "typedoc --disableOutputCheck --exclude '**/__tests__/*' --exclude '**/index.ts' --name @tomato-js --readme ./README.md --excludeNotExported",
     "doc-viewer": "http-server docs -o",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
@@ -63,6 +65,7 @@
     "http-server": "^0.12.1",
     "husky": "^1.3.0",
     "jest": "^25.1.0",
+    "jest-mock-console": "^1.0.0",
     "lerna": "^3.20.2",
     "lint-staged": "^8.0.0",
     "prettier": "^1.19.1",
@@ -73,6 +76,7 @@
     "rollup-plugin-terser": "^5.2.0",
     "ts-jest": "^25.2.1",
     "typedoc": "^0.16.10",
+    "typedoc-plugin-external-module-name": "^3.0.0",
     "typescript": "^3.8.2"
   }
 }

@@ -1,11 +1,3 @@
 # `@tomato-js/shared`
 
-> TODO: description
-
-## Usage
-
-```
-const shared = require('@tomato-js/shared');
-
-// TODO: DEMONSTRATE API
-```
+Read more details in [API Docs](https://tomato-js.github.io/tomato/index.html)

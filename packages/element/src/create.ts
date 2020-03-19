@@ -1,6 +1,11 @@
-import { ObjectType } from "@tomato-js/shared";
+/**
+ * @packageDocumentation
+ * @module @tomato-js/element
+ */
+import { ObjectType, HTMLSelector } from "@tomato-js/shared";
 import { HTMLElementKey } from "@tomato-js/shared";
 import get from "./get";
+import { append } from "./insert";
 /**
  * 创建dom节点
  *
@@ -19,11 +24,7 @@ import get from "./get";
  * @param parent - 挂载的父节点，默认为document.body
  * @returns 创建的dom节点
  */
-export default function create(
-  tagName: HTMLElementKey,
-  idName?: string,
-  parent: string = ""
-) {
+export default function create(tagName: HTMLElementKey, idName?: string, parent?: HTMLSelector) {
   const element = document.createElement(tagName);
   const TagMap: ObjectType<any> = {
     a: { href: "#", hideFocus: !0 },
@@ -35,11 +36,14 @@ export default function create(
   const config = TagMap[tagName.toLowerCase()];
   const createdElement: HTMLElement = Object.assign(element, config);
   if (idName) createdElement.id = idName;
+  if (!parent) {
+    return createdElement;
+  }
   const parentNode = get(parent);
   if (parentNode) {
-    parentNode.appendChild(createdElement);
+    append(parentNode, createdElement);
   } else {
-    document.body.appendChild(createdElement);
+    append(document.body, createdElement);
   }
   return createdElement;
 }

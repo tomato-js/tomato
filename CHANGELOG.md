@@ -1,3 +1,67 @@
+## [0.0.11](https://github.com/tomato-js/tomato/compare/v0.0.10...v0.0.11) (2020-03-14)
+
+### Features
+
+-   **array:** union ([c7f6a64](https://github.com/tomato-js/tomato/commit/c7f6a6421ce2a29813548a5ff461df7bbf496a8a))
+-   **async:** sleep ([6fd8331](https://github.com/tomato-js/tomato/commit/6fd8331cf41d317cecc791ed5d8d248e7a2e2d5d))
+-   **entry:** import async ([c2e39c9](https://github.com/tomato-js/tomato/commit/c2e39c93bb8a10c5c19397f3e2dd340eec54d418))
+-   **function:** takeTime and import jest-mock-console ([8737f28](https://github.com/tomato-js/tomato/commit/8737f28983dcff682fb3f0b938e339c8f6220572))
+-   **function:** times ([d5f65f0](https://github.com/tomato-js/tomato/commit/d5f65f041250a0bd66a4711551b854212afd7985))
+-   **math:** sum sumBy ([1ea5987](https://github.com/tomato-js/tomato/commit/1ea59879b7fde56d88b01239c393568ebffff853))
+-   **shared:** isNumberLike ([8864769](https://github.com/tomato-js/tomato/commit/88647691783cbf030ada6e009c5aeacf8b19aabb))
+
+## [0.0.10](https://github.com/tomato-js/tomato/compare/v0.0.9...v0.0.10) (2020-03-14)
+
+### Features
+
+-   **function:** aop methods ([549ba53](https://github.com/tomato-js/tomato/commit/549ba5325e3bfceaff8e74b0fe11857db36a961a))
+
+## [0.0.9](https://github.com/tomato-js/tomato/compare/v0.0.8...v0.0.9) (2020-03-10)
+
+### Features
+
+-   **cookie:** add cookie handle ([676142c](https://github.com/tomato-js/tomato/commit/676142c66f42176af99924713adac64f50f9379d))
+
+## [0.0.8](https://github.com/tomato-js/tomato/compare/v0.0.7...v0.0.8) (2020-03-09)
+
+### Bug Fixes
+
+-   **path:** fix merge without querystring both ([522bc45](https://github.com/tomato-js/tomato/commit/522bc452450b41a12d92645fc924ae637f944c90))
+
+### Features
+
+-   **array:** allEqual ([4612ca9](https://github.com/tomato-js/tomato/commit/4612ca9fde0d457b0bc585b651498e7757d6bc73))
+-   deep-flatten count-occurrences bottom-visible ([0075e42](https://github.com/tomato-js/tomato/commit/0075e4223c224dca53194cf958f0b98b259b1fd0))
+-   filter-non-unique is-json reverse is-nil is-browser ([13e4546](https://github.com/tomato-js/tomato/commit/13e4546b45077da47aa4b434ba651dce110e62e6))
+-   **array:** sample and sample-size ([e0f4265](https://github.com/tomato-js/tomato/commit/e0f42658da4832654085c6221fcd53eab2a8e2e1))
+-   **element:** scroll-to-top ([e9f9fc0](https://github.com/tomato-js/tomato/commit/e9f9fc03eaac936bb8d88a7f2ef1c91b50a8d1c2))
+-   **math:** average ([95ba30c](https://github.com/tomato-js/tomato/commit/95ba30c134249fc6183083f5aaea6da1e034f893))
+-   **object:** add pick in object package ([c66df72](https://github.com/tomato-js/tomato/commit/c66df727be912e4c03957b8d267f8ceabf225a13))
+-   **shared:** pick and pickX ([384c1a3](https://github.com/tomato-js/tomato/commit/384c1a3ed1bf9c886d6b44b610afb6d9fb3ba7ab))
+
+## [0.0.7](https://github.com/tomato-js/tomato/compare/v0.0.6...v0.0.7) (2020-03-02)
+
+### Features
+
+-   **path:** merge method for url queryString merging ([ca74f18](https://github.com/tomato-js/tomato/commit/ca74f18128e3fa7a23767143595e10d4cc52c767))
+-   **shared:** substring from char and to char ([d176cea](https://github.com/tomato-js/tomato/commit/d176cea8309175edad2d322ddf250e3615db9f47))
+
+## [0.0.6](https://github.com/tomato-js/tomato/compare/v0.0.5...v0.0.6) (2020-02-29)
+
+### Bug Fixes
+
+-   **path:** use location.search when parse without params ([3031540](https://github.com/tomato-js/tomato/commit/303154053f63c36a2fb3a6824f1be79d43e5940a))
+
+### Features
+
+-   **element:** addStyle ([1d230ab](https://github.com/tomato-js/tomato/commit/1d230abbc12e872caee1c9caa20566d859a93ff9))
+-   **element:** append prepend insertBefore insertAfter ([#5](https://github.com/tomato-js/tomato/issues/5)) ([a475b5d](https://github.com/tomato-js/tomato/commit/a475b5d392194f34562af75bdb4df81d4433c8a1))
+-   **path:** add decode logic for parse ([06e4da8](https://github.com/tomato-js/tomato/commit/06e4da83b7203f09142d8eed8fb2677186af643e))
+-   **path:** add stringify method in path ([e46e8bf](https://github.com/tomato-js/tomato/commit/e46e8bfe73a041b4b52679dafa3501973cf743cd))
+-   **shared:** add isObject forEach ([4055f71](https://github.com/tomato-js/tomato/commit/4055f719d9d46b77f65ba6262e32cfe4df0fe9ce))
+
+## [0.0.5](https://github.com/tomato-js/tomato/compare/v0.0.4...v0.0.5) (2020-02-27)
+
 ## [0.0.4](https://github.com/tomato-js/tomato/compare/v0.0.3...v0.0.4) (2020-02-27)
 
 ### Features

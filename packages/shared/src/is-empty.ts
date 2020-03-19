@@ -1,4 +1,8 @@
 /**
+ * @packageDocumentation
+ * @module @tomato-js/shared
+ */
+/**
  * 是否为空对象
  *
  * 脚本举例

@@ -1,11 +1,3 @@
 # `@tomato-js/env`
 
-> TODO: description
-
-## Usage
-
-```
-const env = require('@tomato-js/env');
-
-// TODO: DEMONSTRATE API
-```
+Read more details in [API Docs](https://tomato-js.github.io/tomato/index.html)

@@ -1,0 +1,584 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@tomato-js/element | @tomato-js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@tomato-js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="_tomato_js_element.html">@tomato-js/element</a>
+				</li>
+			</ul>
+			<h1>External module @tomato-js/element</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_element.html#addstyle" class="tsd-kind-icon">add<wbr>Style</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_element.html#append" class="tsd-kind-icon">append</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_element.html#bottomvisible" class="tsd-kind-icon">bottom<wbr>Visible</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_element.html#create" class="tsd-kind-icon">create</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_element.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_element.html#insertafter" class="tsd-kind-icon">insert<wbr>After</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_element.html#insertbefore" class="tsd-kind-icon">insert<wbr>Before</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_element.html#prepend" class="tsd-kind-icon">prepend</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_element.html#scrolltotop" class="tsd-kind-icon">scroll<wbr>ToTop</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="addstyle" class="tsd-anchor"></a>
+					<h3>add<wbr>Style</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Style<span class="tsd-signature-symbol">(</span>styleContent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/element/src/addStyle.ts#L28">element/src/addStyle.ts:28</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>增加一段样式到head底部</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { addStyle } from <span class="hljs-string">'@tomato-js/element'</span>
+  <span class="hljs-comment">// 创建一段样式到页面head</span>
+  addStyle(<span class="hljs-string">'body{background:red;}'</span>);
+  <span class="hljs-comment">// 创建一段多行样式到页面head</span>
+  <span class="hljs-keyword">const</span> cssStr = `body{<span class="hljs-built_in">background</span>:<span class="hljs-built_in">red</span>;}
+     .class { <span class="hljs-built_in">color</span>:<span class="hljs-built_in">red</span>; }`;
+  element.addStyle(cssStr);
+</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> styleContent: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>样式内容</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span></h4>
+							<p>创建的style节点</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="append" class="tsd-anchor"></a>
+					<h3>append</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">append<span class="tsd-signature-symbol">(</span>A<span class="tsd-signature-symbol">: </span><a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a>, B<span class="tsd-signature-symbol">: </span><a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/element/src/insert.ts#L47">element/src/insert.ts:47</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>插入节点B到节点A内部的底部</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { <span class="hljs-built_in">append</span> } from <span class="hljs-string">'@tomato-js/element'</span>
+  <span class="hljs-keyword">const</span> dom = document.createElement(<span class="hljs-string">'p'</span>);
+  dom.innerHTML=<span class="hljs-string">'it is p'</span>;
+  <span class="hljs-built_in">append</span>(<span class="hljs-string">'abc'</span>,dom);</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>A: <a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>节点A</p>
+									</div>
+								</li>
+								<li>
+									<h5>B: <a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>节点B</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="bottomvisible" class="tsd-anchor"></a>
+					<h3>bottom<wbr>Visible</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">bottom<wbr>Visible<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/element/src/bottom-visible.ts#L18">element/src/bottom-visible.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>判断页面是否滚动到底部</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { bottomVisible } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/element'</span>
+  bottomVisible();<span class="hljs-comment">//true</span></code></pre>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>是否滚动到底部</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="create" class="tsd-anchor"></a>
+					<h3>create</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span>tagName<span class="tsd-signature-symbol">: </span><a href="_tomato_js_shared.html#htmlelementkey" class="tsd-signature-type">HTMLElementKey</a>, idName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, parent<span class="tsd-signature-symbol">?: </span><a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/element/src/create.ts#L27">element/src/create.ts:27</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>创建dom节点</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code class="language-javascript">  <span class="hljs-keyword">import</span> { create } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/element'</span>
+  <span class="hljs-comment">// 创建一个div节点，挂到body上</span>
+  create(<span class="hljs-string">"div"</span>);
+  <span class="hljs-comment">// 创建一个p节点，其id为id，挂到id是abc的节点上</span>
+  create(<span class="hljs-string">"p"</span>,<span class="hljs-string">"id"</span>,<span class="hljs-string">"abc"</span>)</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>tagName: <a href="_tomato_js_shared.html#htmlelementkey" class="tsd-signature-type">HTMLElementKey</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>创建节点的标签名称</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> idName: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>创建节点的id</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parent: <a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>挂载的父节点，默认为document.body</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
+							<p>创建的dom节点</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="get" class="tsd-anchor"></a>
+					<h3>get</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/element/src/get.ts#L26">element/src/get.ts:26</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>获取dom节点</p>
+								</div>
+								<p>结构举例</p>
+								<pre><code class="language-html">  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"abc"</span>&gt;</span>123<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"j-abc"</span>&gt;</span>123<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+								<p>脚本举例</p>
+								<pre><code class="language-javascript">  <span class="hljs-keyword">import</span> { <span class="hljs-keyword">get</span> } from '@tomato-js/element'
+  const node = <span class="hljs-keyword">get</span>('abc');
+  const node2 = <span class="hljs-keyword">get</span>('.j-abc');</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str: <a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>id或者是提供给query的字符串</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span></h4>
+							<p>获取到的dom节点</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="insertafter" class="tsd-anchor"></a>
+					<h3>insert<wbr>After</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">insert<wbr>After<span class="tsd-signature-symbol">(</span>A<span class="tsd-signature-symbol">: </span><a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a>, B<span class="tsd-signature-symbol">: </span><a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/element/src/insert.ts#L98">element/src/insert.ts:98</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>插入节点B到节点A的下面</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code class="language-javascript">  <span class="hljs-keyword">import</span> { insertBefore } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/element'</span>
+  <span class="hljs-keyword">const</span> dom = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'p'</span>);
+  dom.innerHTML=<span class="hljs-string">'it is p'</span>;
+  append(<span class="hljs-string">'abc'</span>,dom);</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>A: <a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>节点A</p>
+									</div>
+								</li>
+								<li>
+									<h5>B: <a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>节点B</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="insertbefore" class="tsd-anchor"></a>
+					<h3>insert<wbr>Before</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">insert<wbr>Before<span class="tsd-signature-symbol">(</span>A<span class="tsd-signature-symbol">: </span><a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a>, B<span class="tsd-signature-symbol">: </span><a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/element/src/insert.ts#L81">element/src/insert.ts:81</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>插入节点B到节点A的上面</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code class="language-javascript">  <span class="hljs-keyword">import</span> { insertBefore } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/element'</span>
+  <span class="hljs-keyword">const</span> dom = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'p'</span>);
+  dom.innerHTML=<span class="hljs-string">'it is p'</span>;
+  append(<span class="hljs-string">'abc'</span>,dom);</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>A: <a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>节点A</p>
+									</div>
+								</li>
+								<li>
+									<h5>B: <a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>节点B</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="prepend" class="tsd-anchor"></a>
+					<h3>prepend</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">prepend<span class="tsd-signature-symbol">(</span>A<span class="tsd-signature-symbol">: </span><a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a>, B<span class="tsd-signature-symbol">: </span><a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/element/src/insert.ts#L64">element/src/insert.ts:64</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>插入节点B到节点A内部的顶部</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code class="language-javascript">  <span class="hljs-keyword">import</span> { prepend } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/element'</span>
+  <span class="hljs-keyword">const</span> dom = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'p'</span>);
+  dom.innerHTML=<span class="hljs-string">'it is p'</span>;
+  append(<span class="hljs-string">'abc'</span>,dom);</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>A: <a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>节点A</p>
+									</div>
+								</li>
+								<li>
+									<h5>B: <a href="_tomato_js_shared.html#htmlselector" class="tsd-signature-type">HTMLSelector</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>节点B</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="scrolltotop" class="tsd-anchor"></a>
+					<h3>scroll<wbr>ToTop</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">scroll<wbr>ToTop<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/element/src/scroll-to-top.ts#L18">element/src/scroll-to-top.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>平滑的滚动到页面的顶部</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-section">import</span> { <span class="hljs-attribute">scrollToTop</span> } from <span class="hljs-string">'<span class="hljs-variable">@tomato</span>-js/element'</span>
+  scrollToTop();</code></pre>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<p>是否滚动到底部</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_array.html">@tomato-<wbr>js/array</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_async.html">@tomato-<wbr>js/async</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_cookie.html">@tomato-<wbr>js/cookie</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="_tomato_js_element.html">@tomato-<wbr>js/element</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_env.html">@tomato-<wbr>js/env</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_function.html">@tomato-<wbr>js/function</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_math.html">@tomato-<wbr>js/math</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_object.html">@tomato-<wbr>js/object</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_path.html">@tomato-<wbr>js/path</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_shared.html">@tomato-<wbr>js/shared</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_string.html">@tomato-<wbr>js/string</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_element.html#addstyle" class="tsd-kind-icon">add<wbr>Style</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_element.html#append" class="tsd-kind-icon">append</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_element.html#bottomvisible" class="tsd-kind-icon">bottom<wbr>Visible</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_element.html#create" class="tsd-kind-icon">create</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_element.html#get" class="tsd-kind-icon">get</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_element.html#insertafter" class="tsd-kind-icon">insert<wbr>After</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_element.html#insertbefore" class="tsd-kind-icon">insert<wbr>Before</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_element.html#prepend" class="tsd-kind-icon">prepend</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_element.html#scrolltotop" class="tsd-kind-icon">scroll<wbr>ToTop</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

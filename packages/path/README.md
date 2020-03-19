@@ -1,11 +1,3 @@
 # `@tomato-js/path`
 
-> TODO: description
-
-## Usage
-
-```
-const path = require('@tomato-js/path');
-
-// TODO: DEMONSTRATE API
-```
+Read more details in [API Docs](https://tomato-js.github.io/tomato/index.html)
