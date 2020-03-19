@@ -76,8 +76,13 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#aop" class="tsd-kind-icon">aop</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#around" class="tsd-kind-icon">around</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#before" class="tsd-kind-icon">before</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#both" class="tsd-kind-icon">both</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#compose" class="tsd-kind-icon">compose</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#curry" class="tsd-kind-icon">curry</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#either" class="tsd-kind-icon">either</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#inverse" class="tsd-kind-icon">inverse</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_tomato_js_function.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#pipe" class="tsd-kind-icon">pipe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#taketime" class="tsd-kind-icon">take<wbr>Time</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_function.html#times" class="tsd-kind-icon">times</a></li>
 							</ul>
@@ -97,7 +102,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/after.ts#L23">function/src/after.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/after.ts#L23">function/src/after.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -141,7 +146,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/after-return.ts#L23">function/src/after-return.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/after-return.ts#L23">function/src/after-return.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -185,7 +190,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/aop.ts#L37">function/src/aop.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/aop.ts#L37">function/src/aop.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -235,7 +240,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/around.ts#L23">function/src/around.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/around.ts#L23">function/src/around.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -279,7 +284,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/before.ts#L23">function/src/before.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/before.ts#L23">function/src/before.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -314,6 +319,243 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="both" class="tsd-anchor"></a>
+					<h3>both</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">both<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>fns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">both<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>fns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/both.ts#L23">function/src/both.ts:23</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>both增强函数，相当于函数&amp;&amp;</p>
+								</div>
+								<p>新增于v0.0.12</p>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { both } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/function'</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isOver18</span>(<span class="hljs-params"></span>)</span>{};
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isCitizen</span>(<span class="hljs-params"></span>)</span>{};
+  <span class="hljs-keyword">const</span> isEligibleToVote = both(isOver18,isCitizen);
+  isEligibleToVote();</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>fns: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>多个条件函数</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h4>
+							<p>新函数</p>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-siganture">
+									<ul class="tsd-signatures tsd-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/both.ts#L24">function/src/both.ts:24</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>fns: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-siganture">
+									<ul class="tsd-signatures tsd-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="compose" class="tsd-anchor"></a>
+					<h3>compose</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">compose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/compose.ts#L23">function/src/compose.ts:23</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>compose增强函数，相当于f(g(x))，从右到左</p>
+								</div>
+								<p>新增于v0.0.12</p>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { compose } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/function'</span>
+  <span class="hljs-keyword">const</span> step1 = <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">number</span></span>) =&gt;</span> (x ? <span class="hljs-number">1</span> : <span class="hljs-number">2</span>);
+  <span class="hljs-keyword">const</span> step2 = <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">number</span></span>) =&gt;</span> (x === <span class="hljs-number">1</span> ? <span class="hljs-number">3</span> : <span class="hljs-number">4</span>);
+  <span class="hljs-keyword">const</span> step3 = <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">number</span></span>) =&gt;</span> (x === <span class="hljs-number">3</span> ? <span class="hljs-number">5</span> : <span class="hljs-number">6</span>);
+  <span class="hljs-keyword">const</span> getResult = compose(step3, step2, step1);
+  <span class="hljs-keyword">const</span> result = getResult(<span class="hljs-number">1</span>);<span class="hljs-comment">//5</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>多个函数</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>新函数</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="curry" class="tsd-anchor"></a>
+					<h3>curry</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">curry<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/curry.ts#L24">function/src/curry.ts:24</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>curry增强函数</p>
+								</div>
+								<p>新增于v0.0.12</p>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { curry } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/function'</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compute</span>(<span class="hljs-params">a, b, c, d</span>) </span>{
+     <span class="hljs-keyword">return</span> (a + b * c) / d;
+  } <span class="hljs-comment">// f(12, 3, 6, 2) == 15</span>
+  <span class="hljs-keyword">const</span> f = curry(compute);
+  <span class="hljs-keyword">const</span> g = f(<span class="hljs-number">12</span>);
+  <span class="hljs-keyword">const</span> result = g(<span class="hljs-number">3</span>, <span class="hljs-number">6</span>, <span class="hljs-number">2</span>);<span class="hljs-comment">//15</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fn: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<p>新函数</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="either" class="tsd-anchor"></a>
+					<h3>either</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">either<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>fns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">either<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>fns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/either.ts#L23">function/src/either.ts:23</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>either增强函数，相当于函数||</p>
+								</div>
+								<p>新增于v0.0.12</p>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { either } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/function'</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isOver18</span>(<span class="hljs-params"></span>)</span>{};
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isCitizen</span>(<span class="hljs-params"></span>)</span>{};
+  <span class="hljs-keyword">const</span> isEligibleToVote = either(isOver18,isCitizen);
+  isEligibleToVote()</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>fns: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>多个条件函数</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h4>
+							<p>新函数</p>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-siganture">
+									<ul class="tsd-signatures tsd-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/either.ts#L24">function/src/either.ts:24</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>fns: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-siganture">
+									<ul class="tsd-signatures tsd-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="inverse" class="tsd-anchor"></a>
 					<h3>inverse</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -323,7 +565,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/inverse.ts#L23">function/src/inverse.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/inverse.ts#L23">function/src/inverse.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -361,7 +603,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/once.ts#L22">function/src/once.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/once.ts#L22">function/src/once.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -409,6 +651,46 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="pipe" class="tsd-anchor"></a>
+					<h3>pipe</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">pipe<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/pipe.ts#L24">function/src/pipe.ts:24</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>pipe增强函数，相当于f(g(x))，从左到右</p>
+								</div>
+								<p>新增于v0.0.12</p>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { pipe } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/function'</span>
+  <span class="hljs-keyword">const</span> step1 = <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">number</span></span>) =&gt;</span> (x ? <span class="hljs-number">1</span> : <span class="hljs-number">2</span>);
+  <span class="hljs-keyword">const</span> step2 = <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">number</span></span>) =&gt;</span> (x === <span class="hljs-number">1</span> ? <span class="hljs-number">3</span> : <span class="hljs-number">4</span>);
+  <span class="hljs-keyword">const</span> step3 = <span class="hljs-function">(<span class="hljs-params">x: <span class="hljs-built_in">number</span></span>) =&gt;</span> (x === <span class="hljs-number">3</span> ? <span class="hljs-number">5</span> : <span class="hljs-number">6</span>);
+  <span class="hljs-keyword">const</span> getResult = pipe(step1, step2, step3);
+  <span class="hljs-keyword">const</span> result = getResult(<span class="hljs-number">1</span>);<span class="hljs-comment">//5</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>多个函数</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+							<p>新函数</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="taketime" class="tsd-anchor"></a>
 					<h3>take<wbr>Time</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -418,7 +700,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/take-time.ts#L18">function/src/take-time.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/take-time.ts#L18">function/src/take-time.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -453,7 +735,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/9310240/packages/function/src/times.ts#L20">function/src/times.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/c00eb6f/packages/function/src/times.ts#L20">function/src/times.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -554,10 +836,25 @@
 						<a href="_tomato_js_function.html#before" class="tsd-kind-icon">before</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_function.html#both" class="tsd-kind-icon">both</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_function.html#compose" class="tsd-kind-icon">compose</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_function.html#curry" class="tsd-kind-icon">curry</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_function.html#either" class="tsd-kind-icon">either</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_function.html#inverse" class="tsd-kind-icon">inverse</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_tomato_js_function.html#once" class="tsd-kind-icon">once</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_function.html#pipe" class="tsd-kind-icon">pipe</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_function.html#taketime" class="tsd-kind-icon">take<wbr>Time</a>
