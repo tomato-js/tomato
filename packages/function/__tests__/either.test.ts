@@ -38,6 +38,20 @@ describe("function util", () => {
       const result = func.either(f1.bind(null, false), f2.bind(null, false));
       expect(result()).toBe(false);
     });
+    test("either() with multi func and params false param", () => {
+      let a = "";
+      let f1 = (v: any) => v;
+      const f2 = (v: any) => v;
+      const result = func.either(f1, f2);
+      expect(result(false)).toBe(false);
+    });
+    test("either() with multi func and params true param", () => {
+      let a = "";
+      let f1 = (v: any) => v;
+      const f2 = (v: any) => !v;
+      const result = func.either(f1, f2);
+      expect(result(true)).toBe(true);
+    });
     test("either() with boolean true", () => {
       let a = "";
       let f1 = false;
