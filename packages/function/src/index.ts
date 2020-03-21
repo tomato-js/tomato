@@ -8,6 +8,8 @@ export { curry } from "./curry";
 export { either } from "./either";
 export { inverse } from "./inverse";
 export { once } from "./once";
+export { partialRight } from "./partial-right";
+export { partial } from "./partial";
 export { pipe } from "./pipe";
 export { takeTime } from "./take-time";
 export { times } from "./times";

@@ -18,10 +18,11 @@
  *   const result = g(3, 6, 2);//15
  * ```
  *
- * @param fns - 多个条件函数
+ * @param fn - 需要增强的函数
+ * @param args - 参数列表
  * @returns 新函数
  */
-export function curry(fn: any, ...args: any[]) {
+export function curry(fn: Function, ...args: any[]) {
   if (args.length >= fn.length) {
     return fn(...args);
   }
