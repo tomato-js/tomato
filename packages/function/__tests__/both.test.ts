@@ -38,6 +38,20 @@ describe("function util", () => {
       const result = func.both(f1.bind(null, true), f2.bind(null, false));
       expect(result()).toBe(false);
     });
+    test("both() with multi func and params true with param", () => {
+      let a = "";
+      let f1 = (v: any) => v;
+      const f2 = (v: any) => v;
+      const result = func.both(f1, f2);
+      expect(result(true)).toBe(true);
+    });
+    test("both() with multi func and params false with param", () => {
+      let a = "";
+      let f1 = (v: any) => v;
+      const f2 = (v: any) => v;
+      const result = func.both(f1, f2);
+      expect(result(false)).toBe(false);
+    });
     test("both() with boolean true", () => {
       let a = "";
       let f1 = true;

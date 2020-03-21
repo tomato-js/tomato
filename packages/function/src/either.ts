@@ -20,12 +20,12 @@ import { isFunction } from "@tomato-js/shared";
  * @param fns - 多个条件函数
  * @returns 新函数
  */
-export function either(...fns: Array<boolean>): () => boolean;
-export function either(...fns: Array<() => boolean>): () => boolean;
-export function either(...fns: Array<(() => boolean) | boolean>) {
-  return function() {
+export function either(...fns: Array<boolean>): Function;
+export function either(...fns: Array<Function>): Function;
+export function either(...fns: Array<Function | boolean>) {
+  return function(...args: any[]) {
     return fns.some(fn => {
-      return isFunction(fn) ? (fn as () => boolean)() : fn;
+      return isFunction(fn) ? (args.length > 0 ? (fn as Function)(...args) : (fn as Function)()) : fn;
     });
   };
 }
