@@ -6,6 +6,7 @@ export { both } from "./both";
 export { compose } from "./compose";
 export { curry } from "./curry";
 export { either } from "./either";
+export { flip } from "./flip";
 export { inverse } from "./inverse";
 export { once } from "./once";
 export { partialRight } from "./partial-right";
