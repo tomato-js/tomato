@@ -26,8 +26,8 @@
   },
   "scripts": {
     "build": "npm run clean && run-p build:*",
-    "build:esm": "tsc -p tsconfig.json --target ES5 --module ESNext --outDir dist/esm",
-    "build:cjs": "tsc -p tsconfig.json --target ES5 --module commonjs --outDir dist/lib",
+    "build:esm": "tsc -p tsconfig.json --target ES2015 --module ESNext --outDir dist/esm",
+    "build:cjs": "tsc -p tsconfig.json --target ES2015 --module commonjs --outDir dist/lib",
     "clean": "rm -rf dist"
   },
   "bugs": {
