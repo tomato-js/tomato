@@ -1,3 +1,9 @@
+## [0.0.13](https://github.com/tomato-js/tomato/compare/v0.0.12...v0.0.13) (2020-03-26)
+
+### Bug Fixes
+
+-   **tsc:** upgrade target to fix redundant code ([b6b5f4c](https://github.com/tomato-js/tomato/commit/b6b5f4ce2a238ecc4628aa8ed3e93bebcda410b1))
+
 ## [0.0.12](https://github.com/tomato-js/tomato/compare/v0.0.11...v0.0.12) (2020-03-26)
 
 ### Features
