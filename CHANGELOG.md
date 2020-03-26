@@ -1,3 +1,18 @@
+## [0.0.12](https://github.com/tomato-js/tomato/compare/v0.0.11...v0.0.12) (2020-03-26)
+
+### Features
+
+-   **element:** add create method ([7c03260](https://github.com/tomato-js/tomato/commit/7c03260fe617896f5ac97083622012163b5b1d51))
+-   **function:** compose pipe ([c00eb6f](https://github.com/tomato-js/tomato/commit/c00eb6f8f6f419d3eca4a60e4936d2c5aa4e623d))
+-   **function:** curry both either ([eca64bc](https://github.com/tomato-js/tomato/commit/eca64bc9023a356231a336b7d97656e55a1c9f14))
+-   **function:** flip ([88f00e3](https://github.com/tomato-js/tomato/commit/88f00e3dd8e8b3a244a8cf9a4ba5a4c03da3a061))
+-   **function:** inverse ([882b84c](https://github.com/tomato-js/tomato/commit/882b84ca812991a7c676d3d4f2924a33002d95d2))
+-   **function:** once ([f7a67b0](https://github.com/tomato-js/tomato/commit/f7a67b0d218c744415b800f8447728238ebda28f))
+-   **function:** partial partialRight ([347e990](https://github.com/tomato-js/tomato/commit/347e990af03ade43f780e439d35847074216f2e3))
+-   **math:** add divide multiply subtract ([8f75c93](https://github.com/tomato-js/tomato/commit/8f75c9331f18f7a20b794a29d8fdd96b21a0cb6e))
+-   **shared:** map ([84143e5](https://github.com/tomato-js/tomato/commit/84143e5ab157b812a3d4d0c5efb9f37d8b198976))
+-   **string:** random ([7361d85](https://github.com/tomato-js/tomato/commit/7361d85e80d292b012af8605a8b79e657422b7d8))
+
 ## [0.0.11](https://github.com/tomato-js/tomato/compare/v0.0.10...v0.0.11) (2020-03-14)
 
 ### Features
