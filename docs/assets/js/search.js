@@ -642,13 +642,21 @@ typedoc.search.data = {
     {
       id: 90,
       kind: 64,
+      name: "number2Chinese",
+      url: "modules/_tomato_js_string.html#number2chinese",
+      classes: "tsd-kind-function tsd-parent-kind-external-module",
+      parent: "@tomato-js/string"
+    },
+    {
+      id: 91,
+      kind: 64,
       name: "isJson",
       url: "modules/_tomato_js_string.html#isjson",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: "@tomato-js/string"
     },
     {
-      id: 91,
+      id: 92,
       kind: 64,
       name: "random",
       url: "modules/_tomato_js_string.html#random",
@@ -656,7 +664,7 @@ typedoc.search.data = {
       parent: "@tomato-js/string"
     },
     {
-      id: 92,
+      id: 93,
       kind: 64,
       name: "reverse",
       url: "modules/_tomato_js_string.html#reverse",
@@ -664,7 +672,7 @@ typedoc.search.data = {
       parent: "@tomato-js/string"
     },
     {
-      id: 93,
+      id: 94,
       kind: 64,
       name: "substringFromChar",
       url: "modules/_tomato_js_string.html#substringfromchar",
@@ -672,7 +680,7 @@ typedoc.search.data = {
       parent: "@tomato-js/string"
     },
     {
-      id: 94,
+      id: 95,
       kind: 64,
       name: "substringToChar",
       url: "modules/_tomato_js_string.html#substringtochar",

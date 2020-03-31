@@ -3,7 +3,8 @@
     "moduleResolution": "node",
     "lib": ["dom", "dom.iterable", "esnext"],
     "strict": true,
-    "declaration": true
+    "declaration": true,
+    "target": "ES2015"
   },
   "exclude": ["node_modules"]
 }
