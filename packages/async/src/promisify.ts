@@ -5,6 +5,8 @@
 /**
  * 回调函数promise化
  *
+ * 新增于v0.0.14
+ *
  * 脚本举例
  * ```
  *   import { promisify } from '@tomato-js/async'

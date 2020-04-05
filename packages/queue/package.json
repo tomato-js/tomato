@@ -1,5 +1,5 @@
 {
-  "name": "@tomato-js/function",
+  "name": "@tomato-js/queue",
   "version": "0.0.13",
   "description": "simple, modular utils for web applications",
   "author": "brizer <brizer@163.com>",

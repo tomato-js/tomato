@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@tomato-js/async | @tomato-js</title>
+	<title>&quot;object/src/lazy&quot; | @tomato-js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_tomato_js_async.html">@tomato-js/async</a>
+					<a href="_object_src_lazy_.html">&quot;object/src/lazy&quot;</a>
 				</li>
 			</ul>
-			<h1>External module @tomato-js/async</h1>
+			<h1>External module &quot;object/src/lazy&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -71,9 +71,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_async.html#callbackify" class="tsd-kind-icon">callbackify</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_async.html#promisify" class="tsd-kind-icon">promisify</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_async.html#sleep" class="tsd-kind-icon">sleep</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_object_src_lazy_.html#lazy" class="tsd-kind-icon">lazy</a></li>
 							</ul>
 						</section>
 					</div>
@@ -82,121 +80,44 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="callbackify" class="tsd-anchor"></a>
-					<h3>callbackify</h3>
+					<a name="lazy" class="tsd-anchor"></a>
+					<h3>lazy</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">callbackify<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+						<li class="tsd-signature tsd-kind-icon">lazy<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, prop<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, valueResolver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/eb36f40/packages/async/src/callbackify.ts#L24">async/src/callbackify.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/eb36f40/packages/object/src/lazy.ts#L24">object/src/lazy.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>promise函数回调化</p>
+									<p>给对象增加懒依赖属性</p>
 								</div>
 								<p>新增于v0.0.14</p>
 								<p>脚本举例</p>
-								<pre><code>  <span class="hljs-keyword">import</span> { callbackify } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/async'</span>
-  const fixture = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Promise(<span class="hljs-function"><span class="hljs-params">(resolve, reject)</span> =&gt;</span> {
-      resolve(<span class="hljs-string">"brizer"</span>);
-    });
-  };
-  callbackify(fixture)(<span class="hljs-function"><span class="hljs-params">(err,value)</span>=&gt;</span>value);//brizer</code></pre>
+								<pre><code>   <span class="hljs-keyword">const</span> obj = {};
+   object.lazy(obj, <span class="hljs-string">"x"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+     <span class="hljs-keyword">return</span> <span class="hljs-number">2</span>;
+   });
+   obj.x<span class="hljs-comment">//2</span></code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">Function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>promise函数</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
-							<p>callback风格函数</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="promisify" class="tsd-anchor"></a>
-					<h3>promisify</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">promisify<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/eb36f40/packages/async/src/promisify.ts#L19">async/src/promisify.ts:19</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>回调函数promise化</p>
-								</div>
-								<p>新增于v0.0.14</p>
-								<p>脚本举例</p>
-								<pre><code>  <span class="hljs-section">import</span> { <span class="hljs-attribute">promisify</span> } from <span class="hljs-string">'<span class="hljs-variable">@tomato</span>-js/async'</span>
-  promisify(fs.readFile)(<span class="hljs-string">'package.json'</span>).then();</code></pre>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>fn: <span class="tsd-signature-type">Function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>回调style的函数</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
-							<p>promise风格函数</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="sleep" class="tsd-anchor"></a>
-					<h3>sleep</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">sleep<span class="tsd-signature-symbol">(</span>ms<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">SleepOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/eb36f40/packages/async/src/sleep.ts#L24">async/src/sleep.ts:24</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>延迟</p>
-								</div>
-								<p>脚本举例</p>
-								<pre><code>  <span class="hljs-keyword">import</span> { sleep } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/async'</span>
-  <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sleepyWork</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"I'm going to sleep for 1 second."</span>);
-    <span class="hljs-keyword">await</span> sleep(<span class="hljs-number">1000</span>);
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'I woke up after 1 second.'</span>);
-  }</code></pre>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>ms: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>延迟毫秒数</p>
-									</div>
+									<h5>object: <span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-type">SleepOptions</span><span class="tsd-signature-symbol"> = {}</span></h5>
+									<h5>prop: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>valueResolver: <span class="tsd-signature-type">Function</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>延迟Promise</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<p>拷贝对象</p>
 						</li>
 					</ul>
 				</section>
@@ -208,10 +129,13 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="_object_src_lazy_.html">&quot;object/src/lazy&quot;</a>
+					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_array.html">@tomato-<wbr>js/array</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_async.html">@tomato-<wbr>js/async</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -252,13 +176,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_tomato_js_async.html#callbackify" class="tsd-kind-icon">callbackify</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_tomato_js_async.html#promisify" class="tsd-kind-icon">promisify</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_tomato_js_async.html#sleep" class="tsd-kind-icon">sleep</a>
+						<a href="_object_src_lazy_.html#lazy" class="tsd-kind-icon">lazy</a>
 					</li>
 				</ul>
 			</nav>
