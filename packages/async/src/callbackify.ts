@@ -5,6 +5,8 @@
 /**
  * promise函数回调化
  *
+ * 新增于v0.0.14
+ *
  * 脚本举例
  * ```
  *   import { callbackify } from '@tomato-js/async'
