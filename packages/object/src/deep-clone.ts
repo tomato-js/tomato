@@ -2,7 +2,7 @@
  * @packageDocumentation
  * @module @tomato-js/object
  */
-import { isObject, isArray, isFunction } from "@tomato-js/shared";
+import { isObject, isArray, isFunction, map, forEach } from "@tomato-js/shared";
 
 /**
  * 深拷贝对象、数组、函数
@@ -27,12 +27,12 @@ export function deepClone(value: any) {
   const isArr = isArray(value);
   const isFunc = isFunction(value);
   if (isArr) {
-    result = value.map((item: any) => deepClone(item));
+    result = map(value, (k, item) => deepClone(item));
   } else if (isFunc) {
     result = value.bind({});
   } else {
     result = Object.assign({}, value);
-    Object.keys(value).forEach(key => (result[key] = deepClone(value[key])));
+    forEach(value, (key, v) => (result[key] = deepClone(value[key])));
   }
   return result;
 }
