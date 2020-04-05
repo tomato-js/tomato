@@ -1,8 +1,8 @@
-import { ObjectType } from "@tomato-js/shared";
 /**
  * @packageDocumentation
  * @module @tomato-js/object
  */
+import { ObjectType } from "@tomato-js/shared";
 
 /**
  * 给对象增加懒依赖属性
