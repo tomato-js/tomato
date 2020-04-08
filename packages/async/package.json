@@ -1,6 +1,6 @@
 {
   "name": "@tomato-js/async",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "simple, modular utils for web applications",
   "author": "brizer <brizer@163.com>",
   "homepage": "https://github.com/tomato-js/tomato/tree/master/packages/path#readme",
@@ -37,6 +37,6 @@
     "npm-run-all": "^4.1.5"
   },
   "dependencies": {
-    "@tomato-js/shared": "^0.0.13"
+    "@tomato-js/shared": "^0.0.14"
   }
 }
