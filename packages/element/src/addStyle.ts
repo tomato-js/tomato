@@ -26,7 +26,7 @@ import { blankReg } from "@tomato-js/shared";
  * @returns 创建的style节点
  */
 export default function addStyle(styleContent: string = "") {
-  const css = styleContent.replace(blankReg, "").trim();
+  const css = styleContent.replace(blankReg, " ").trim();
   if (!css) return;
   const node = create("style");
   node.textContent = css;
