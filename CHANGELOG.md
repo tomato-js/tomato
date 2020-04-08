@@ -1,3 +1,17 @@
+## [0.0.14](https://github.com/tomato-js/tomato/compare/v0.0.13...v0.0.14) (2020-04-08)
+
+### Bug Fixes
+
+-   **element:** handle blank in addStyle ([1fc8e85](https://github.com/tomato-js/tomato/commit/1fc8e853a79587fd53fecdcea502441ae6621a34))
+
+### Features
+
+-   **async:** promisify callbackify ([f9da2b1](https://github.com/tomato-js/tomato/commit/f9da2b13d5c6214b3d2213b01202f40d1e9ff291))
+-   **object:** deepClone ([ac63f11](https://github.com/tomato-js/tomato/commit/ac63f114fe4b10a2156c648444a1fd52b9ece0fc))
+-   **object:** lazy ([47bfafb](https://github.com/tomato-js/tomato/commit/47bfafbf59ce81c2800051e87f6b87471298507f))
+-   **queue:** chain class ([eb36f40](https://github.com/tomato-js/tomato/commit/eb36f4016c52b712d7148c21a5bb1d063ef65b18))
+-   **string:** number2Chinese ([67cbf22](https://github.com/tomato-js/tomato/commit/67cbf22f34bbd6c4d96f3b07e41b3a90e5668d79))
+
 ## [0.0.13](https://github.com/tomato-js/tomato/compare/v0.0.12...v0.0.13) (2020-03-26)
 
 ### Bug Fixes
