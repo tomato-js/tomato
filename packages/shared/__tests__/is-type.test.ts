@@ -90,4 +90,19 @@ describe("is-empty util", () => {
       expect(result).toBe(true);
     });
   });
+  describe("isFalsy", () => {
+    test("isFalsy() true", () => {
+      expect(shared.isFalsy(undefined)).toBe(true);
+      expect(shared.isFalsy("")).toBe(true);
+      expect(shared.isFalsy(0)).toBe(true);
+      expect(shared.isFalsy(null)).toBe(true);
+      expect(shared.isFalsy(false)).toBe(true);
+    });
+    test("isFalsy() false", () => {
+      expect(shared.isFalsy(true)).toBe(false);
+      expect(shared.isFalsy(1)).toBe(false);
+      expect(shared.isFalsy("1")).toBe(false);
+      expect(shared.isFalsy({})).toBe(false);
+    });
+  });
 });

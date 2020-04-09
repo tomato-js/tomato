@@ -1,6 +1,6 @@
 /**
  * @packageDocumentation
- * @module @tomato-js/not
+ * @module @tomato-js/shared
  */
 /**
  * 取反
