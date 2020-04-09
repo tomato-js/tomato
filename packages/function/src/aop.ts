@@ -25,7 +25,7 @@ function shouldExecAfterReturn(type: AopType) {
  *   import { aop } from '@tomato-js/function'
  *   let origin = (str) => console.log(str);
  *   const target = ({args,value}) => console.log('around');
- *   origin = aop(origin, target,'around);
+ *   origin = aop(origin, target,'around');
  *   origin('current');//around current around
  * ```
  *
