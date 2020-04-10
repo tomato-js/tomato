@@ -9,6 +9,8 @@ export type HTMLElementKey = keyof HTMLElementTagNameMap;
 
 export type Eachable<T> = T[] | ObjectType<T>;
 
+export type FunctionType = (...args: any[]) => void;
+
 export interface ObjectType<T> {
   [key: string]: T;
 }

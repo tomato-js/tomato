@@ -4,3 +4,4 @@ export { around } from "./around";
 export { before } from "./before";
 export { takeTime } from "./take-time";
 export { times } from "./times";
+export { debounce } from "./debounce";
