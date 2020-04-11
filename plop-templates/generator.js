@@ -38,6 +38,15 @@ module.exports = {
           name,
           scope
         }
+      },
+      {
+        type: "append",
+        path: `packages/${scope}/src/index.ts`,
+        templateFile: "plop-templates/util/index.hbs",
+        data: {
+          name,
+          kebabName: kebabCase(name)
+        }
       }
     ];
 
