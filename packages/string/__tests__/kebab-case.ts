@@ -4,6 +4,7 @@ describe("string util", () => {
   describe("kebabCase", () => {
     test("kebabCase()", () => {
       expect(string.kebabCase("foo-bar")).toBe("foo-bar");
+      expect(string.kebabCase("foo")).toBe("foo");
       expect(string.kebabCase("fooBar")).toBe("foo-bar");
       expect(string.kebabCase("FooBar")).toBe("foo-bar");
       expect(string.kebabCase("foo  bar")).toBe("foo-bar");
