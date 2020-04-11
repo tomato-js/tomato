@@ -6,7 +6,7 @@ import { Falsy } from "./types";
 
 const toString = Object.prototype.toString;
 
-export function isType(value: unknown, type: string): boolean {
+export function isType<T>(value: unknown, type: string): value is T {
   return toString.call(value) === "[object " + type + "]";
 }
 
@@ -27,8 +27,8 @@ export function isObject(value: unknown) {
   return (value !== null && type === "object") || type === "function";
 }
 
-export function isFunction(value: unknown) {
-  return isType(value, "Function");
+export function isFunction(value: unknown): value is Function {
+  return isType<"Function">(value, "Function") || typeof value === "function";
 }
 
 /**
