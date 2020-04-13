@@ -1,3 +1,11 @@
+## [0.0.15](https://github.com/tomato-js/tomato/compare/v0.0.14...v0.0.15) (2020-04-13)
+
+### Features
+
+-   **async:** pIf pLog pTag ([c072d61](https://github.com/tomato-js/tomato/commit/c072d616b20b5de8d27641bc7b1ff038f67c9522))
+-   **shared:** some useful types ([634b7ef](https://github.com/tomato-js/tomato/commit/634b7efd9ce7c6560b81f7404a415c8e9e9b78dd))
+-   **string:** camelCase kebabCase ([618cf3a](https://github.com/tomato-js/tomato/commit/618cf3a6d3e4931aaa4a51a47c1c3cebad97cad4))
+
 ## [0.0.14](https://github.com/tomato-js/tomato/compare/v0.0.13...v0.0.14) (2020-04-08)
 
 ### Bug Fixes

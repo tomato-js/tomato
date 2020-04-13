@@ -3,7 +3,7 @@ const utilList = fs.readdirSync("./packages");
 const version = fs.readFileSync("./package.json").version;
 const { kebabCase } = require("../packages/string");
 module.exports = {
-  description: "generate vue component",
+  description: "generate tomato-js utils",
   prompts: [
     {
       type: "list",
