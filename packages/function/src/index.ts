@@ -14,3 +14,5 @@ export { partial } from "./partial";
 export { pipe } from "./pipe";
 export { takeTime } from "./take-time";
 export { times } from "./times";
+
+export { poll } from "./poll";
