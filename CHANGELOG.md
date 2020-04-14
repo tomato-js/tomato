@@ -1,3 +1,9 @@
+## [0.0.16](https://github.com/tomato-js/tomato/compare/v0.0.15...v0.0.16) (2020-04-14)
+
+### Features
+
+-   **function:** poll ([17f6ac4](https://github.com/tomato-js/tomato/commit/17f6ac4d1ab3ad5bb1080718138c507d071a8935))
+
 ## [0.0.15](https://github.com/tomato-js/tomato/compare/v0.0.14...v0.0.15) (2020-04-13)
 
 ### Features
