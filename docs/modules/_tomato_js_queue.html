@@ -64,6 +64,66 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_queue.html#chainer" class="tsd-kind-icon">chainer</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="chainer" class="tsd-anchor"></a>
+					<h3>chainer</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">chainer<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Chain</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/queue/src/chainer.ts#L31">queue/src/chainer.ts:31</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>链式调用</p>
+								</div>
+								<p>新增于v0.0.17</p>
+								<p>支持链式调用方法：add,subtract,multiply,divide</p>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { chainer } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/queue'</span>
+  <span class="hljs-keyword">const</span> result = chainer(<span class="hljs-number">3</span>)
+    .add(<span class="hljs-number">4</span>)
+    .subtract(<span class="hljs-number">5</span>)
+    .multiply(<span class="hljs-number">10</span>)
+    .divide(<span class="hljs-number">4</span>)
+    .add(<span class="hljs-number">10</span>)
+    .subtract(<span class="hljs-number">5</span>)
+    .done();<span class="hljs-comment">//10</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <span class="tsd-signature-type">unknown</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>入口参数</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Chain</span></h4>
+							<p>最后返回值</p>
+						</li>
+					</ul>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
@@ -111,6 +171,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_queue.html#chainer" class="tsd-kind-icon">chainer</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
