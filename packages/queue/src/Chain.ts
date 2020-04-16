@@ -3,7 +3,7 @@
  * @module @tomato-js/queue
  */
 import { lazy } from "@tomato-js/object";
-import { ObjectType, forEach } from "@tomato-js/shared";
+import { ObjectType, forEach, isFunction } from "@tomato-js/shared";
 /**
  * @ignore
  */
@@ -22,7 +22,7 @@ export class Chain {
   initProxy(container: Chain, name: string, resolver: Function) {
     lazy(container, name, function outerResolver(this: any) {
       var fn = resolver.bind(this);
-      if (typeof fn === "function") {
+      if (isFunction(fn)) {
         return container.chainify(fn);
       }
       return undefined; // if not a function, ignore
