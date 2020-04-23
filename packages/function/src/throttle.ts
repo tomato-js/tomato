@@ -34,17 +34,16 @@ export function throttle<F extends FunctionType>(
     const context = this;
 
     const doLater = function() {
-      //   timeout = undefined;
-      clearTimeout(timeout);
+      // timeout = undefined;
+      if (!isUndefined(timeout)) {
+        clearTimeout(timeout);
+      }
       if (!options.isImmediate) {
         func.apply(context, args);
       }
     };
     if (!isUndefined(timeout)) return;
     const shouldCallNow = options.isImmediate && isUndefined(timeout);
-    // if (timeout !== undefined) {
-    //   clearTimeout(timeout);
-    // }
     timeout = setTimeout(doLater, wait);
     if (shouldCallNow) {
       func.apply(context, args);

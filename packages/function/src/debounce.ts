@@ -33,18 +33,17 @@ export function debounce<F extends FunctionType>(
   return function(this: ThisParameterType<F>, ...args: Parameters<F>) {
     const context = this;
     const doLater = function() {
-      timeout = undefined;
+      if (!isUndefined(timeout)) {
+        clearTimeout(timeout);
+      }
       if (!options.isImmediate) {
         func.apply(context, args);
       }
     };
     const shouldCallNow = options.isImmediate && isUndefined(timeout);
-    if (isUndefined(timeout)) {
+    if (!isUndefined(timeout)) {
       clearTimeout(timeout);
     }
-    // if (timeout !== undefined) {
-    //   clearTimeout(timeout);
-    // }
     timeout = setTimeout(doLater, wait);
     if (shouldCallNow) {
       func.apply(context, args);
