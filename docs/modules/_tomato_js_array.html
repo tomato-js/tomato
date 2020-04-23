@@ -75,6 +75,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#countoccurrences" class="tsd-kind-icon">count<wbr>Occurrences</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#deepflatten" class="tsd-kind-icon">deep<wbr>Flatten</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#filternonunique" class="tsd-kind-icon">filter<wbr>Non<wbr>Unique</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#find" class="tsd-kind-icon">find</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#sample" class="tsd-kind-icon">sample</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#samplesize" class="tsd-kind-icon">sample<wbr>Size</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_array.html#union" class="tsd-kind-icon">union</a></li>
@@ -95,7 +96,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/array/src/all-equal.ts#L18">array/src/all-equal.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/array/src/all-equal.ts#L18">array/src/all-equal.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -136,7 +137,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/array/src/count-occurrences.ts#L20">array/src/count-occurrences.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/array/src/count-occurrences.ts#L20">array/src/count-occurrences.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -178,7 +179,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/array/src/deep-flatten.ts#L18">array/src/deep-flatten.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/array/src/deep-flatten.ts#L18">array/src/deep-flatten.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -213,7 +214,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/array/src/filter-non-unique.ts#L17">array/src/filter-non-unique.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/array/src/filter-non-unique.ts#L17">array/src/filter-non-unique.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -239,6 +240,44 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="find" class="tsd-anchor"></a>
+					<h3>find</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">find<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span>, func<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/array/src/find.ts#L20">array/src/find.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>在数组中寻找指定值</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { find } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/array'</span>
+  find([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>], v=&gt;v/<span class="hljs-number">2</span>===<span class="hljs-number">0</span>); <span class="hljs-comment">// 2</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>arr: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>原始数组</p>
+									</div>
+								</li>
+								<li>
+									<h5>func: <span class="tsd-signature-type">Function</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<p>随机新数组</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="sample" class="tsd-anchor"></a>
 					<h3>sample</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -248,7 +287,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/array/src/sample.ts#L20">array/src/sample.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/array/src/sample.ts#L20">array/src/sample.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -280,7 +319,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/array/src/sample-size.ts#L20">array/src/sample-size.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/array/src/sample-size.ts#L20">array/src/sample-size.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -321,7 +360,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/array/src/union.ts#L18">array/src/union.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/array/src/union.ts#L18">array/src/union.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -347,7 +386,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/array/src/union.ts#L19">array/src/union.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/array/src/union.ts#L19">array/src/union.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -364,7 +403,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/array/src/union.ts#L20">array/src/union.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/array/src/union.ts#L20">array/src/union.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -416,6 +455,9 @@
 						<a href="_tomato_js_path.html">@tomato-<wbr>js/path</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_queue.html">@tomato-<wbr>js/queue</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_shared.html">@tomato-<wbr>js/shared</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -436,6 +478,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_array.html#filternonunique" class="tsd-kind-icon">filter<wbr>Non<wbr>Unique</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_array.html#find" class="tsd-kind-icon">find</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_array.html#sample" class="tsd-kind-icon">sample</a>

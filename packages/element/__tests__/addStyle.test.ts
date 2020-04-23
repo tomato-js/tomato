@@ -25,7 +25,7 @@ describe("element util", () => {
       element.addStyle(cssStr);
       const htmlNode: any = element.get("html");
       expect(htmlNode.innerHTML).toBe(
-        '<head><style type="text/css">body{background:red;}.class{color:red;}</style></head><body><div id="id" class="j-id"><span>hello world</span></div></body>'
+        '<head><style type="text/css">body{background:red;} .class { color:red; }</style></head><body><div id="id" class="j-id"><span>hello world</span></div></body>'
       );
     });
     test("addStyle() add style append to head in multi lines with \\", () => {
@@ -36,7 +36,7 @@ describe("element util", () => {
       element.addStyle(cssStr);
       const htmlNode: any = element.get("html");
       expect(htmlNode.innerHTML).toBe(
-        '<head><style type="text/css">body{background:red;}.class{color:red;}</style></head><body><div id="id" class="j-id"><span>hello world</span></div></body>'
+        '<head><style type="text/css">body{background:red;} .class { color:red; }</style></head><body><div id="id" class="j-id"><span>hello world</span></div></body>'
       );
     });
     test("addStyle() add style append to head multi times", () => {
@@ -45,6 +45,13 @@ describe("element util", () => {
       const htmlNode: any = element.get("html");
       expect(htmlNode.innerHTML).toBe(
         '<head><style type="text/css">body{background:red;}</style><style type="text/css">.class{color:blue;}</style></head><body><div id="id" class="j-id"><span>hello world</span></div></body>'
+      );
+    });
+    test("addStyle() add style with blank", () => {
+      element.addStyle(`html * {border:1px solid    red;}`);
+      const htmlNode: any = element.get("html");
+      expect(htmlNode.innerHTML).toBe(
+        '<head><style type="text/css">html * {border:1px solid red;}</style></head><body><div id="id" class="j-id"><span>hello world</span></div></body>'
       );
     });
     test("addStyle() return created node", () => {

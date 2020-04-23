@@ -1,6 +1,6 @@
 {
   "name": "@tomato-js/entry",
-  "version": "0.0.11",
+  "version": "0.0.16",
   "description": "simple, modular utils for web applications",
   "author": "brizer <brizer@163.com>",
   "homepage": "https://github.com/tomato-js/tomato/tree/master/packages/path#readme",
@@ -26,8 +26,8 @@
   },
   "scripts": {
     "build": "npm run clean && run-p build:*",
-    "build:esm": "tsc -p tsconfig.json --target ES5 --module ESNext --outDir dist/esm",
-    "build:cjs": "tsc -p tsconfig.json --target ES5 --module commonjs --outDir dist/lib",
+    "build:esm": "tsc -p tsconfig.json --target ESNext --module ESNext --outDir dist/esm",
+    "build:cjs": "tsc -p tsconfig.json --target ESNext --module commonjs --outDir dist/lib",
     "build:umd": "rollup -c",
     "build:umd-p": "cross-env NODE_ENV=production rollup -c",
     "clean": "rm -rf dist"
@@ -41,16 +41,16 @@
     "rollup-plugin-terser": "^5.2.0"
   },
   "dependencies": {
-    "@tomato-js/array": "^0.0.11",
-    "@tomato-js/async": "^0.0.11",
-    "@tomato-js/cookie": "^0.0.11",
-    "@tomato-js/element": "^0.0.11",
-    "@tomato-js/env": "^0.0.11",
-    "@tomato-js/function": "^0.0.11",
-    "@tomato-js/math": "^0.0.11",
-    "@tomato-js/object": "^0.0.11",
-    "@tomato-js/path": "^0.0.11",
-    "@tomato-js/shared": "^0.0.11",
-    "@tomato-js/string": "^0.0.11"
+    "@tomato-js/array": "^0.0.16",
+    "@tomato-js/async": "^0.0.16",
+    "@tomato-js/cookie": "^0.0.16",
+    "@tomato-js/element": "^0.0.16",
+    "@tomato-js/env": "^0.0.16",
+    "@tomato-js/function": "^0.0.16",
+    "@tomato-js/math": "^0.0.16",
+    "@tomato-js/object": "^0.0.16",
+    "@tomato-js/path": "^0.0.16",
+    "@tomato-js/shared": "^0.0.16",
+    "@tomato-js/string": "^0.0.16"
   }
 }

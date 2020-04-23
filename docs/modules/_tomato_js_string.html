@@ -71,7 +71,11 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_string.html#camelcase" class="tsd-kind-icon">camel<wbr>Case</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_string.html#isjson" class="tsd-kind-icon">is<wbr>Json</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_string.html#kebabcase" class="tsd-kind-icon">kebab<wbr>Case</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_string.html#number2chinese" class="tsd-kind-icon">number2<wbr>Chinese</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_string.html#random" class="tsd-kind-icon">random</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_string.html#reverse" class="tsd-kind-icon">reverse</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_string.html#substringfromchar" class="tsd-kind-icon">substring<wbr>From<wbr>Char</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_string.html#substringtochar" class="tsd-kind-icon">substring<wbr>ToChar</a></li>
@@ -83,6 +87,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="camelcase" class="tsd-anchor"></a>
+					<h3>camel<wbr>Case</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">camel<wbr>Case<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/string/src/camel-case.ts#L22">string/src/camel-case.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>字符转为驼峰命名</p>
+								</div>
+								<p>新增于v0.0.15</p>
+								<p>脚本举例</p>
+								<pre><code>  import { camelCase } from '@tomato-js/<span class="hljs-built_in">string</span>'
+  camel<span class="hljs-constructor">Case('<span class="hljs-params">foo</span>-<span class="hljs-params">bar</span>')</span>; <span class="hljs-comment">// fooBar</span>
+  camel<span class="hljs-constructor">Case('<span class="hljs-params">foo</span>.<span class="hljs-params">bar</span>')</span>; <span class="hljs-comment">// fooBar</span>
+  camel<span class="hljs-constructor">Case('FooBar')</span>; <span class="hljs-comment">// fooBar</span>
+  camel<span class="hljs-constructor">Case('--<span class="hljs-params">foo</span>  <span class="hljs-params">bar__</span>')</span>; <span class="hljs-comment">// fooBar</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>input: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>转换后的中文字符串</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="isjson" class="tsd-anchor"></a>
 					<h3>is<wbr>Json</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -92,7 +132,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/string/src/is-json.ts#L18">string/src/is-json.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/string/src/is-json.ts#L18">string/src/is-json.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -119,6 +159,113 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="kebabcase" class="tsd-anchor"></a>
+					<h3>kebab<wbr>Case</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">kebab<wbr>Case<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/string/src/kebab-case.ts#L22">string/src/kebab-case.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>字符转为短横线命名</p>
+								</div>
+								<p>新增于v0.0.15</p>
+								<p>脚本举例</p>
+								<pre><code>  import { kebabCase } from '@tomato-js/<span class="hljs-built_in">string</span>'
+  kebab<span class="hljs-constructor">Case('<span class="hljs-params">fooBar</span>')</span>; <span class="hljs-comment">// foo-bar</span>
+  kebab<span class="hljs-constructor">Case('<span class="hljs-params">foo</span>.<span class="hljs-params">bar</span>')</span>; <span class="hljs-comment">// foo-bar</span>
+  kebab<span class="hljs-constructor">Case('FooBar')</span>; <span class="hljs-comment">// foo-bar</span>
+  kebab<span class="hljs-constructor">Case('--<span class="hljs-params">foo</span>  <span class="hljs-params">bar__</span>')</span>; <span class="hljs-comment">// foo-bar</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>input: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>转换后的中文字符串</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="number2chinese" class="tsd-anchor"></a>
+					<h3>number2<wbr>Chinese</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">number2<wbr>Chinese<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/string/src/chinese.ts#L22">string/src/chinese.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>阿拉伯数字转中文字符串</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { number2Chinese } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/string'</span>
+  number2Chinese(<span class="hljs-number">110025.06</span>); <span class="hljs-comment">// 十一万零二十五点零六</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>number: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>需要转换的阿拉伯数字</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>转换后的中文字符串</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="random" class="tsd-anchor"></a>
+					<h3>random</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">random<span class="tsd-signature-symbol">(</span>length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/string/src/random.ts#L19">string/src/random.ts:19</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>随机字符串</p>
+								</div>
+								<p>新增于v0.0.12</p>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { random } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/string'</span>
+  random(<span class="hljs-number">3</span>); // <span class="hljs-string">'2xK'</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>length: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>字符串长度</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>随机字符串</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="reverse" class="tsd-anchor"></a>
 					<h3>reverse</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -128,7 +275,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/string/src/reverse.ts#L17">string/src/reverse.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/string/src/reverse.ts#L17">string/src/reverse.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -163,7 +310,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/string/src/substr.ts#L25">string/src/substr.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/string/src/substr.ts#L25">string/src/substr.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -211,7 +358,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/string/src/substr.ts#L53">string/src/substr.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/string/src/substr.ts#L53">string/src/substr.ts:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -285,6 +432,9 @@
 						<a href="_tomato_js_path.html">@tomato-<wbr>js/path</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_queue.html">@tomato-<wbr>js/queue</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_shared.html">@tomato-<wbr>js/shared</a>
 					</li>
 					<li class="current tsd-kind-external-module">
@@ -295,7 +445,19 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_string.html#camelcase" class="tsd-kind-icon">camel<wbr>Case</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_string.html#isjson" class="tsd-kind-icon">is<wbr>Json</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_string.html#kebabcase" class="tsd-kind-icon">kebab<wbr>Case</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_string.html#number2chinese" class="tsd-kind-icon">number2<wbr>Chinese</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_string.html#random" class="tsd-kind-icon">random</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_string.html#reverse" class="tsd-kind-icon">reverse</a>

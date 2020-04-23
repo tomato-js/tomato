@@ -2,31 +2,33 @@
  * @packageDocumentation
  * @module @tomato-js/shared
  */
+import { Falsy } from "./types";
+
 const toString = Object.prototype.toString;
 
-export function isType(value: any, type: string): boolean {
+export function isType<T>(value: unknown, type: string): value is T {
   return toString.call(value) === "[object " + type + "]";
 }
 
-export function isString(str: any) {
+export function isString(str: unknown) {
   return isType(str, "String");
 }
 
-export function isNumber(str: any) {
+export function isNumber(str: unknown) {
   return isType(str, "Number");
 }
 
-export function isArray(value: any) {
+export function isArray(value: unknown) {
   return Array.isArray ? Array.isArray(value) : isType(value, "Array");
 }
 
-export function isObject(value: any) {
+export function isObject(value: unknown) {
   const type = typeof value;
   return (value !== null && type === "object") || type === "function";
 }
 
-export function isFunction(value: any) {
-  return isType(value, "Function");
+export function isFunction(value: unknown): value is Function {
+  return isType<"Function">(value, "Function") || typeof value === "function";
 }
 
 /**
@@ -41,7 +43,7 @@ export function isFunction(value: any) {
  * @param val - 需要判断的值
  * @returns 是否为null
  */
-export function isNull(val: any) {
+export function isNull(val: unknown) {
   return val === null;
 }
 
@@ -73,7 +75,7 @@ export function isUndefined(val: unknown): val is undefined {
  * @param val - 需要判断的值
  * @returns 是否为undefined或null
  */
-export function isNil(val: any) {
+export function isNil(val: unknown) {
   return isUndefined(val) || isNull(val);
 }
 /**
@@ -89,6 +91,22 @@ export function isNil(val: any) {
  * @param val - 需要判断的值
  * @returns 是否为数字或字符串数字类型
  */
-export function isNumberLike(val: any) {
-  return !isNaN(parseFloat(val)) && isFinite(val) && Number(val) == val;
+export function isNumberLike(val: unknown) {
+  return !isNaN(parseFloat(val as string)) && isFinite(val as number) && Number(val) == val;
+}
+/**
+ * 是否为falsy类型
+ *
+ * 脚本举例
+ * ```
+ *   import { isFalsy } from '@tomato-js/shared'
+ *   isFalsy(1);//false
+ *   isFalsy('');//true
+ * ```
+ *
+ * @param val - 需要判断的值
+ * @returns 是否为数字或字符串数字类型
+ */
+export function isFalsy(val: unknown): val is Falsy {
+  return !val;
 }

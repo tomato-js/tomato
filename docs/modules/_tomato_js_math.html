@@ -69,6 +69,15 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_tomato_js_math.html#add" class="tsd-kind-icon">add</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_tomato_js_math.html#divide" class="tsd-kind-icon">divide</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_tomato_js_math.html#multiply" class="tsd-kind-icon">multiply</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_tomato_js_math.html#subtract" class="tsd-kind-icon">subtract</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_math.html#average" class="tsd-kind-icon">average</a></li>
@@ -77,6 +86,133 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_math.html#sumby" class="tsd-kind-icon">sum<wbr>By</a></li>
 							</ul>
 						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="add" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> add</h3>
+					<div class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = curry((num1: number, num2: number) &#x3D;&gt; {return Number(num1) + Number(num2);})</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/math/src/add.ts#L23">math/src/add.ts:23</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>两值相加，相当于a+b，带curry</p>
+						</div>
+						<p>增加于v0.0.12</p>
+						<p>脚本举例</p>
+						<pre><code>  <span class="hljs-keyword">import</span> { add } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/math'</span>
+  add(<span class="hljs-number">3</span>,<span class="hljs-number">4</span>);<span class="hljs-comment">//7</span>
+  add(<span class="hljs-number">3</span>)(<span class="hljs-number">4</span>);<span class="hljs-comment">//7</span></code></pre>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>传入的值</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>传入的值</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>结果值</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="divide" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> divide</h3>
+					<div class="tsd-signature tsd-kind-icon">divide<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = curry((num1: number, num2: number) &#x3D;&gt; {return Number(num1) / Number(num2);})</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/math/src/divide.ts#L23">math/src/divide.ts:23</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>两值相除，相当于a/b，带curry</p>
+						</div>
+						<p>增加于v0.0.12</p>
+						<p>脚本举例</p>
+						<pre><code>  <span class="hljs-keyword">import</span> { divide } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/math'</span>
+  divide(<span class="hljs-number">12</span>,<span class="hljs-number">3</span>);<span class="hljs-comment">//4</span>
+  divide(<span class="hljs-number">12</span>)(<span class="hljs-number">3</span>);<span class="hljs-comment">//4</span></code></pre>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>传入的值</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>传入的值</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>结果值</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="multiply" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> multiply</h3>
+					<div class="tsd-signature tsd-kind-icon">multiply<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = curry((num1: number, num2: number) &#x3D;&gt; {return Number(num1) * Number(num2);})</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/math/src/multiply.ts#L23">math/src/multiply.ts:23</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>两值相乘，相当于a*b，带curry</p>
+						</div>
+						<p>增加于v0.0.12</p>
+						<p>脚本举例</p>
+						<pre><code>  <span class="hljs-keyword">import</span> { multiply } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/math'</span>
+  multiply(<span class="hljs-number">4</span>,<span class="hljs-number">3</span>);<span class="hljs-comment">//12</span>
+  multiply(<span class="hljs-number">4</span>)(<span class="hljs-number">3</span>);<span class="hljs-comment">//12</span></code></pre>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>传入的值</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>传入的值</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>结果值</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="subtract" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> subtract</h3>
+					<div class="tsd-signature tsd-kind-icon">subtract<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = curry((num1: number, num2: number) &#x3D;&gt; {return Number(num1) - Number(num2);})</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/math/src/subtract.ts#L23">math/src/subtract.ts:23</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>两值相减，相当于a-b，带curry</p>
+						</div>
+						<p>增加于v0.0.12</p>
+						<p>脚本举例</p>
+						<pre><code>  <span class="hljs-keyword">import</span> { subtract } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/math'</span>
+  subtract(<span class="hljs-number">4</span>,<span class="hljs-number">3</span>);<span class="hljs-comment">//1</span>
+  subtract(<span class="hljs-number">4</span>)(<span class="hljs-number">3</span>);<span class="hljs-comment">//1</span></code></pre>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>传入的值</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>传入的值</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>结果值</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 			</section>
@@ -92,7 +228,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/math/src/average.ts#L19">math/src/average.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/math/src/average.ts#L19">math/src/average.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -128,7 +264,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/math/src/average-by.ts#L19">math/src/average-by.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/math/src/average-by.ts#L19">math/src/average-by.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -187,7 +323,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/math/src/sum.ts#L19">math/src/sum.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/math/src/sum.ts#L19">math/src/sum.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -223,7 +359,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/math/src/sum-by.ts#L19">math/src/sum-by.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/math/src/sum-by.ts#L19">math/src/sum-by.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -308,6 +444,9 @@
 						<a href="_tomato_js_path.html">@tomato-<wbr>js/path</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_queue.html">@tomato-<wbr>js/queue</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_shared.html">@tomato-<wbr>js/shared</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -317,6 +456,18 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_tomato_js_math.html#add" class="tsd-kind-icon">add</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_tomato_js_math.html#divide" class="tsd-kind-icon">divide</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_tomato_js_math.html#multiply" class="tsd-kind-icon">multiply</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_tomato_js_math.html#subtract" class="tsd-kind-icon">subtract</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_math.html#average" class="tsd-kind-icon">average</a>
 					</li>

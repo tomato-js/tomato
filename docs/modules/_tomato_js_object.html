@@ -71,7 +71,9 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_object.html#deepclone" class="tsd-kind-icon">deep<wbr>Clone</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_object.html#deepget" class="tsd-kind-icon">deep<wbr>Get</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_object.html#lazy" class="tsd-kind-icon">lazy</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_tomato_js_object.html#pick" class="tsd-kind-icon">pick</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_tomato_js_object.html#pickx" class="tsd-kind-icon">pickX</a></li>
 							</ul>
@@ -82,6 +84,43 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="deepclone" class="tsd-anchor"></a>
+					<h3>deep<wbr>Clone</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">deep<wbr>Clone<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/object/src/deep-clone.ts#L22">object/src/deep-clone.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>深拷贝对象、数组、函数</p>
+								</div>
+								<p>新增于v0.0.14</p>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-string">import</span> <span class="hljs-string">{</span> <span class="hljs-string">deepClone</span> <span class="hljs-string">}</span> <span class="hljs-string">from</span> <span class="hljs-string">'@tomato-js/object'</span>
+  <span class="hljs-string">const</span> <span class="hljs-string">obj</span> <span class="hljs-string">=</span> <span class="hljs-string">{</span> <span class="hljs-attr">a:</span> <span class="hljs-number">1</span><span class="hljs-string">,</span> <span class="hljs-attr">b:</span> <span class="hljs-number">2</span><span class="hljs-string">,</span> <span class="hljs-attr">c:</span> <span class="hljs-string">[1,</span> <span class="hljs-number">2</span><span class="hljs-string">,</span> <span class="hljs-number">3</span><span class="hljs-string">,</span> <span class="hljs-string">{</span> <span class="hljs-attr">e:</span> <span class="hljs-number">5</span><span class="hljs-string">,</span> <span class="hljs-attr">f:</span> <span class="hljs-string">[{</span> <span class="hljs-attr">g:</span> <span class="hljs-number">1</span> <span class="hljs-string">},</span> <span class="hljs-string">{</span> <span class="hljs-attr">h:</span> <span class="hljs-number">8</span> <span class="hljs-string">}],</span> <span class="hljs-attr">i:</span> <span class="hljs-number">9</span> <span class="hljs-string">}]}</span>
+  <span class="hljs-string">const</span> <span class="hljs-string">c</span> <span class="hljs-string">=</span> <span class="hljs-string">deepClone(obj);</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>被拷贝对象</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<p>拷贝对象</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="deepget" class="tsd-anchor"></a>
 					<h3>deep<wbr>Get</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -91,7 +130,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/object/src/deep-get.ts#L23">object/src/deep-get.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/object/src/deep-get.ts#L23">object/src/deep-get.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -123,6 +162,48 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="lazy" class="tsd-anchor"></a>
+					<h3>lazy</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">lazy<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, prop<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, valueResolver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/object/src/lazy.ts#L24">object/src/lazy.ts:24</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>给对象增加懒依赖属性</p>
+								</div>
+								<p>新增于v0.0.14</p>
+								<p>脚本举例</p>
+								<pre><code>   <span class="hljs-keyword">const</span> obj = {};
+   object.lazy(obj, <span class="hljs-string">"x"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+     <span class="hljs-keyword">return</span> <span class="hljs-number">2</span>;
+   });
+   obj.x<span class="hljs-comment">//2</span></code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>prop: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>valueResolver: <span class="tsd-signature-type">Function</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<p>拷贝对象</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="pick" class="tsd-anchor"></a>
 					<h3>pick</h3>
@@ -133,7 +214,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/object/src/pick.ts#L27">object/src/pick.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/object/src/pick.ts#L27">object/src/pick.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -186,7 +267,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/4ab8b79/packages/object/src/pick-x.ts#L48">object/src/pick-x.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/2a89fb9/packages/object/src/pick-x.ts#L48">object/src/pick-x.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -265,6 +346,9 @@
 						<a href="_tomato_js_path.html">@tomato-<wbr>js/path</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_queue.html">@tomato-<wbr>js/queue</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_shared.html">@tomato-<wbr>js/shared</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -275,7 +359,13 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_object.html#deepclone" class="tsd-kind-icon">deep<wbr>Clone</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_object.html#deepget" class="tsd-kind-icon">deep<wbr>Get</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_object.html#lazy" class="tsd-kind-icon">lazy</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_tomato_js_object.html#pick" class="tsd-kind-icon">pick</a>
