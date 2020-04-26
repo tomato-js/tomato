@@ -14,7 +14,7 @@ type Options = {
  * 脚本举例
  * ```
  *   import { debounce } from '@tomato-js/function'
- *   takeTime(() => console.log('debounce'), 1000, { isImmediate: true });
+ *   debounce(() => console.log('debounce'), 1000, { isImmediate: true });
  * ```
  *
  * @param func - 调用函数

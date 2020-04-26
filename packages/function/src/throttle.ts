@@ -9,12 +9,12 @@ type Options = {
 };
 
 /**
- * 函数防抖
+ * 函数节流
  *
  * 脚本举例
  * ```
  *   import { throttle } from '@tomato-js/function'
- *   takeTime(() => console.log('throttle'), 1000, { isImmediate: true });
+ *   throttle(() => console.log('throttle'), 1000, { isImmediate: true });
  * ```
  *
  * @param func - 调用函数
@@ -34,7 +34,6 @@ export function throttle<F extends FunctionType>(
     const context = this;
 
     const doLater = function() {
-      // timeout = undefined;
       if (!isUndefined(timeout)) {
         clearTimeout(timeout);
       }

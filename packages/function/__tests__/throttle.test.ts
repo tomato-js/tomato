@@ -18,7 +18,7 @@ describe("function util", () => {
       jest.clearAllTimers();
     });
 
-    test("throttle(fn,1000) twice", () => {
+    test("throttle(fn,1000) execute twice", () => {
       jest.useFakeTimers();
 
       const fn = jest.fn();
@@ -36,7 +36,7 @@ describe("function util", () => {
       expect(fn).toHaveBeenCalledTimes(1);
     });
 
-    test("throttle(fn,1000,{isImmediate:true})", () => {
+    test("throttle(fn,1000,{isImmediate:true}) execute immediately", () => {
       jest.useFakeTimers();
 
       const fn = jest.fn();

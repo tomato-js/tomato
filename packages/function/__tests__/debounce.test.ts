@@ -18,7 +18,7 @@ describe("function util", () => {
       jest.clearAllTimers();
     });
 
-    test("debounce(fn,1000) twice", () => {
+    test("debounce(fn,1000) execute twice", () => {
       jest.useFakeTimers();
 
       const fn = jest.fn();
@@ -36,7 +36,7 @@ describe("function util", () => {
       expect(fn).toHaveBeenCalledTimes(1);
     });
 
-    test("debounce(fn,1000,{isImmediate:true})", () => {
+    test("debounce(fn,1000,{isImmediate:true}) execute immediately", () => {
       jest.useFakeTimers();
 
       const fn = jest.fn();
