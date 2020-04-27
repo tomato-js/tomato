@@ -45,6 +45,34 @@ describe("async util", () => {
       expect(valueA).toEqual([42]);
       expect(valueB).toEqual([1]);
     });
+    test("pIf() with typeof condition and if else func are async Function", async () => {
+      const isEmpty = async (array: unknown[]) => array.length === 0;
+      let a = 1;
+      const doAsyncFunc = async (array: unknown[]) => {
+        a = 2;
+      };
+      const elseAsyncFunc = async (array: unknown[]) => {
+        a = 3;
+      };
+      const valueA = await Promise.resolve([]).then(async.pIf(isEmpty, doAsyncFunc, elseAsyncFunc));
+      expect(a).toEqual(2);
+      const valueB = await Promise.resolve([1]).then(async.pIf(isEmpty, doAsyncFunc, elseAsyncFunc));
+      expect(a).toEqual(3);
+    });
+    test("pIf() with typeof condition and if else func are async Function and then", async () => {
+      const isEmpty = async (array: unknown[]) => array.length === 0;
+      let a = 1;
+      const doAsyncFunc = async (array: unknown[]) => {
+        a = 2;
+      };
+      const elseAsyncFunc = async (array: unknown[]) => {
+        a = 3;
+      };
+      const valueA = await Promise.resolve([])
+        .then(async.pIf(isEmpty, doAsyncFunc, elseAsyncFunc))
+        .then(data => (a = 4));
+      expect(a).toEqual(4);
+    });
     test("pIf() else with typeof condition is boolean and types", async () => {
       const value = await Promise.resolve(fixture).then(
         async.pIf<Symbol, string, string>(

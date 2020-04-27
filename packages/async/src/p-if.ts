@@ -24,12 +24,12 @@ import { isFunction } from "@tomato-js/shared";
 
 export function pIf<ValueType, DoIfRetureType, DoElseReturnType>(
   condition: boolean | ((value: ValueType) => boolean | PromiseLike<boolean>),
-  doIf: (value: ValueType) => DoIfRetureType,
+  doIf: (value: ValueType) => DoIfRetureType | PromiseLike<DoElseReturnType>,
   doElse?: (value: ValueType) => DoElseReturnType | PromiseLike<DoElseReturnType>
 ) {
   return async function(value: ValueType) {
-    function chooseFn(boolean: boolean) {
-      return boolean === true ? doIf(value) : doElse ? doElse(value) : value;
+    async function chooseFn(boolean: boolean) {
+      return boolean === true ? await doIf(value) : doElse ? await doElse(value) : value;
     }
     if (isFunction(condition)) {
       const conditionResult = await condition(value);
