@@ -1,6 +1,7 @@
 {
   "name": "@tomato-js/math",
   "version": "0.0.17",
+  "sideEffects": false,
   "description": "simple, modular utils for web applications",
   "author": "brizer <brizer@163.com>",
   "homepage": "https://github.com/tomato-js/tomato/tree/master/packages/path#readme",
