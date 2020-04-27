@@ -1,6 +1,6 @@
 {
   "name": "@tomato-js/queue",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "simple, modular utils for web applications",
   "author": "brizer <brizer@163.com>",
   "homepage": "https://github.com/tomato-js/tomato/tree/master/packages/path#readme",
@@ -37,8 +37,8 @@
     "npm-run-all": "^4.1.5"
   },
   "dependencies": {
-    "@tomato-js/math": "^0.0.16",
-    "@tomato-js/object": "^0.0.16",
-    "@tomato-js/shared": "^0.0.16"
+    "@tomato-js/math": "^0.0.17",
+    "@tomato-js/object": "^0.0.17",
+    "@tomato-js/shared": "^0.0.17"
   }
 }
