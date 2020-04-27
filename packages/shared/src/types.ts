@@ -9,6 +9,8 @@ export type HTMLElementKey = keyof HTMLElementTagNameMap;
 
 export type Eachable<T> = T[] | ObjectType<T>;
 
+export type FunctionType = (...args: any[]) => void;
+
 export type Falsy = false | "" | 0 | null | undefined;
 
 export type NonUndefined<A> = A extends undefined ? never : A;

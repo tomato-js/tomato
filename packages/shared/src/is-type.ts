@@ -59,7 +59,7 @@ export function isNull(val: unknown) {
  * @param val - 需要判断的值
  * @returns 是否为undefined
  */
-export function isUndefined(val: unknown) {
+export function isUndefined(val: unknown): val is undefined {
   return val === undefined;
 }
 
