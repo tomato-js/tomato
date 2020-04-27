@@ -1,3 +1,15 @@
+## [0.0.17](https://github.com/tomato-js/tomato/compare/v0.0.16...v0.0.17) (2020-04-27)
+
+### Bug Fixes
+
+-   **async:** pIf support promise do and else func ([fc3c437](https://github.com/tomato-js/tomato/commit/fc3c4377ffa021a0539693985ab44715f40a3a33))
+
+### Features
+
+-   **function:** add throttle ([0bf92e8](https://github.com/tomato-js/tomato/commit/0bf92e8622f60e4463b2ddd9f43739619bdb61bb))
+-   **function:** debounce ([ea17bd5](https://github.com/tomato-js/tomato/commit/ea17bd5b91a1dd27c41da07d91299b1e1a654f14))
+-   **queue:** chainer ([2a89fb9](https://github.com/tomato-js/tomato/commit/2a89fb91f9433f5b1cd3b8f4b689574545b8c605))
+
 ## [0.0.16](https://github.com/tomato-js/tomato/compare/v0.0.15...v0.0.16) (2020-04-14)
 
 ### Features
