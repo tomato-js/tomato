@@ -18,3 +18,5 @@ export { debounce } from "./debounce";
 export { throttle } from "./throttle";
 
 export { poll } from "./poll";
+
+export { waitUntil } from "./wait-until";
