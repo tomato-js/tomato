@@ -2,7 +2,7 @@
  * @packageDocumentation
  * @module @tomato-js/function
  */
-import { FunctionType, isUndefined } from "@tomato-js/shared";
+import { FunctionType, isNil } from "@tomato-js/shared";
 
 type Options = {
   isImmediate: boolean;
@@ -10,6 +10,8 @@ type Options = {
 
 /**
  * 函数防抖
+ *
+ * 新增于v0.0.17
  *
  * 脚本举例
  * ```
@@ -33,15 +35,15 @@ export function debounce<F extends FunctionType>(
   return function(this: ThisParameterType<F>, ...args: Parameters<F>) {
     const context = this;
     const doLater = function() {
-      if (!isUndefined(timeout)) {
+      if (!isNil(timeout)) {
         clearTimeout(timeout);
       }
       if (!options.isImmediate) {
         func.apply(context, args);
       }
     };
-    const shouldCallNow = options.isImmediate && isUndefined(timeout);
-    if (!isUndefined(timeout)) {
+    const shouldCallNow = options.isImmediate && isNil(timeout);
+    if (!isNil(timeout)) {
       clearTimeout(timeout);
     }
     timeout = setTimeout(doLater, wait);

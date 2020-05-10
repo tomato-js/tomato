@@ -2,7 +2,7 @@
  * @packageDocumentation
  * @module @tomato-js/function
  */
-import { FunctionType, isUndefined } from "@tomato-js/shared";
+import { FunctionType, isNil } from "@tomato-js/shared";
 
 type Options = {
   isImmediate: boolean;
@@ -10,6 +10,8 @@ type Options = {
 
 /**
  * 函数节流
+ *
+ * 新增于v0.0.17
  *
  * 脚本举例
  * ```
@@ -34,15 +36,15 @@ export function throttle<F extends FunctionType>(
     const context = this;
 
     const doLater = function() {
-      if (!isUndefined(timeout)) {
+      if (!isNil(timeout)) {
         clearTimeout(timeout);
       }
       if (!options.isImmediate) {
         func.apply(context, args);
       }
     };
-    if (!isUndefined(timeout)) return;
-    const shouldCallNow = options.isImmediate && isUndefined(timeout);
+    if (!isNil(timeout)) return;
+    const shouldCallNow = options.isImmediate && isNil(timeout);
     timeout = setTimeout(doLater, wait);
     if (shouldCallNow) {
       func.apply(context, args);
