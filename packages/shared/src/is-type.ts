@@ -10,11 +10,11 @@ export function isType<T>(value: unknown, type: string): value is T {
   return toString.call(value) === "[object " + type + "]";
 }
 
-export function isString(str: unknown) {
+export function isString(str: unknown): str is string {
   return isType(str, "String");
 }
 
-export function isNumber(str: unknown) {
+export function isNumber(str: unknown): str is number {
   return isType(str, "Number");
 }
 
@@ -43,7 +43,7 @@ export function isFunction(value: unknown): value is Function {
  * @param val - 需要判断的值
  * @returns 是否为null
  */
-export function isNull(val: unknown) {
+export function isNull(val: unknown): val is null {
   return val === null;
 }
 
@@ -53,7 +53,7 @@ export function isNull(val: unknown) {
  * 脚本举例
  * ```
  *   import { isUndefined } from '@tomato-js/shared'
- *   const node = isNull(undefined);//true
+ *   const node = isUndefined(undefined);//true
  * ```
  *
  * @param val - 需要判断的值
@@ -75,9 +75,28 @@ export function isUndefined(val: unknown): val is undefined {
  * @param val - 需要判断的值
  * @returns 是否为undefined或null
  */
-export function isNil(val: unknown) {
+export function isNil(val: unknown): val is undefined | null {
   return isUndefined(val) || isNull(val);
 }
+
+/**
+ * 是否已定义
+ *
+ * 新增于v0.0.18
+ *
+ * 脚本举例
+ * ```
+ *   import { isDef } from '@tomato-js/shared'
+ *   const node = isDef(undefined);//false
+ * ```
+ *
+ * @param val - 需要判断的值
+ * @returns 是否为已定义的值
+ */
+export function isDef(val: unknown): val is NonNullable<any> {
+  return !isUndefined(val) && !isNull(val);
+}
+
 /**
  * 是否为 数字或字符串数字类型
  *

@@ -9,7 +9,7 @@ export type HTMLElementKey = keyof HTMLElementTagNameMap;
 
 export type Eachable<T> = T[] | ObjectType<T>;
 
-export type FunctionType = (...args: any[]) => void;
+export type FunctionType<T = any, U = any> = (...args: T[]) => U;
 
 export type Falsy = false | "" | 0 | null | undefined;
 
