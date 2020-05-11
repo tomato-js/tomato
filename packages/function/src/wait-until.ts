@@ -3,9 +3,9 @@
  * @module @tomato-js/function
  */
 /**
- * 函数描述
+ * 等待执行，等待
  *
- * 新增于v
+ * 新增于v0.0.18
  *
  * 脚本举例
  * ```
@@ -22,9 +22,15 @@
  *   changeBool();
  *
  * ```
+ *
+ * @param boolFn - 判断函数
+ * @param callback - 等待执行函数
+ * @param wait - 判断执行间隔时间
+ * @returns
  */
 export function waitUntil(boolFn: (...args: any[]) => boolean, callback: Function, wait: number = 500) {
-  setTimeout(function() {
+  let timeoutId = setTimeout(function() {
+    clearTimeout(timeoutId);
     boolFn() ? callback() : waitUntil(boolFn, callback, wait);
   }, wait);
 }
