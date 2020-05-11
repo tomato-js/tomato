@@ -39,6 +39,7 @@ export function throttle<F extends FunctionType>(
       if (!isNil(timeout)) {
         clearTimeout(timeout);
       }
+      timeout = undefined;
       if (!options.isImmediate) {
         func.apply(context, args);
       }
