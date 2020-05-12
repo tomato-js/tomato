@@ -23,7 +23,7 @@ interface SetOptions {
  * @param name - 需要设置的key
  * @param value - 需要设置的值
  * @param options - 其他参数
- * @param options.end - cookie过期时间，支持毫秒数、时间点和字符串
+ * @param options.end - cookie过期时间，支持秒数、时间点和字符串
  * @param options.path - 例如 '/', '/mydir'。 如果没有定义，默认为当前文档位置的路径
  * @param options.domain - 例如 'example.com'， '.example.com' (包括所有子域名)
  * @param options.secure - cookie只会被https传输
