@@ -1,3 +1,7 @@
+/**
+ * @packageDocumentation
+ * @module @tomato-js/events
+ */
 import { FunctionType, isFunction } from "@tomato-js/shared";
 
 type Listener = {
@@ -6,6 +10,21 @@ type Listener = {
   once: boolean;
 };
 type Listeners = Listener[];
+/**
+ * Events事件通信类
+ *
+ * 新增于v0.0.18
+ *
+ * 脚本举例
+ * ```
+ *   import { Events } from '@tomato-js/events';
+ *   const e = new Events();
+ *   e.on('foo',data=>data);
+ *   e.once('foo',data=>data);//只监听一次
+ *   e.emit('foo','bar')
+ *   e.clear('foo')//清除事件
+ * ```
+ */
 export class Events {
   private events: Map<string, Listeners>;
   private eventsCount: number;
