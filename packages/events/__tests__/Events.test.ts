@@ -28,5 +28,61 @@ describe("events util", () => {
       );
       e.emit("foo", "bar");
     });
+    test("emits to all listeners", () => {
+      const e = new events.Events();
+      let str = "";
+      e.on("foo", () => {
+        str += "1";
+      });
+      e.on("foo", () => {
+        str += "2";
+      });
+      e.on("foo", () => {
+        str += "3";
+      });
+      e.on("good", () => {
+        str += "4";
+      });
+      e.emit("foo");
+      expect(str).toBe("123");
+      expect(e.listeners("foo").length).toBe(3);
+      expect(e.size()).toBe(4);
+    });
+    test("only emit once for multiple events", () => {
+      const e = new events.Events();
+      let str = "";
+      e.once("foo", () => {
+        str += "1";
+      });
+      e.once("good", () => {
+        str += "4";
+      });
+      e.emit("foo");
+      e.emit("foo");
+      e.emit("foo");
+      e.emit("foo");
+      expect(str).toBe("1");
+      e.emit("good");
+      expect(str).toBe("14");
+    });
+    test("clear and clearAll", () => {
+      const e = new events.Events();
+      let str = "";
+      e.on("foo", () => {
+        str += "1";
+      });
+      e.on("good", () => {
+        str += "4";
+      });
+      e.clear("foo");
+      e.emit("foo");
+      e.emit("foo");
+      e.emit("foo");
+      e.emit("foo");
+      expect(str).toBe("");
+      e.clear();
+      e.emit("good");
+      expect(str).toBe("");
+    });
   });
 });
