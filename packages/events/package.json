@@ -27,7 +27,7 @@
   "scripts": {
     "build": "npm run clean && run-p build:*",
     "build:esm": "tsc -p tsconfig.json --target ESNext --module ESNext --outDir dist/esm",
-    "build:cjs": "tsc -p tsconfig.json --target ESNext --module commonjs --outDir dist/lib",
+    "build:cjs": "tsc -p tsconfig.json --target ES2018 --module commonjs --outDir dist/lib",
     "clean": "rm -rf dist"
   },
   "bugs": {
