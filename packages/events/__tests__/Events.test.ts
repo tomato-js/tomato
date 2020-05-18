@@ -9,7 +9,7 @@ describe("events util", () => {
     });
     test("emit without context", () => {
       const e = new events.Events();
-      e.on("foo", bar => {
+      e.on("foo", (bar: any) => {
         expect(bar).toBe("bar");
       });
       e.emit("foo", "bar");
@@ -19,7 +19,7 @@ describe("events util", () => {
       const e = new events.Events();
       e.on(
         "foo",
-        function(bar) {
+        function(bar: any) {
           expect(bar).toBe("bar");
           //@ts-ignore
           expect(this).toEqual(context);
