@@ -27,7 +27,7 @@ type Queue = QueueItem[];
  * ```
  *   import { PQueue, sleep } from '@tomato-js/async'
  *   const queue = new PQueue({
- *     autoStart:false, // 是否自动开始执行队列
+ *     autoStart:true, // 是否自动开始执行队列
  *     concurrency: 1 //队列执行并发数
  *   });
  *   let str = "";
