@@ -3,7 +3,7 @@
  * @module @tomato-js/string
  */
 const digits = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九"];
-const units = ["", "十", "百", "千", "万", "十", "百", "千", "亿", "十", "百", "千", "兆"];
+const units = ["", "十", "百", "千", "万", "十", "百", "千", "亿", "十", "百", "千", "兆", "十", "百", "千", "京", "十", "百", "千", "垓"];
 const minus = "负";
 const point = "点";
 
@@ -44,7 +44,7 @@ export function int2Chinese(number: number) {
   }
   //针对各边界值进行处理
   const small = units[1] + units[2] + units[3];
-  const big = units[4] + units[8] + units[12];
+  const big = units[4] + units[8] + units[12] + units[16] + units[20];
   //处理零十零百零千
   str = str.replace(new RegExp("(" + zero + ")[" + small + "]", "g"), "$1");
   //处理 亿零万 这种

@@ -21,6 +21,9 @@ describe("string util", () => {
       expect(string.int2Chinese(100000)).toBe("十万");
       expect(string.int2Chinese(1000000)).toBe("一百万");
       expect(string.int2Chinese(10000000)).toBe("一千万");
+      expect(string.int2Chinese(1000000000000000)).toBe("一千兆");
+      expect(string.int2Chinese(10000000000000000000)).toBe("一千京");
+      expect(string.int2Chinese(100000000000000000000)).toBe("一垓");
     });
     test("int2Chinese() with random number", () => {
       expect(string.int2Chinese(11002506)).toBe("一千一百万零二千五百零六");
