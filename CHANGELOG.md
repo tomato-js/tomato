@@ -1,3 +1,16 @@
+## [0.0.18](https://github.com/tomato-js/tomato/compare/v0.0.17...v0.0.18) (2020-06-19)
+
+### Bug Fixes
+
+-   **function:** clear timeout in throttle and debounce ([23af73a](https://github.com/tomato-js/tomato/commit/23af73aa816a732afc5a1c9556e830920b14dcc7))
+
+### Features
+
+-   support multiple events as same name ([0f33fd2](https://github.com/tomato-js/tomato/commit/0f33fd2954de4a8dcb019434e172d41aea3b3794))
+-   **async:** add p-queue ([a404f3f](https://github.com/tomato-js/tomato/commit/a404f3fddc969090e1538dfa3c7ec7b0f4c74dfd))
+-   **events:** add Events class as eventbus ([93e8b34](https://github.com/tomato-js/tomato/commit/93e8b34de68f16cd99341668f5beca5c24b14e46))
+-   **string:** number2Chinese support big int ([0a83d2e](https://github.com/tomato-js/tomato/commit/0a83d2ee5867641f6413ebad0d443d982560193b))
+
 ## [0.0.17](https://github.com/tomato-js/tomato/compare/v0.0.16...v0.0.17) (2020-04-27)
 
 ### Bug Fixes
