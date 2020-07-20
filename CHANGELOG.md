@@ -1,3 +1,11 @@
+## [0.0.19](https://github.com/tomato-js/tomato/compare/v0.0.18...v0.0.19) (2020-07-20)
+
+### Features
+
+-   **object:** deepFreeze ([1a70803](https://github.com/tomato-js/tomato/commit/1a70803521e7a1ad435583f83206d06c1f81a77d))
+-   **shared:** some useful regexp ([4072c73](https://github.com/tomato-js/tomato/commit/4072c731f148e28b8c03d30f8785a66296d50e3e))
+-   **string:** trimAll ([c7db244](https://github.com/tomato-js/tomato/commit/c7db2449963a8e31be3241a443d3ebfa080a6d31))
+
 ## [0.0.18](https://github.com/tomato-js/tomato/compare/v0.0.17...v0.0.18) (2020-06-19)
 
 ### Bug Fixes

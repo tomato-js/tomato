@@ -10,6 +10,8 @@
  * 脚本举例
  * ```
  *   import { trimAll } from '@tomato-js/string'
+ *   trimAll(' my name is brizer    ');
+ *   //mynameisbrizer
  * ```
  */
 export function trimAll(str: string) {
