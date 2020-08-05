@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "private": true,
   "description": "simple, modular utils for web applications",
   "scripts": {

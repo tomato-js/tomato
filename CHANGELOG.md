@@ -1,3 +1,9 @@
+## [0.0.20](https://github.com/tomato-js/tomato/compare/v0.0.19...v0.0.20) (2020-08-05)
+
+### Features
+
+-   **request:** request get post getIns in new package ([26f3e29](https://github.com/tomato-js/tomato/commit/26f3e29979c85dfccbd528a67d9d6caa1beca241))
+
 ## [0.0.19](https://github.com/tomato-js/tomato/compare/v0.0.18...v0.0.19) (2020-07-20)
 
 ### Features
