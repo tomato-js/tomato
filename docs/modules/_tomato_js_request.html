@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@tomato-js/path | @tomato-js</title>
+	<title>@tomato-js/request | @tomato-js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_tomato_js_path.html">@tomato-js/path</a>
+					<a href="_tomato_js_request.html">@tomato-js/request</a>
 				</li>
 			</ul>
-			<h1>External module @tomato-js/path</h1>
+			<h1>External module @tomato-js/request</h1>
 		</div>
 	</div>
 </header>
@@ -71,10 +71,10 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_path.html#getsearch" class="tsd-kind-icon">get<wbr>Search</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_path.html#merge" class="tsd-kind-icon">merge</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_path.html#parse" class="tsd-kind-icon">parse</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_path.html#stringify" class="tsd-kind-icon">stringify</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_request.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_request.html#getins" class="tsd-kind-icon">get<wbr>Ins</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_request.html#post" class="tsd-kind-icon">post</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_request.html#request" class="tsd-kind-icon">request</a></li>
 							</ul>
 						</section>
 					</div>
@@ -83,167 +83,176 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="getsearch" class="tsd-anchor"></a>
-					<h3>get<wbr>Search</h3>
+					<a name="get" class="tsd-anchor"></a>
+					<h3>get</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Search<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, settings<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">AxiosRequestConfig</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AxiosResponse</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/11f935a/packages/path/src/parse.ts#L29">path/src/parse.ts:29</a></li>
+									<li>Defined in request/src/request.ts:100</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>获取url中的search字符串</p>
+									<p>简易get方法</p>
 								</div>
 								<p>脚本举例</p>
-								<pre><code>  <span class="hljs-keyword">import</span> { getSearch } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/path'</span>;
-  <span class="hljs-keyword">const</span> search = parse()<span class="hljs-comment">//默认使用window.location.href;</span>
-  <span class="hljs-keyword">const</span> search2 = parse(<span class="hljs-string">"https://www.baidu.com?a=123&amp;e=f"</span>)<span class="hljs-comment">//?a=123&amp;e=f;</span></code></pre>
+								<pre><code>  <span class="hljs-keyword">import</span> { <span class="hljs-keyword">get</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/request'</span>
+  <span class="hljs-keyword">const</span> { data } = <span class="hljs-keyword">await</span> <span class="hljs-keyword">get</span>(<span class="hljs-string">'/api.json'</span>);</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = window.location.href</span></h5>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>待解析的url</p>
+										<p>请求路径</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> settings: <span class="tsd-signature-type">AxiosRequestConfig</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>配置，和axios保持一致<a href="https://github.com/axios/axios/blob/master/README.md#request-config">https://github.com/axios/axios/blob/master/README.md#request-config</a></p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>search字符串</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AxiosResponse</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="merge" class="tsd-anchor"></a>
-					<h3>merge</h3>
+					<a name="getins" class="tsd-anchor"></a>
+					<h3>get<wbr>Ins</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Ins<span class="tsd-signature-symbol">(</span>settings<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Settings</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AxiosInstance</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/11f935a/packages/path/src/merge.ts#L22">path/src/merge.ts:22</a></li>
+									<li>Defined in request/src/request.ts:59</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>将form和to的queryString进行merge合并到to</p>
+									<p>详细配置一个request实例</p>
 								</div>
 								<p>脚本举例</p>
-								<pre><code>  <span class="hljs-keyword">import</span> { merge } from <span class="hljs-string">'@tomato-js/path'</span>;
-  merge(<span class="hljs-string">"https://tomato-js.github.io?a=b&amp;c=d"</span>, <span class="hljs-string">"https://www.baidu.com?a=123&amp;e=f"</span>);
-  <span class="hljs-regexp">//https</span><span class="hljs-symbol">://www</span>.baidu.com?a=<span class="hljs-number">123</span>&amp;c=d&amp;e=f</code></pre>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>from: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>解析的url</p>
-									</div>
-								</li>
-								<li>
-									<h5>to: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>待合并的url</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>合并后的url</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="parse" class="tsd-anchor"></a>
-					<h3>parse</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ParseOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/11f935a/packages/path/src/parse.ts#L71">path/src/parse.ts:71</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>解析search字符串</p>
-								</div>
-								<p>脚本举例</p>
-								<pre><code>  <span class="hljs-keyword">import</span> { parse } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/path'</span>;
-  <span class="hljs-keyword">const</span> queryObj = parse()<span class="hljs-comment">//默认使用window.location.search;</span>
-  <span class="hljs-keyword">const</span> queryObj2 = parse(<span class="hljs-string">'?a=123&amp;b=456'</span>)<span class="hljs-comment">//{a:'123',b:'456'};</span>
-  <span class="hljs-keyword">const</span> queryObj3 = parse(<span class="hljs-string">'a=123&amp;b=456'</span>)<span class="hljs-comment">//{a:'123',b:'456'};</span></code></pre>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>str: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>待解析的字符串</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-type">ParseOptions</span><span class="tsd-signature-symbol"> = {encode: true}</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>其他解析参数</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></h4>
-							<p>解析完成的对象</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="stringify" class="tsd-anchor"></a>
-					<h3>stringify</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">stringify<span class="tsd-signature-symbol">(</span>queryObj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">StringifyOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/11f935a/packages/path/src/stringify.ts#L28">path/src/stringify.ts:28</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>解析对象为query字符串</p>
-								</div>
-								<p>脚本举例</p>
-								<pre><code>  <span class="hljs-keyword">import</span> { <span class="hljs-built_in">string</span>ify } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/path'</span>;
-  <span class="hljs-keyword">const</span> queryStr = <span class="hljs-built_in">string</span>ify({
-    queryKey: <span class="hljs-string">"this is queryA"</span>
+								<pre><code>  <span class="hljs-keyword">import</span> { getIns } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/request'</span>
+  <span class="hljs-keyword">const</span> myRequest = getIns({
+    <span class="hljs-attr">responseInterceptors</span>: [
+      {
+        <span class="hljs-attr">onFulfilled</span>: <span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> {
+          response.data.hello = <span class="hljs-string">"me"</span>;
+          <span class="hljs-keyword">return</span> response;
+        },
+        <span class="hljs-attr">onRejected</span>: <span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> {
+          <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.reject(error);
+        }
+      }
+    ]
   });
-  <span class="hljs-comment">//queryKey=this%20is%20queryA</span></code></pre>
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> myRequest.post(<span class="hljs-string">"/post.json"</span>, {
+    <span class="hljs-attr">option</span>: <span class="hljs-string">"lala"</span>
+  });</code></pre>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>queryObj: <span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> settings: <span class="tsd-signature-type">Settings</span><span class="tsd-signature-symbol"> = {}</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>待解析的对象</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <span class="tsd-signature-type">StringifyOptions</span><span class="tsd-signature-symbol"> = {encode: true}</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>其他解析参数</p>
+										<p>配置，和axios保持一致</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>解析完成的query字符串</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">AxiosInstance</span></h4>
+							<p>request实例</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="post" class="tsd-anchor"></a>
+					<h3>post</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">post<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, settings<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">AxiosRequestConfig</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AxiosResponse</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in request/src/request.ts:119</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>简易post方法</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { post } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/request'</span>
+  <span class="hljs-keyword">const</span> { data } = <span class="hljs-keyword">await</span> post(<span class="hljs-string">'/api.json'</span>,{
+    <span class="hljs-attr">data</span>: {
+      <span class="hljs-attr">str</span>: <span class="hljs-string">'str'</span>
+    }
+  });</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>请求路径</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> settings: <span class="tsd-signature-type">AxiosRequestConfig</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>配置，和axios保持一致</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AxiosResponse</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="request" class="tsd-anchor"></a>
+					<h3>request</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">(</span>settings<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AxiosRequestConfig</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AxiosPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in request/src/request.ts:84</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>全量request方法</p>
+								</div>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { request } <span class="hljs-keyword">from</span> <span class="hljs-string">'@tomato-js/request'</span>
+  <span class="hljs-keyword">const</span> { data } = <span class="hljs-keyword">await</span> request({
+    <span class="hljs-attr">method</span>: <span class="hljs-string">"get"</span>,
+    <span class="hljs-attr">url</span>: <span class="hljs-string">"/get.json"</span>
+  });</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>settings: <span class="tsd-signature-type">AxiosRequestConfig</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>配置，和axios保持一致<a href="https://github.com/axios/axios/blob/master/README.md#request-config">https://github.com/axios/axios/blob/master/README.md#request-config</a></p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">AxiosPromise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise</p>
 						</li>
 					</ul>
 				</section>
@@ -282,13 +291,13 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_object.html">@tomato-<wbr>js/object</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_path.html">@tomato-<wbr>js/path</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_queue.html">@tomato-<wbr>js/queue</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="_tomato_js_request.html">@tomato-<wbr>js/request</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -302,16 +311,16 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_tomato_js_path.html#getsearch" class="tsd-kind-icon">get<wbr>Search</a>
+						<a href="_tomato_js_request.html#get" class="tsd-kind-icon">get</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_tomato_js_path.html#merge" class="tsd-kind-icon">merge</a>
+						<a href="_tomato_js_request.html#getins" class="tsd-kind-icon">get<wbr>Ins</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_tomato_js_path.html#parse" class="tsd-kind-icon">parse</a>
+						<a href="_tomato_js_request.html#post" class="tsd-kind-icon">post</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_tomato_js_path.html#stringify" class="tsd-kind-icon">stringify</a>
+						<a href="_tomato_js_request.html#request" class="tsd-kind-icon">request</a>
 					</li>
 				</ul>
 			</nav>

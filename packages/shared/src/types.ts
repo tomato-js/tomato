@@ -15,6 +15,7 @@ export type Falsy = false | "" | 0 | null | undefined;
 
 export type NonUndefined<A> = A extends undefined ? never : A;
 
+export type Methods = "get" | "post" | "put" | "delete" | "head" | "options" | "patch";
 /**
  * 获取类型中value为函数的key
  *
