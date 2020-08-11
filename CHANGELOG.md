@@ -1,3 +1,9 @@
+## [0.0.21](https://github.com/tomato-js/tomato/compare/v0.0.20...v0.0.21) (2020-08-11)
+
+### Features
+
+-   **api:** npm and gihtub api ([9ad8516](https://github.com/tomato-js/tomato/commit/9ad85166c030e203de67c59965416f981f99d075))
+
 ## [0.0.20](https://github.com/tomato-js/tomato/compare/v0.0.19...v0.0.20) (2020-08-05)
 
 ### Features
