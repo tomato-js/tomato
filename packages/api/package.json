@@ -38,8 +38,6 @@
     "npm-run-all": "^4.1.5"
   },
   "dependencies": {
-    "@octokit/graphql": "^4.5.3",
-    "@octokit/rest": "^18.0.3",
     "@tomato-js/async": "0.0.20",
     "@tomato-js/env": "0.0.20",
     "@tomato-js/request": "0.0.20",
