@@ -18,6 +18,8 @@ type Settings = {
   requestInterceptors?: Interceptors;
   responseInterceptors?: Interceptors;
 } & AxiosRequestConfig;
+
+export type RequestInstance = AxiosInstance;
 //创建拦截器
 const createInterceptors = (inst: AxiosInstance, requestInterceptors: Interceptors = [], responseInterceptors: Interceptors = []) => {
   requestInterceptors.map(requestInterceptor => {

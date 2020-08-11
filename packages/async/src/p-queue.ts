@@ -19,7 +19,7 @@ type QueueItem = {
 
 type Queue = QueueItem[];
 /**
- * 函数描述
+ * 异步队列
  *
  * 新增于v0.0.18
  *
@@ -44,7 +44,7 @@ type Queue = QueueItem[];
  *     str = str + 3;
  *   });
  *   // 同步方法监听
- *   await queue.onIdle(()=>str)//123;
+ *   await queue.onIdle()//str=123;
  *   // 通过事件监听
  *   queue.on('idle',()=>str)//123
  * ```
