@@ -1,1 +1,1 @@
-export { getIns, request, get, post } from "./request";
+export { getIns, request, get, post, RequestInstance } from "./request";
