@@ -1,3 +1,7 @@
+/**
+ * @packageDocumentation
+ * @module @tomato-js/api
+ */
 import { getIns, RequestInstance } from "@tomato-js/request";
 
 export type GithubOptions = {
@@ -35,6 +39,30 @@ class Github {
       timeout: 10000
     });
   }
+  /**
+   * 获取github库信息
+   *
+   * 新增于v0.0.21
+   *
+   * 脚本举例
+   * ```
+   *   import { Github } from '@tomato-js/api'
+   *   const api = new Github({
+   *     token:'your_token', // github的token
+   *   });
+   *   (async()=>{
+   *     const data = await api.getRepoData('brizer','mrgx');
+   *   })()
+   *   //{
+   *   //  stargazers_count:20,
+   *   //  ...
+   *   //}
+   * ```
+   *
+   * @param owner - 拥有者
+   * @param repo - 包名称
+   * @returns 信息
+   */
   public async getRepoData(owner: string, repo: string) {
     try {
       const { data } = await this.request.get(`repos/${owner}/${repo}`);

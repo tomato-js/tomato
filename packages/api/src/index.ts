@@ -1,2 +1,2 @@
-export { getNpmDependents, getNpmRegistryInfo, getNpmLatestVersion, getDependentsInfo, getSortedDependentsByStar } from "./npm";
+export { Npm } from "./npm";
 export { Github } from "./github";
