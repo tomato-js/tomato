@@ -5,7 +5,6 @@
 
 import axios, { AxiosRequestConfig, AxiosInstance } from "axios";
 import { FunctionType } from "@tomato-js/shared";
-import Axios from "axios";
 
 type Interceptor = {
   onFulfilled: FunctionType<any, any>;
@@ -84,7 +83,7 @@ function getIns(settings: Settings = {}) {
  * @returns Promise
  */
 function request(settings: AxiosRequestConfig) {
-  return Axios(settings);
+  return axios(settings);
 }
 /**
  * 简易get方法
@@ -100,7 +99,7 @@ function request(settings: AxiosRequestConfig) {
  * @returns Promise
  */
 function get(url: string, settings?: AxiosRequestConfig) {
-  return Axios.get(url, settings);
+  return axios.get(url, settings);
 }
 /**
  * 简易post方法
@@ -119,7 +118,7 @@ function get(url: string, settings?: AxiosRequestConfig) {
  * @returns Promise
  */
 function post(url: string, settings?: AxiosRequestConfig) {
-  return Axios.get(url, settings);
+  return axios.post(url, settings);
 }
 
 export { getIns, request, get, post };

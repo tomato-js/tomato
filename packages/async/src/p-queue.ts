@@ -114,14 +114,14 @@ export class PQueue extends Events {
   pause() {
     this.isPaused = true;
   }
-  async add<TaskResultsType>(fn: Task<TaskResultsType>) {
+  add<TaskResultsType>(fn: Task<TaskResultsType>) {
     return new Promise<TaskResultsType>((resolve, reject) => {
       const run = async (): Promise<void> => {
         // 未决的promise数量+1
         this.pendingCount++;
         try {
           // 执行传入的promise
-          resolve(await Promise.resolve(fn()));
+          resolve(await fn());
         } catch (error) {
           reject(error);
         }
@@ -133,10 +133,10 @@ export class PQueue extends Events {
       this.tryToStartAnother();
     });
   }
-  async addAll<TaskResultsType>(fns: ReadonlyArray<Task<TaskResultsType>>) {
+  addAll<TaskResultsType>(fns: ReadonlyArray<Task<TaskResultsType>>) {
     return Promise.all(fns.map(async fn => this.add(fn)));
   }
-  async onIdle() {
+  onIdle() {
     return new Promise((resolve, reject) => {
       this.on("idle", () => resolve());
     });
