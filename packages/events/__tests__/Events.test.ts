@@ -84,5 +84,22 @@ describe("events util", () => {
       e.emit("good");
       expect(str).toBe("");
     });
+    test("clear only the listeners matching the specified listener", () => {
+      const e = new events.Events();
+      function foo() {}
+      function bar() {}
+      function baz() {}
+
+      e.on("foo", foo);
+      e.on("bar", bar);
+      e.on("bar", baz);
+
+      e.clear("foo", foo);
+      expect(e.listeners("foo")).toEqual([]);
+      expect(e.size()).toEqual(2);
+      e.clear("bar", bar);
+      expect(e.size()).toEqual(1);
+      expect(e.listeners("bar")).toEqual([baz]);
+    });
   });
 });

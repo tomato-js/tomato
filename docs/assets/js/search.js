@@ -707,7 +707,7 @@ typedoc.search.data = {
       kind: 2048,
       name: "addEventListener",
       url: "classes/_tomato_js_events.events.html#addeventlistener",
-      classes: "tsd-kind-method tsd-parent-kind-class",
+      classes: "tsd-kind-method tsd-parent-kind-class tsd-is-private",
       parent: "@tomato-js/events.Events"
     },
     {
@@ -715,7 +715,7 @@ typedoc.search.data = {
       kind: 2048,
       name: "removeListener",
       url: "classes/_tomato_js_events.events.html#removelistener",
-      classes: "tsd-kind-method tsd-parent-kind-class",
+      classes: "tsd-kind-method tsd-parent-kind-class tsd-is-private",
       parent: "@tomato-js/events.Events"
     },
     {
