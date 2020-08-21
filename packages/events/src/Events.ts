@@ -143,7 +143,7 @@ export class Events {
     listeners?.map(listener => {
       if (listener?.fn) {
         if (listener.once) {
-          this.removeListener(event);
+          this.removeListener(event, listener.fn);
         }
         listener.fn.call(listener.context, ...args);
       }
