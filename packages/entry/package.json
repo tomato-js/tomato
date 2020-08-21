@@ -25,7 +25,7 @@
     "url": "git+https://github.com/tomato-js/tomato.git"
   },
   "scripts": {
-    "build": "npm run clean && run-p build:*",
+    "build": "  run-p build:*",
     "build:esm": "tsc -p tsconfig.json --target ESNext --module ESNext --outDir dist/esm",
     "build:cjs": "tsc -p tsconfig.json --target ESNext --module commonjs --outDir dist/lib",
     "build:umd": "rollup -c",
