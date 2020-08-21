@@ -45,7 +45,7 @@ describe("events util", () => {
       });
       e.emit("foo");
       expect(str).toBe("123");
-      expect(e.listeners("foo").length).toBe(3);
+      expect(e.listeners("foo")?.length).toBe(3);
       expect(e.size()).toBe(4);
     });
     test("only emit once for multiple events", () => {
