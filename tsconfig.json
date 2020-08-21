@@ -4,7 +4,8 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "strict": true,
     "declaration": true,
-    "target": "ES2019"
+    "target": "ES2019",
+    "incremental": true
   },
   "exclude": ["node_modules"]
 }
