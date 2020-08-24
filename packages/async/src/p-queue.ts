@@ -227,9 +227,3 @@ export class PQueue extends Events {
     return this.pendingCount;
   }
 }
-
-const queue = new PQueue({
-  intervalCap: 1,
-  interval: 300,
-  autoStart: false
-});
