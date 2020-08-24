@@ -1,7 +1,6 @@
 import { Events } from "@tomato-js/events";
 import * as async from "../src";
 const fixture = Symbol("fixture");
-
 describe("async util", () => {
   describe("PQueue", () => {
     test("add return promise", async () => {
@@ -195,6 +194,21 @@ describe("async util", () => {
     test("PQueue should be a Events", () => {
       const queue = new async.PQueue();
       expect(queue instanceof Events).toBe(true);
+    });
+    test(".add() - throttled", async () => {
+      const result: number[] = [];
+      const queue = new async.PQueue({
+        intervalCap: 1,
+        interval: 300,
+        autoStart: false
+      });
+      queue.add(async () => result.push(1));
+      queue.start();
+      await async.sleep(150);
+      queue.add(async () => result.push(2));
+      expect(result).toEqual([1]);
+      await async.sleep(300);
+      expect(result).toEqual([1, 2]);
     });
   });
 });
