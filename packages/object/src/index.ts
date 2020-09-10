@@ -5,3 +5,5 @@ export { pickX } from "./pick-x";
 export { pick } from "./pick";
 
 export { deepFreeze } from "./deep-freeze";
+
+export { omit } from "./omit";

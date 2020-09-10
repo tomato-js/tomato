@@ -75,6 +75,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_tomato_js_object.html#deepfreeze" class="tsd-kind-icon">deep<wbr>Freeze</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_object.html#deepget" class="tsd-kind-icon">deep<wbr>Get</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_object.html#lazy" class="tsd-kind-icon">lazy</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_tomato_js_object.html#omit" class="tsd-kind-icon">omit</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_tomato_js_object.html#pick" class="tsd-kind-icon">pick</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_tomato_js_object.html#pickx" class="tsd-kind-icon">pickX</a></li>
 							</ul>
@@ -94,7 +95,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/a1ebb56/packages/object/src/deep-clone.ts#L22">object/src/deep-clone.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/18e5c65/packages/object/src/deep-clone.ts#L22">object/src/deep-clone.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -131,7 +132,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/a1ebb56/packages/object/src/deep-freeze.ts#L25">object/src/deep-freeze.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/18e5c65/packages/object/src/deep-freeze.ts#L25">object/src/deep-freeze.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -178,7 +179,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/a1ebb56/packages/object/src/deep-get.ts#L23">object/src/deep-get.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/18e5c65/packages/object/src/deep-get.ts#L23">object/src/deep-get.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -220,7 +221,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/a1ebb56/packages/object/src/lazy.ts#L24">object/src/lazy.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/18e5c65/packages/object/src/lazy.ts#L24">object/src/lazy.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -253,6 +254,58 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="omit" class="tsd-anchor"></a>
+					<h3>omit</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">omit&lt;T, K&gt;<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, keys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in object/src/omit.ts:22</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>返回一个去除了某些项的新对象</p>
+								</div>
+								<p>新增于v0.0.22</p>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-string">import</span> <span class="hljs-string">{</span> <span class="hljs-string">omit</span> <span class="hljs-string">}</span> <span class="hljs-string">from</span> <span class="hljs-string">'@tomato-js/object'</span>
+  <span class="hljs-string">omit({</span> <span class="hljs-attr">a:</span> <span class="hljs-number">1</span><span class="hljs-string">,</span> <span class="hljs-attr">b:</span> <span class="hljs-number">2</span><span class="hljs-string">,</span> <span class="hljs-attr">c:</span> <span class="hljs-number">3</span><span class="hljs-string">,</span> <span class="hljs-attr">d:</span> <span class="hljs-number">4</span> <span class="hljs-string">},</span> <span class="hljs-string">['a',</span> <span class="hljs-string">'d'</span><span class="hljs-string">])</span>
+  <span class="hljs-string">//{</span> <span class="hljs-attr">b:</span> <span class="hljs-number">2</span><span class="hljs-string">,</span> <span class="hljs-attr">c:</span> <span class="hljs-number">3</span> <span class="hljs-string">}</span></code></pre>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></h4>
+								</li>
+								<li>
+									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>object: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>待挑选的对象</p>
+									</div>
+								</li>
+								<li>
+									<h5>keys: <span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>需要剔除的对象</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>返回去除了某些项后的新对象</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="pick" class="tsd-anchor"></a>
 					<h3>pick</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
@@ -262,7 +315,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/a1ebb56/packages/object/src/pick.ts#L27">object/src/pick.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/18e5c65/packages/object/src/pick.ts#L27">object/src/pick.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -315,7 +368,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/a1ebb56/packages/object/src/pick-x.ts#L48">object/src/pick-x.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/18e5c65/packages/object/src/pick-x.ts#L48">object/src/pick-x.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -426,6 +479,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_object.html#lazy" class="tsd-kind-icon">lazy</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_tomato_js_object.html#omit" class="tsd-kind-icon">omit</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_tomato_js_object.html#pick" class="tsd-kind-icon">pick</a>
