@@ -1,3 +1,12 @@
+## [0.0.22](https://github.com/tomato-js/tomato/compare/v0.0.21...v0.0.22) (2020-09-24)
+
+### Features
+
+-   **async:** throttled of pQueue ([eba7f99](https://github.com/tomato-js/tomato/commit/eba7f99ff0c722ee62d6850236c4b4915dff0ecf))
+-   **events:** support multi handler in one key ([8647611](https://github.com/tomato-js/tomato/commit/8647611efd79b91c3a3aa2f0c221c8b7e710dd6a))
+-   **object:** omit ([f22818e](https://github.com/tomato-js/tomato/commit/f22818ed8ee02b00af6c004cf2480469505cfa64))
+-   **shared:** isEmpty and isArrayEmpty ([e9f9e48](https://github.com/tomato-js/tomato/commit/e9f9e48a04f0ae38ef11be5a448ee755c82164e2))
+
 ## [0.0.21](https://github.com/tomato-js/tomato/compare/v0.0.20...v0.0.21) (2020-08-11)
 
 ### Features
