@@ -72,14 +72,22 @@
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_tomato_js_api.github.html" class="tsd-kind-icon">Github</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_tomato_js_api.gitlab.html" class="tsd-kind-icon">Gitlab</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_tomato_js_api.npm.html" class="tsd-kind-icon">Npm</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_tomato_js_api.html#cloneoptions" class="tsd-kind-icon">Clone<wbr>Options</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_tomato_js_api.html#cloneprojectoptions" class="tsd-kind-icon">Clone<wbr>Project<wbr>Options</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_tomato_js_api.html#coreinstance" class="tsd-kind-icon">Core<wbr>Instance</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_tomato_js_api.html#coreoptions" class="tsd-kind-icon">Core<wbr>Options</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_tomato_js_api.html#download" class="tsd-kind-icon">Download</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_tomato_js_api.html#githuboptions" class="tsd-kind-icon">Github<wbr>Options</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_tomato_js_api.html#gitlaboptions" class="tsd-kind-icon">Gitlab<wbr>Options</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_tomato_js_api.html#npmoptions" class="tsd-kind-icon">Npm<wbr>Options</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_tomato_js_api.html#sample" class="tsd-kind-icon">Sample</a></li>
 							</ul>
 						</section>
 					</div>
@@ -88,12 +96,93 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="cloneoptions" class="tsd-anchor"></a>
+					<h3>Clone<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">Clone<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>link<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in api/src/gitlab.ts:20</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>link<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> path<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="cloneprojectoptions" class="tsd-anchor"></a>
+					<h3>Clone<wbr>Project<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">Clone<wbr>Project<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>path<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><a href="_tomato_js_api.html#sample" class="tsd-signature-type">Sample</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in api/src/gitlab.ts:24</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="coreinstance" class="tsd-anchor"></a>
+					<h3>Core<wbr>Instance</h3>
+					<div class="tsd-signature tsd-kind-icon">Core<wbr>Instance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>GroupProjects<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GroupProjects</span><span class="tsd-signature-symbol">; </span>Groups<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Groups</span><span class="tsd-signature-symbol">; </span>Projects<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Projects</span><span class="tsd-signature-symbol">; </span>Repositories<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Repositories</span><span class="tsd-signature-symbol">; </span>RepositoryFiles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RepositoryFiles</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in api/src/gitlab.ts:27</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>Group<wbr>Projects<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GroupProjects</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>Groups<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Groups</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>Projects<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Projects</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>Repositories<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Repositories</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>Repository<wbr>Files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RepositoryFiles</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="coreoptions" class="tsd-anchor"></a>
+					<h3>Core<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">Core<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="_tomato_js_api.html#gitlaboptions" class="tsd-signature-type">GitlabOptions</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in api/src/gitlab.ts:12</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="download" class="tsd-anchor"></a>
+					<h3>Download</h3>
+					<div class="tsd-signature tsd-kind-icon">Download<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>ref<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><a href="_tomato_js_api.html#sample" class="tsd-signature-type">Sample</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in api/src/gitlab.ts:16</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="githuboptions" class="tsd-anchor"></a>
 					<h3>Github<wbr>Options</h3>
 					<div class="tsd-signature tsd-kind-icon">Github<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>token<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/18e5c65/packages/api/src/github.ts#L7">api/src/github.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/34a950f/packages/api/src/github.ts#L7">api/src/github.ts:7</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -106,12 +195,33 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="gitlaboptions" class="tsd-anchor"></a>
+					<h3>Gitlab<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">Gitlab<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>baseUrl<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>token<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in api/src/gitlab.ts:8</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> base<wbr>Url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> token<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="npmoptions" class="tsd-anchor"></a>
 					<h3>Npm<wbr>Options</h3>
 					<div class="tsd-signature tsd-kind-icon">Npm<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>pages<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/18e5c65/packages/api/src/npm.ts#L24">api/src/npm.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/34a950f/packages/api/src/npm.ts#L24">api/src/npm.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -122,6 +232,24 @@
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> pages<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="sample" class="tsd-anchor"></a>
+					<h3>Sample</h3>
+					<div class="tsd-signature tsd-kind-icon">Sample<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in api/src/gitlab.ts:13</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
 					</div>
@@ -187,13 +315,37 @@
 						<a href="../classes/_tomato_js_api.github.html" class="tsd-kind-icon">Github</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_tomato_js_api.gitlab.html" class="tsd-kind-icon">Gitlab</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/_tomato_js_api.npm.html" class="tsd-kind-icon">Npm</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_tomato_js_api.html#cloneoptions" class="tsd-kind-icon">Clone<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_tomato_js_api.html#cloneprojectoptions" class="tsd-kind-icon">Clone<wbr>Project<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_tomato_js_api.html#coreinstance" class="tsd-kind-icon">Core<wbr>Instance</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_tomato_js_api.html#coreoptions" class="tsd-kind-icon">Core<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_tomato_js_api.html#download" class="tsd-kind-icon">Download</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_tomato_js_api.html#githuboptions" class="tsd-kind-icon">Github<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_tomato_js_api.html#gitlaboptions" class="tsd-kind-icon">Gitlab<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_tomato_js_api.html#npmoptions" class="tsd-kind-icon">Npm<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_tomato_js_api.html#sample" class="tsd-kind-icon">Sample</a>
 					</li>
 				</ul>
 			</nav>
