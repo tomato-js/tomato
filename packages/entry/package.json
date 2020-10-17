@@ -1,6 +1,6 @@
 {
   "name": "@tomato-js/entry",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "simple, modular utils for web applications",
   "author": "brizer <brizer@163.com>",
   "homepage": "https://github.com/tomato-js/tomato/tree/master/packages/path#readme",
@@ -41,16 +41,16 @@
     "rollup-plugin-terser": "^5.2.0"
   },
   "dependencies": {
-    "@tomato-js/array": "^0.0.22",
-    "@tomato-js/async": "^0.0.22",
-    "@tomato-js/cookie": "^0.0.22",
-    "@tomato-js/element": "^0.0.22",
-    "@tomato-js/env": "^0.0.22",
-    "@tomato-js/function": "^0.0.22",
-    "@tomato-js/math": "^0.0.22",
-    "@tomato-js/object": "^0.0.22",
-    "@tomato-js/path": "^0.0.22",
-    "@tomato-js/shared": "^0.0.22",
-    "@tomato-js/string": "^0.0.22"
+    "@tomato-js/array": "^0.0.23",
+    "@tomato-js/async": "^0.0.23",
+    "@tomato-js/cookie": "^0.0.23",
+    "@tomato-js/element": "^0.0.23",
+    "@tomato-js/env": "^0.0.23",
+    "@tomato-js/function": "^0.0.23",
+    "@tomato-js/math": "^0.0.23",
+    "@tomato-js/object": "^0.0.23",
+    "@tomato-js/path": "^0.0.23",
+    "@tomato-js/shared": "^0.0.23",
+    "@tomato-js/string": "^0.0.23"
   }
 }
