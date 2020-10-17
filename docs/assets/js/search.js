@@ -60,7 +60,7 @@ typedoc.search.data = {
       id: 6,
       kind: 65536,
       name: "__type",
-      url: "modules/_tomato_js_api.html#githuboptions.__type",
+      url: "modules/_tomato_js_api.html#githuboptions.__type-2",
       classes: "tsd-kind-type-literal tsd-parent-kind-type-alias",
       parent: "@tomato-js/api.GithubOptions"
     },
@@ -68,12 +68,332 @@ typedoc.search.data = {
       id: 7,
       kind: 32,
       name: "token",
-      url: "modules/_tomato_js_api.html#githuboptions.__type.token",
+      url: "modules/_tomato_js_api.html#githuboptions.__type-2.token",
       classes: "tsd-kind-variable tsd-parent-kind-type-literal",
       parent: "@tomato-js/api.GithubOptions.__type"
     },
     {
       id: 8,
+      kind: 128,
+      name: "Gitlab",
+      url: "classes/_tomato_js_api.gitlab.html",
+      classes: "tsd-kind-class tsd-parent-kind-external-module",
+      parent: "@tomato-js/api"
+    },
+    {
+      id: 9,
+      kind: 1024,
+      name: "token",
+      url: "classes/_tomato_js_api.gitlab.html#token",
+      classes: "tsd-kind-property tsd-parent-kind-class tsd-is-private",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 10,
+      kind: 1024,
+      name: "baseUrl",
+      url: "classes/_tomato_js_api.gitlab.html#baseurl",
+      classes: "tsd-kind-property tsd-parent-kind-class tsd-is-private",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 11,
+      kind: 1024,
+      name: "isNode",
+      url: "classes/_tomato_js_api.gitlab.html#isnode",
+      classes: "tsd-kind-property tsd-parent-kind-class tsd-is-private",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 12,
+      kind: 1024,
+      name: "core",
+      url: "classes/_tomato_js_api.gitlab.html#core",
+      classes: "tsd-kind-property tsd-parent-kind-class",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 13,
+      kind: 1024,
+      name: "clone",
+      url: "classes/_tomato_js_api.gitlab.html#clone",
+      classes: "tsd-kind-property tsd-parent-kind-class",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 14,
+      kind: 65536,
+      name: "__type",
+      url: "classes/_tomato_js_api.gitlab.html#clone.__type",
+      classes: "tsd-kind-type-literal tsd-parent-kind-property",
+      parent: "@tomato-js/api.Gitlab.clone"
+    },
+    {
+      id: 15,
+      kind: 1024,
+      name: "cloneProject",
+      url: "classes/_tomato_js_api.gitlab.html#cloneproject",
+      classes: "tsd-kind-property tsd-parent-kind-class",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 16,
+      kind: 65536,
+      name: "__type",
+      url: "classes/_tomato_js_api.gitlab.html#cloneproject.__type-2",
+      classes: "tsd-kind-type-literal tsd-parent-kind-property",
+      parent: "@tomato-js/api.Gitlab.cloneProject"
+    },
+    {
+      id: 17,
+      kind: 1024,
+      name: "cloneGroup",
+      url: "classes/_tomato_js_api.gitlab.html#clonegroup",
+      classes: "tsd-kind-property tsd-parent-kind-class",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 18,
+      kind: 65536,
+      name: "__type",
+      url: "classes/_tomato_js_api.gitlab.html#clonegroup.__type-1",
+      classes: "tsd-kind-type-literal tsd-parent-kind-property",
+      parent: "@tomato-js/api.Gitlab.cloneGroup"
+    },
+    {
+      id: 19,
+      kind: 512,
+      name: "constructor",
+      url: "classes/_tomato_js_api.gitlab.html#constructor",
+      classes: "tsd-kind-constructor tsd-parent-kind-class",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 20,
+      kind: 2048,
+      name: "initCore",
+      url: "classes/_tomato_js_api.gitlab.html#initcore",
+      classes: "tsd-kind-method tsd-parent-kind-class tsd-is-private",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 21,
+      kind: 2048,
+      name: "create",
+      url: "classes/_tomato_js_api.gitlab.html#create",
+      classes: "tsd-kind-method tsd-parent-kind-class tsd-is-static",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 22,
+      kind: 2048,
+      name: "fetchSubGroups",
+      url: "classes/_tomato_js_api.gitlab.html#fetchsubgroups",
+      classes: "tsd-kind-method tsd-parent-kind-class",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 23,
+      kind: 2048,
+      name: "fetchGroupProjects",
+      url: "classes/_tomato_js_api.gitlab.html#fetchgroupprojects",
+      classes: "tsd-kind-method tsd-parent-kind-class",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 24,
+      kind: 2048,
+      name: "fetchProjectRepositories",
+      url: "classes/_tomato_js_api.gitlab.html#fetchprojectrepositories",
+      classes: "tsd-kind-method tsd-parent-kind-class",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 25,
+      kind: 2048,
+      name: "fetchFileContent",
+      url: "classes/_tomato_js_api.gitlab.html#fetchfilecontent",
+      classes: "tsd-kind-method tsd-parent-kind-class",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 26,
+      kind: 2048,
+      name: "fetchProject",
+      url: "classes/_tomato_js_api.gitlab.html#fetchproject",
+      classes: "tsd-kind-method tsd-parent-kind-class",
+      parent: "@tomato-js/api.Gitlab"
+    },
+    {
+      id: 27,
+      kind: 4194304,
+      name: "GitlabOptions",
+      url: "modules/_tomato_js_api.html#gitlaboptions",
+      classes: "tsd-kind-type-alias tsd-parent-kind-external-module",
+      parent: "@tomato-js/api"
+    },
+    {
+      id: 28,
+      kind: 65536,
+      name: "__type",
+      url: "modules/_tomato_js_api.html#gitlaboptions.__type-3",
+      classes: "tsd-kind-type-literal tsd-parent-kind-type-alias",
+      parent: "@tomato-js/api.GitlabOptions"
+    },
+    {
+      id: 29,
+      kind: 32,
+      name: "token",
+      url: "modules/_tomato_js_api.html#gitlaboptions.__type-3.token-1",
+      classes: "tsd-kind-variable tsd-parent-kind-type-literal",
+      parent: "@tomato-js/api.GitlabOptions.__type"
+    },
+    {
+      id: 30,
+      kind: 32,
+      name: "baseUrl",
+      url: "modules/_tomato_js_api.html#gitlaboptions.__type-3.baseurl",
+      classes: "tsd-kind-variable tsd-parent-kind-type-literal",
+      parent: "@tomato-js/api.GitlabOptions.__type"
+    },
+    {
+      id: 31,
+      kind: 4194304,
+      name: "CoreOptions",
+      url: "modules/_tomato_js_api.html#coreoptions",
+      classes: "tsd-kind-type-alias tsd-parent-kind-external-module",
+      parent: "@tomato-js/api"
+    },
+    {
+      id: 32,
+      kind: 4194304,
+      name: "Sample",
+      url: "modules/_tomato_js_api.html#sample",
+      classes: "tsd-kind-type-alias tsd-parent-kind-external-module",
+      parent: "@tomato-js/api"
+    },
+    {
+      id: 33,
+      kind: 65536,
+      name: "__type",
+      url: "modules/_tomato_js_api.html#sample.__type-5",
+      classes: "tsd-kind-type-literal tsd-parent-kind-type-alias",
+      parent: "@tomato-js/api.Sample"
+    },
+    {
+      id: 34,
+      kind: 32,
+      name: "id",
+      url: "modules/_tomato_js_api.html#sample.__type-5.id",
+      classes: "tsd-kind-variable tsd-parent-kind-type-literal",
+      parent: "@tomato-js/api.Sample.__type"
+    },
+    {
+      id: 35,
+      kind: 4194304,
+      name: "Download",
+      url: "modules/_tomato_js_api.html#download",
+      classes: "tsd-kind-type-alias tsd-parent-kind-external-module",
+      parent: "@tomato-js/api"
+    },
+    {
+      id: 36,
+      kind: 4194304,
+      name: "CloneOptions",
+      url: "modules/_tomato_js_api.html#cloneoptions",
+      classes: "tsd-kind-type-alias tsd-parent-kind-external-module",
+      parent: "@tomato-js/api"
+    },
+    {
+      id: 37,
+      kind: 65536,
+      name: "__type",
+      url: "modules/_tomato_js_api.html#cloneoptions.__type",
+      classes: "tsd-kind-type-literal tsd-parent-kind-type-alias",
+      parent: "@tomato-js/api.CloneOptions"
+    },
+    {
+      id: 38,
+      kind: 32,
+      name: "link",
+      url: "modules/_tomato_js_api.html#cloneoptions.__type.link",
+      classes: "tsd-kind-variable tsd-parent-kind-type-literal",
+      parent: "@tomato-js/api.CloneOptions.__type"
+    },
+    {
+      id: 39,
+      kind: 32,
+      name: "path",
+      url: "modules/_tomato_js_api.html#cloneoptions.__type.path",
+      classes: "tsd-kind-variable tsd-parent-kind-type-literal",
+      parent: "@tomato-js/api.CloneOptions.__type"
+    },
+    {
+      id: 40,
+      kind: 4194304,
+      name: "CloneProjectOptions",
+      url: "modules/_tomato_js_api.html#cloneprojectoptions",
+      classes: "tsd-kind-type-alias tsd-parent-kind-external-module",
+      parent: "@tomato-js/api"
+    },
+    {
+      id: 41,
+      kind: 4194304,
+      name: "CoreInstance",
+      url: "modules/_tomato_js_api.html#coreinstance",
+      classes: "tsd-kind-type-alias tsd-parent-kind-external-module",
+      parent: "@tomato-js/api"
+    },
+    {
+      id: 42,
+      kind: 65536,
+      name: "__type",
+      url: "modules/_tomato_js_api.html#coreinstance.__type-1",
+      classes: "tsd-kind-type-literal tsd-parent-kind-type-alias",
+      parent: "@tomato-js/api.CoreInstance"
+    },
+    {
+      id: 43,
+      kind: 32,
+      name: "Groups",
+      url: "modules/_tomato_js_api.html#coreinstance.__type-1.groups",
+      classes: "tsd-kind-variable tsd-parent-kind-type-literal",
+      parent: "@tomato-js/api.CoreInstance.__type"
+    },
+    {
+      id: 44,
+      kind: 32,
+      name: "GroupProjects",
+      url: "modules/_tomato_js_api.html#coreinstance.__type-1.groupprojects",
+      classes: "tsd-kind-variable tsd-parent-kind-type-literal",
+      parent: "@tomato-js/api.CoreInstance.__type"
+    },
+    {
+      id: 45,
+      kind: 32,
+      name: "Repositories",
+      url: "modules/_tomato_js_api.html#coreinstance.__type-1.repositories",
+      classes: "tsd-kind-variable tsd-parent-kind-type-literal",
+      parent: "@tomato-js/api.CoreInstance.__type"
+    },
+    {
+      id: 46,
+      kind: 32,
+      name: "RepositoryFiles",
+      url: "modules/_tomato_js_api.html#coreinstance.__type-1.repositoryfiles",
+      classes: "tsd-kind-variable tsd-parent-kind-type-literal",
+      parent: "@tomato-js/api.CoreInstance.__type"
+    },
+    {
+      id: 47,
+      kind: 32,
+      name: "Projects",
+      url: "modules/_tomato_js_api.html#coreinstance.__type-1.projects",
+      classes: "tsd-kind-variable tsd-parent-kind-type-literal",
+      parent: "@tomato-js/api.CoreInstance.__type"
+    },
+    {
+      id: 48,
       kind: 128,
       name: "Npm",
       url: "classes/_tomato_js_api.npm.html",
@@ -81,7 +401,7 @@ typedoc.search.data = {
       parent: "@tomato-js/api"
     },
     {
-      id: 9,
+      id: 49,
       kind: 1024,
       name: "packageName",
       url: "classes/_tomato_js_api.npm.html#packagename",
@@ -89,7 +409,7 @@ typedoc.search.data = {
       parent: "@tomato-js/api.Npm"
     },
     {
-      id: 10,
+      id: 50,
       kind: 1024,
       name: "pages",
       url: "classes/_tomato_js_api.npm.html#pages",
@@ -97,7 +417,7 @@ typedoc.search.data = {
       parent: "@tomato-js/api.Npm"
     },
     {
-      id: 11,
+      id: 51,
       kind: 512,
       name: "constructor",
       url: "classes/_tomato_js_api.npm.html#constructor",
@@ -105,7 +425,7 @@ typedoc.search.data = {
       parent: "@tomato-js/api.Npm"
     },
     {
-      id: 12,
+      id: 52,
       kind: 2048,
       name: "_sortInfos",
       url: "classes/_tomato_js_api.npm.html#_sortinfos",
@@ -113,7 +433,7 @@ typedoc.search.data = {
       parent: "@tomato-js/api.Npm"
     },
     {
-      id: 13,
+      id: 53,
       kind: 2048,
       name: "getNpmDependents",
       url: "classes/_tomato_js_api.npm.html#getnpmdependents",
@@ -121,7 +441,7 @@ typedoc.search.data = {
       parent: "@tomato-js/api.Npm"
     },
     {
-      id: 14,
+      id: 54,
       kind: 2048,
       name: "getNpmRegistryInfo",
       url: "classes/_tomato_js_api.npm.html#getnpmregistryinfo",
@@ -129,7 +449,7 @@ typedoc.search.data = {
       parent: "@tomato-js/api.Npm"
     },
     {
-      id: 15,
+      id: 55,
       kind: 2048,
       name: "getNpmLatestVersion",
       url: "classes/_tomato_js_api.npm.html#getnpmlatestversion",
@@ -137,7 +457,7 @@ typedoc.search.data = {
       parent: "@tomato-js/api.Npm"
     },
     {
-      id: 16,
+      id: 56,
       kind: 2048,
       name: "getDependentsInfo",
       url: "classes/_tomato_js_api.npm.html#getdependentsinfo",
@@ -145,7 +465,7 @@ typedoc.search.data = {
       parent: "@tomato-js/api.Npm"
     },
     {
-      id: 17,
+      id: 57,
       kind: 2048,
       name: "getSortedDependentsByStar",
       url: "classes/_tomato_js_api.npm.html#getsorteddependentsbystar",
@@ -153,7 +473,7 @@ typedoc.search.data = {
       parent: "@tomato-js/api.Npm"
     },
     {
-      id: 18,
+      id: 58,
       kind: 4194304,
       name: "NpmOptions",
       url: "modules/_tomato_js_api.html#npmoptions",
@@ -161,32 +481,32 @@ typedoc.search.data = {
       parent: "@tomato-js/api"
     },
     {
-      id: 19,
+      id: 59,
       kind: 65536,
       name: "__type",
-      url: "modules/_tomato_js_api.html#npmoptions.__type-1",
+      url: "modules/_tomato_js_api.html#npmoptions.__type-4",
       classes: "tsd-kind-type-literal tsd-parent-kind-type-alias",
       parent: "@tomato-js/api.NpmOptions"
     },
     {
-      id: 20,
+      id: 60,
       kind: 32,
       name: "name",
-      url: "modules/_tomato_js_api.html#npmoptions.__type-1.name",
+      url: "modules/_tomato_js_api.html#npmoptions.__type-4.name",
       classes: "tsd-kind-variable tsd-parent-kind-type-literal",
       parent: "@tomato-js/api.NpmOptions.__type"
     },
     {
-      id: 21,
+      id: 61,
       kind: 32,
       name: "pages",
-      url: "modules/_tomato_js_api.html#npmoptions.__type-1.pages",
+      url: "modules/_tomato_js_api.html#npmoptions.__type-4.pages",
       classes: "tsd-kind-variable tsd-parent-kind-type-literal",
       parent: "@tomato-js/api.NpmOptions.__type"
     },
-    { id: 22, kind: 1, name: "@tomato-js/array", url: "modules/_tomato_js_array.html", classes: "tsd-kind-external-module" },
+    { id: 62, kind: 1, name: "@tomato-js/array", url: "modules/_tomato_js_array.html", classes: "tsd-kind-external-module" },
     {
-      id: 23,
+      id: 63,
       kind: 64,
       name: "allEqual",
       url: "modules/_tomato_js_array.html#allequal",
@@ -194,7 +514,7 @@ typedoc.search.data = {
       parent: "@tomato-js/array"
     },
     {
-      id: 24,
+      id: 64,
       kind: 64,
       name: "countOccurrences",
       url: "modules/_tomato_js_array.html#countoccurrences",
@@ -202,7 +522,7 @@ typedoc.search.data = {
       parent: "@tomato-js/array"
     },
     {
-      id: 25,
+      id: 65,
       kind: 64,
       name: "deepFlatten",
       url: "modules/_tomato_js_array.html#deepflatten",
@@ -210,7 +530,7 @@ typedoc.search.data = {
       parent: "@tomato-js/array"
     },
     {
-      id: 26,
+      id: 66,
       kind: 64,
       name: "filterNonUnique",
       url: "modules/_tomato_js_array.html#filternonunique",
@@ -218,7 +538,7 @@ typedoc.search.data = {
       parent: "@tomato-js/array"
     },
     {
-      id: 27,
+      id: 67,
       kind: 64,
       name: "find",
       url: "modules/_tomato_js_array.html#find",
@@ -226,7 +546,7 @@ typedoc.search.data = {
       parent: "@tomato-js/array"
     },
     {
-      id: 28,
+      id: 68,
       kind: 64,
       name: "sampleSize",
       url: "modules/_tomato_js_array.html#samplesize",
@@ -234,7 +554,7 @@ typedoc.search.data = {
       parent: "@tomato-js/array"
     },
     {
-      id: 29,
+      id: 69,
       kind: 64,
       name: "sample",
       url: "modules/_tomato_js_array.html#sample",
@@ -242,16 +562,16 @@ typedoc.search.data = {
       parent: "@tomato-js/array"
     },
     {
-      id: 30,
+      id: 70,
       kind: 64,
       name: "union",
       url: "modules/_tomato_js_array.html#union",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: "@tomato-js/array"
     },
-    { id: 31, kind: 1, name: "@tomato-js/async", url: "modules/_tomato_js_async.html", classes: "tsd-kind-external-module" },
+    { id: 71, kind: 1, name: "@tomato-js/async", url: "modules/_tomato_js_async.html", classes: "tsd-kind-external-module" },
     {
-      id: 32,
+      id: 72,
       kind: 64,
       name: "callbackify",
       url: "modules/_tomato_js_async.html#callbackify",
@@ -259,7 +579,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async"
     },
     {
-      id: 33,
+      id: 73,
       kind: 64,
       name: "pIf",
       url: "modules/_tomato_js_async.html#pif",
@@ -267,7 +587,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async"
     },
     {
-      id: 34,
+      id: 74,
       kind: 64,
       name: "pTap",
       url: "modules/_tomato_js_async.html#ptap",
@@ -275,7 +595,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async"
     },
     {
-      id: 35,
+      id: 75,
       kind: 64,
       name: "pLog",
       url: "modules/_tomato_js_async.html#plog",
@@ -283,7 +603,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async"
     },
     {
-      id: 36,
+      id: 76,
       kind: 128,
       name: "PQueue",
       url: "classes/_tomato_js_async.pqueue.html",
@@ -291,7 +611,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async"
     },
     {
-      id: 37,
+      id: 77,
       kind: 1024,
       name: "isPaused",
       url: "classes/_tomato_js_async.pqueue.html#ispaused",
@@ -299,7 +619,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 38,
+      id: 78,
       kind: 1024,
       name: "pendingCount",
       url: "classes/_tomato_js_async.pqueue.html#pendingcount",
@@ -307,7 +627,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 39,
+      id: 79,
       kind: 1024,
       name: "intervalCount",
       url: "classes/_tomato_js_async.pqueue.html#intervalcount",
@@ -315,7 +635,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 40,
+      id: 80,
       kind: 1024,
       name: "queue",
       url: "classes/_tomato_js_async.pqueue.html#queue",
@@ -323,7 +643,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 41,
+      id: 81,
       kind: 1024,
       name: "concurrency",
       url: "classes/_tomato_js_async.pqueue.html#concurrency",
@@ -331,7 +651,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 42,
+      id: 82,
       kind: 1024,
       name: "isIntervalIgnored",
       url: "classes/_tomato_js_async.pqueue.html#isintervalignored",
@@ -339,7 +659,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 43,
+      id: 83,
       kind: 1024,
       name: "intervalCap",
       url: "classes/_tomato_js_async.pqueue.html#intervalcap",
@@ -347,7 +667,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 44,
+      id: 84,
       kind: 1024,
       name: "interval",
       url: "classes/_tomato_js_async.pqueue.html#interval",
@@ -355,7 +675,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 45,
+      id: 85,
       kind: 1024,
       name: "intervalEnd",
       url: "classes/_tomato_js_async.pqueue.html#intervalend",
@@ -363,7 +683,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 46,
+      id: 86,
       kind: 1024,
       name: "intervalId",
       url: "classes/_tomato_js_async.pqueue.html#intervalid",
@@ -371,7 +691,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 47,
+      id: 87,
       kind: 1024,
       name: "timeoutId",
       url: "classes/_tomato_js_async.pqueue.html#timeoutid",
@@ -379,7 +699,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 48,
+      id: 88,
       kind: 512,
       name: "constructor",
       url: "classes/_tomato_js_async.pqueue.html#constructor",
@@ -387,7 +707,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 49,
+      id: 89,
       kind: 262144,
       name: "doesIntervalAllowAnother",
       url: "classes/_tomato_js_async.pqueue.html#doesintervalallowanother",
@@ -395,7 +715,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 50,
+      id: 90,
       kind: 262144,
       name: "doesConcurrentAllowAnother",
       url: "classes/_tomato_js_async.pqueue.html#doesconcurrentallowanother",
@@ -403,7 +723,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 51,
+      id: 91,
       kind: 2048,
       name: "isIntervalPaused",
       url: "classes/_tomato_js_async.pqueue.html#isintervalpaused",
@@ -411,7 +731,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 52,
+      id: 92,
       kind: 2048,
       name: "onResumeInterval",
       url: "classes/_tomato_js_async.pqueue.html#onresumeinterval",
@@ -419,7 +739,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 53,
+      id: 93,
       kind: 2048,
       name: "initializeIntervalIfNeeded",
       url: "classes/_tomato_js_async.pqueue.html#initializeintervalifneeded",
@@ -427,7 +747,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 54,
+      id: 94,
       kind: 2048,
       name: "onInterval",
       url: "classes/_tomato_js_async.pqueue.html#oninterval",
@@ -435,7 +755,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 55,
+      id: 95,
       kind: 2048,
       name: "tryToStartAnother",
       url: "classes/_tomato_js_async.pqueue.html#trytostartanother",
@@ -443,7 +763,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 56,
+      id: 96,
       kind: 2048,
       name: "next",
       url: "classes/_tomato_js_async.pqueue.html#next",
@@ -451,7 +771,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 57,
+      id: 97,
       kind: 2048,
       name: "enqueue",
       url: "classes/_tomato_js_async.pqueue.html#enqueue",
@@ -459,7 +779,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 58,
+      id: 98,
       kind: 2048,
       name: "dequeue",
       url: "classes/_tomato_js_async.pqueue.html#dequeue",
@@ -467,7 +787,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 59,
+      id: 99,
       kind: 2048,
       name: "processQueue",
       url: "classes/_tomato_js_async.pqueue.html#processqueue",
@@ -475,7 +795,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 60,
+      id: 100,
       kind: 2048,
       name: "start",
       url: "classes/_tomato_js_async.pqueue.html#start",
@@ -483,7 +803,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 61,
+      id: 101,
       kind: 2048,
       name: "pause",
       url: "classes/_tomato_js_async.pqueue.html#pause",
@@ -491,7 +811,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 62,
+      id: 102,
       kind: 2048,
       name: "add",
       url: "classes/_tomato_js_async.pqueue.html#add",
@@ -499,7 +819,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 63,
+      id: 103,
       kind: 2048,
       name: "addAll",
       url: "classes/_tomato_js_async.pqueue.html#addall",
@@ -507,7 +827,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 64,
+      id: 104,
       kind: 2048,
       name: "onIdle",
       url: "classes/_tomato_js_async.pqueue.html#onidle",
@@ -515,7 +835,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 65,
+      id: 105,
       kind: 2048,
       name: "clear",
       url: "classes/_tomato_js_async.pqueue.html#clear",
@@ -523,7 +843,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 66,
+      id: 106,
       kind: 2048,
       name: "size",
       url: "classes/_tomato_js_async.pqueue.html#size",
@@ -531,7 +851,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 67,
+      id: 107,
       kind: 262144,
       name: "pending",
       url: "classes/_tomato_js_async.pqueue.html#pending",
@@ -539,7 +859,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 68,
+      id: 108,
       kind: 2048,
       name: "on",
       url: "classes/_tomato_js_async.pqueue.html#on",
@@ -547,7 +867,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 69,
+      id: 109,
       kind: 2048,
       name: "once",
       url: "classes/_tomato_js_async.pqueue.html#once",
@@ -555,23 +875,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 70,
-      kind: 2048,
-      name: "addEventListener",
-      url: "classes/_tomato_js_async.pqueue.html#addeventlistener",
-      classes: "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
-      parent: "@tomato-js/async.PQueue"
-    },
-    {
-      id: 71,
-      kind: 2048,
-      name: "removeListener",
-      url: "classes/_tomato_js_async.pqueue.html#removelistener",
-      classes: "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
-      parent: "@tomato-js/async.PQueue"
-    },
-    {
-      id: 72,
+      id: 110,
       kind: 2048,
       name: "emit",
       url: "classes/_tomato_js_async.pqueue.html#emit",
@@ -579,7 +883,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 73,
+      id: 111,
       kind: 2048,
       name: "listeners",
       url: "classes/_tomato_js_async.pqueue.html#listeners",
@@ -587,7 +891,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 74,
+      id: 112,
       kind: 2048,
       name: "clearAll",
       url: "classes/_tomato_js_async.pqueue.html#clearall",
@@ -595,7 +899,7 @@ typedoc.search.data = {
       parent: "@tomato-js/async.PQueue"
     },
     {
-      id: 75,
+      id: 113,
       kind: 64,
       name: "promisify",
       url: "modules/_tomato_js_async.html#promisify",
@@ -603,16 +907,16 @@ typedoc.search.data = {
       parent: "@tomato-js/async"
     },
     {
-      id: 76,
+      id: 114,
       kind: 64,
       name: "sleep",
       url: "modules/_tomato_js_async.html#sleep",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: "@tomato-js/async"
     },
-    { id: 77, kind: 1, name: "@tomato-js/cookie", url: "modules/_tomato_js_cookie.html", classes: "tsd-kind-external-module" },
+    { id: 115, kind: 1, name: "@tomato-js/cookie", url: "modules/_tomato_js_cookie.html", classes: "tsd-kind-external-module" },
     {
-      id: 78,
+      id: 116,
       kind: 64,
       name: "get",
       url: "modules/_tomato_js_cookie.html#get",
@@ -620,7 +924,7 @@ typedoc.search.data = {
       parent: "@tomato-js/cookie"
     },
     {
-      id: 79,
+      id: 117,
       kind: 64,
       name: "has",
       url: "modules/_tomato_js_cookie.html#has",
@@ -628,7 +932,7 @@ typedoc.search.data = {
       parent: "@tomato-js/cookie"
     },
     {
-      id: 80,
+      id: 118,
       kind: 64,
       name: "remove",
       url: "modules/_tomato_js_cookie.html#remove",
@@ -636,16 +940,16 @@ typedoc.search.data = {
       parent: "@tomato-js/cookie"
     },
     {
-      id: 81,
+      id: 119,
       kind: 64,
       name: "set",
       url: "modules/_tomato_js_cookie.html#set",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: "@tomato-js/cookie"
     },
-    { id: 82, kind: 1, name: "@tomato-js/element", url: "modules/_tomato_js_element.html", classes: "tsd-kind-external-module" },
+    { id: 120, kind: 1, name: "@tomato-js/element", url: "modules/_tomato_js_element.html", classes: "tsd-kind-external-module" },
     {
-      id: 83,
+      id: 121,
       kind: 64,
       name: "get",
       url: "modules/_tomato_js_element.html#get",
@@ -653,7 +957,7 @@ typedoc.search.data = {
       parent: "@tomato-js/element"
     },
     {
-      id: 84,
+      id: 122,
       kind: 64,
       name: "append",
       url: "modules/_tomato_js_element.html#append",
@@ -661,7 +965,7 @@ typedoc.search.data = {
       parent: "@tomato-js/element"
     },
     {
-      id: 85,
+      id: 123,
       kind: 64,
       name: "prepend",
       url: "modules/_tomato_js_element.html#prepend",
@@ -669,7 +973,7 @@ typedoc.search.data = {
       parent: "@tomato-js/element"
     },
     {
-      id: 86,
+      id: 124,
       kind: 64,
       name: "insertBefore",
       url: "modules/_tomato_js_element.html#insertbefore",
@@ -677,7 +981,7 @@ typedoc.search.data = {
       parent: "@tomato-js/element"
     },
     {
-      id: 87,
+      id: 125,
       kind: 64,
       name: "insertAfter",
       url: "modules/_tomato_js_element.html#insertafter",
@@ -685,7 +989,7 @@ typedoc.search.data = {
       parent: "@tomato-js/element"
     },
     {
-      id: 88,
+      id: 126,
       kind: 64,
       name: "create",
       url: "modules/_tomato_js_element.html#create",
@@ -693,7 +997,7 @@ typedoc.search.data = {
       parent: "@tomato-js/element"
     },
     {
-      id: 89,
+      id: 127,
       kind: 64,
       name: "addStyle",
       url: "modules/_tomato_js_element.html#addstyle",
@@ -701,7 +1005,7 @@ typedoc.search.data = {
       parent: "@tomato-js/element"
     },
     {
-      id: 90,
+      id: 128,
       kind: 64,
       name: "bottomVisible",
       url: "modules/_tomato_js_element.html#bottomvisible",
@@ -709,16 +1013,16 @@ typedoc.search.data = {
       parent: "@tomato-js/element"
     },
     {
-      id: 91,
+      id: 129,
       kind: 64,
       name: "scrollToTop",
       url: "modules/_tomato_js_element.html#scrolltotop",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: "@tomato-js/element"
     },
-    { id: 92, kind: 1, name: "@tomato-js/env", url: "modules/_tomato_js_env.html", classes: "tsd-kind-external-module" },
+    { id: 130, kind: 1, name: "@tomato-js/env", url: "modules/_tomato_js_env.html", classes: "tsd-kind-external-module" },
     {
-      id: 93,
+      id: 131,
       kind: 64,
       name: "isBrowser",
       url: "modules/_tomato_js_env.html#isbrowser",
@@ -726,7 +1030,7 @@ typedoc.search.data = {
       parent: "@tomato-js/env"
     },
     {
-      id: 94,
+      id: 132,
       kind: 64,
       name: "isNode",
       url: "modules/_tomato_js_env.html#isnode",
@@ -734,7 +1038,7 @@ typedoc.search.data = {
       parent: "@tomato-js/env"
     },
     {
-      id: 95,
+      id: 133,
       kind: 64,
       name: "isExist",
       url: "modules/_tomato_js_env.html#isexist",
@@ -742,16 +1046,16 @@ typedoc.search.data = {
       parent: "@tomato-js/env"
     },
     {
-      id: 96,
+      id: 134,
       kind: 64,
       name: "isURLSearchParamsExist",
       url: "modules/_tomato_js_env.html#isurlsearchparamsexist",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: "@tomato-js/env"
     },
-    { id: 97, kind: 1, name: "@tomato-js/events", url: "modules/_tomato_js_events.html", classes: "tsd-kind-external-module" },
+    { id: 135, kind: 1, name: "@tomato-js/events", url: "modules/_tomato_js_events.html", classes: "tsd-kind-external-module" },
     {
-      id: 98,
+      id: 136,
       kind: 128,
       name: "Events",
       url: "classes/_tomato_js_events.events.html",
@@ -759,7 +1063,7 @@ typedoc.search.data = {
       parent: "@tomato-js/events"
     },
     {
-      id: 99,
+      id: 137,
       kind: 1024,
       name: "events",
       url: "classes/_tomato_js_events.events.html#events",
@@ -767,7 +1071,7 @@ typedoc.search.data = {
       parent: "@tomato-js/events.Events"
     },
     {
-      id: 100,
+      id: 138,
       kind: 1024,
       name: "eventsCount",
       url: "classes/_tomato_js_events.events.html#eventscount",
@@ -775,7 +1079,7 @@ typedoc.search.data = {
       parent: "@tomato-js/events.Events"
     },
     {
-      id: 101,
+      id: 139,
       kind: 512,
       name: "constructor",
       url: "classes/_tomato_js_events.events.html#constructor",
@@ -783,7 +1087,7 @@ typedoc.search.data = {
       parent: "@tomato-js/events.Events"
     },
     {
-      id: 102,
+      id: 140,
       kind: 2048,
       name: "on",
       url: "classes/_tomato_js_events.events.html#on",
@@ -791,7 +1095,7 @@ typedoc.search.data = {
       parent: "@tomato-js/events.Events"
     },
     {
-      id: 103,
+      id: 141,
       kind: 2048,
       name: "once",
       url: "classes/_tomato_js_events.events.html#once",
@@ -799,7 +1103,7 @@ typedoc.search.data = {
       parent: "@tomato-js/events.Events"
     },
     {
-      id: 104,
+      id: 142,
       kind: 2048,
       name: "addEventListener",
       url: "classes/_tomato_js_events.events.html#addeventlistener",
@@ -807,7 +1111,7 @@ typedoc.search.data = {
       parent: "@tomato-js/events.Events"
     },
     {
-      id: 105,
+      id: 143,
       kind: 2048,
       name: "removeListener",
       url: "classes/_tomato_js_events.events.html#removelistener",
@@ -815,7 +1119,7 @@ typedoc.search.data = {
       parent: "@tomato-js/events.Events"
     },
     {
-      id: 106,
+      id: 144,
       kind: 2048,
       name: "emit",
       url: "classes/_tomato_js_events.events.html#emit",
@@ -823,7 +1127,7 @@ typedoc.search.data = {
       parent: "@tomato-js/events.Events"
     },
     {
-      id: 107,
+      id: 145,
       kind: 2048,
       name: "listeners",
       url: "classes/_tomato_js_events.events.html#listeners",
@@ -831,7 +1135,7 @@ typedoc.search.data = {
       parent: "@tomato-js/events.Events"
     },
     {
-      id: 108,
+      id: 146,
       kind: 2048,
       name: "clear",
       url: "classes/_tomato_js_events.events.html#clear",
@@ -839,7 +1143,7 @@ typedoc.search.data = {
       parent: "@tomato-js/events.Events"
     },
     {
-      id: 109,
+      id: 147,
       kind: 2048,
       name: "clearAll",
       url: "classes/_tomato_js_events.events.html#clearall",
@@ -847,16 +1151,16 @@ typedoc.search.data = {
       parent: "@tomato-js/events.Events"
     },
     {
-      id: 110,
+      id: 148,
       kind: 2048,
       name: "size",
       url: "classes/_tomato_js_events.events.html#size",
       classes: "tsd-kind-method tsd-parent-kind-class",
       parent: "@tomato-js/events.Events"
     },
-    { id: 111, kind: 1, name: "@tomato-js/function", url: "modules/_tomato_js_function.html", classes: "tsd-kind-external-module" },
+    { id: 149, kind: 1, name: "@tomato-js/function", url: "modules/_tomato_js_function.html", classes: "tsd-kind-external-module" },
     {
-      id: 112,
+      id: 150,
       kind: 64,
       name: "aop",
       url: "modules/_tomato_js_function.html#aop",
@@ -864,7 +1168,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 113,
+      id: 151,
       kind: 64,
       name: "afterReturn",
       url: "modules/_tomato_js_function.html#afterreturn",
@@ -872,7 +1176,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 114,
+      id: 152,
       kind: 64,
       name: "after",
       url: "modules/_tomato_js_function.html#after",
@@ -880,7 +1184,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 115,
+      id: 153,
       kind: 64,
       name: "around",
       url: "modules/_tomato_js_function.html#around",
@@ -888,7 +1192,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 116,
+      id: 154,
       kind: 64,
       name: "before",
       url: "modules/_tomato_js_function.html#before",
@@ -896,7 +1200,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 117,
+      id: 155,
       kind: 64,
       name: "both",
       url: "modules/_tomato_js_function.html#both",
@@ -904,7 +1208,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 118,
+      id: 156,
       kind: 64,
       name: "compose",
       url: "modules/_tomato_js_function.html#compose",
@@ -912,7 +1216,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 119,
+      id: 157,
       kind: 64,
       name: "curry",
       url: "modules/_tomato_js_function.html#curry",
@@ -920,7 +1224,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 120,
+      id: 158,
       kind: 64,
       name: "debounce",
       url: "modules/_tomato_js_function.html#debounce",
@@ -928,7 +1232,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 121,
+      id: 159,
       kind: 64,
       name: "either",
       url: "modules/_tomato_js_function.html#either",
@@ -936,7 +1240,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 122,
+      id: 160,
       kind: 64,
       name: "flip",
       url: "modules/_tomato_js_function.html#flip",
@@ -944,7 +1248,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 123,
+      id: 161,
       kind: 64,
       name: "inverse",
       url: "modules/_tomato_js_function.html#inverse",
@@ -952,7 +1256,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 124,
+      id: 162,
       kind: 64,
       name: "once",
       url: "modules/_tomato_js_function.html#once",
@@ -960,7 +1264,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 125,
+      id: 163,
       kind: 64,
       name: "partialRight",
       url: "modules/_tomato_js_function.html#partialright",
@@ -968,7 +1272,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 126,
+      id: 164,
       kind: 64,
       name: "partial",
       url: "modules/_tomato_js_function.html#partial",
@@ -976,7 +1280,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 127,
+      id: 165,
       kind: 64,
       name: "pipe",
       url: "modules/_tomato_js_function.html#pipe",
@@ -984,7 +1288,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 128,
+      id: 166,
       kind: 64,
       name: "poll",
       url: "modules/_tomato_js_function.html#poll",
@@ -992,7 +1296,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 129,
+      id: 167,
       kind: 64,
       name: "takeTime",
       url: "modules/_tomato_js_function.html#taketime",
@@ -1000,7 +1304,7 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 130,
+      id: 168,
       kind: 64,
       name: "throttle",
       url: "modules/_tomato_js_function.html#throttle",
@@ -1008,16 +1312,16 @@ typedoc.search.data = {
       parent: "@tomato-js/function"
     },
     {
-      id: 131,
+      id: 169,
       kind: 64,
       name: "times",
       url: "modules/_tomato_js_function.html#times",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: "@tomato-js/function"
     },
-    { id: 132, kind: 1, name: "@tomato-js/math", url: "modules/_tomato_js_math.html", classes: "tsd-kind-external-module" },
+    { id: 170, kind: 1, name: "@tomato-js/math", url: "modules/_tomato_js_math.html", classes: "tsd-kind-external-module" },
     {
-      id: 133,
+      id: 171,
       kind: 32,
       name: "add",
       url: "modules/_tomato_js_math.html#add",
@@ -1025,7 +1329,7 @@ typedoc.search.data = {
       parent: "@tomato-js/math"
     },
     {
-      id: 134,
+      id: 172,
       kind: 64,
       name: "averageBy",
       url: "modules/_tomato_js_math.html#averageby",
@@ -1033,7 +1337,7 @@ typedoc.search.data = {
       parent: "@tomato-js/math"
     },
     {
-      id: 135,
+      id: 173,
       kind: 64,
       name: "average",
       url: "modules/_tomato_js_math.html#average",
@@ -1041,7 +1345,7 @@ typedoc.search.data = {
       parent: "@tomato-js/math"
     },
     {
-      id: 136,
+      id: 174,
       kind: 32,
       name: "divide",
       url: "modules/_tomato_js_math.html#divide",
@@ -1049,7 +1353,7 @@ typedoc.search.data = {
       parent: "@tomato-js/math"
     },
     {
-      id: 137,
+      id: 175,
       kind: 32,
       name: "multiply",
       url: "modules/_tomato_js_math.html#multiply",
@@ -1057,7 +1361,7 @@ typedoc.search.data = {
       parent: "@tomato-js/math"
     },
     {
-      id: 138,
+      id: 176,
       kind: 32,
       name: "subtract",
       url: "modules/_tomato_js_math.html#subtract",
@@ -1065,7 +1369,7 @@ typedoc.search.data = {
       parent: "@tomato-js/math"
     },
     {
-      id: 139,
+      id: 177,
       kind: 64,
       name: "sumBy",
       url: "modules/_tomato_js_math.html#sumby",
@@ -1073,16 +1377,16 @@ typedoc.search.data = {
       parent: "@tomato-js/math"
     },
     {
-      id: 140,
+      id: 178,
       kind: 64,
       name: "sum",
       url: "modules/_tomato_js_math.html#sum",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: "@tomato-js/math"
     },
-    { id: 141, kind: 1, name: "@tomato-js/object", url: "modules/_tomato_js_object.html", classes: "tsd-kind-external-module" },
+    { id: 179, kind: 1, name: "@tomato-js/object", url: "modules/_tomato_js_object.html", classes: "tsd-kind-external-module" },
     {
-      id: 142,
+      id: 180,
       kind: 64,
       name: "deepClone",
       url: "modules/_tomato_js_object.html#deepclone",
@@ -1090,7 +1394,7 @@ typedoc.search.data = {
       parent: "@tomato-js/object"
     },
     {
-      id: 143,
+      id: 181,
       kind: 64,
       name: "deepFreeze",
       url: "modules/_tomato_js_object.html#deepfreeze",
@@ -1098,7 +1402,7 @@ typedoc.search.data = {
       parent: "@tomato-js/object"
     },
     {
-      id: 144,
+      id: 182,
       kind: 64,
       name: "deepGet",
       url: "modules/_tomato_js_object.html#deepget",
@@ -1106,7 +1410,7 @@ typedoc.search.data = {
       parent: "@tomato-js/object"
     },
     {
-      id: 145,
+      id: 183,
       kind: 64,
       name: "lazy",
       url: "modules/_tomato_js_object.html#lazy",
@@ -1114,7 +1418,7 @@ typedoc.search.data = {
       parent: "@tomato-js/object"
     },
     {
-      id: 146,
+      id: 184,
       kind: 64,
       name: "omit",
       url: "modules/_tomato_js_object.html#omit",
@@ -1122,7 +1426,7 @@ typedoc.search.data = {
       parent: "@tomato-js/object"
     },
     {
-      id: 147,
+      id: 185,
       kind: 64,
       name: "pickX",
       url: "modules/_tomato_js_object.html#pickx",
@@ -1130,16 +1434,16 @@ typedoc.search.data = {
       parent: "@tomato-js/object"
     },
     {
-      id: 148,
+      id: 186,
       kind: 64,
       name: "pick",
       url: "modules/_tomato_js_object.html#pick",
       classes: "tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter",
       parent: "@tomato-js/object"
     },
-    { id: 149, kind: 1, name: "@tomato-js/path", url: "modules/_tomato_js_path.html", classes: "tsd-kind-external-module" },
+    { id: 187, kind: 1, name: "@tomato-js/path", url: "modules/_tomato_js_path.html", classes: "tsd-kind-external-module" },
     {
-      id: 150,
+      id: 188,
       kind: 64,
       name: "getSearch",
       url: "modules/_tomato_js_path.html#getsearch",
@@ -1147,7 +1451,7 @@ typedoc.search.data = {
       parent: "@tomato-js/path"
     },
     {
-      id: 151,
+      id: 189,
       kind: 64,
       name: "parse",
       url: "modules/_tomato_js_path.html#parse",
@@ -1155,7 +1459,7 @@ typedoc.search.data = {
       parent: "@tomato-js/path"
     },
     {
-      id: 152,
+      id: 190,
       kind: 64,
       name: "stringify",
       url: "modules/_tomato_js_path.html#stringify",
@@ -1163,25 +1467,25 @@ typedoc.search.data = {
       parent: "@tomato-js/path"
     },
     {
-      id: 153,
+      id: 191,
       kind: 64,
       name: "merge",
       url: "modules/_tomato_js_path.html#merge",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: "@tomato-js/path"
     },
-    { id: 154, kind: 1, name: "@tomato-js/queue", url: "modules/_tomato_js_queue.html", classes: "tsd-kind-external-module" },
+    { id: 192, kind: 1, name: "@tomato-js/queue", url: "modules/_tomato_js_queue.html", classes: "tsd-kind-external-module" },
     {
-      id: 155,
+      id: 193,
       kind: 64,
       name: "chainer",
       url: "modules/_tomato_js_queue.html#chainer",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: "@tomato-js/queue"
     },
-    { id: 156, kind: 1, name: "@tomato-js/request", url: "modules/_tomato_js_request.html", classes: "tsd-kind-external-module" },
+    { id: 194, kind: 1, name: "@tomato-js/request", url: "modules/_tomato_js_request.html", classes: "tsd-kind-external-module" },
     {
-      id: 157,
+      id: 195,
       kind: 4194304,
       name: "RequestInstance",
       url: "modules/_tomato_js_request.html#requestinstance",
@@ -1189,7 +1493,7 @@ typedoc.search.data = {
       parent: "@tomato-js/request"
     },
     {
-      id: 158,
+      id: 196,
       kind: 64,
       name: "getIns",
       url: "modules/_tomato_js_request.html#getins",
@@ -1197,7 +1501,7 @@ typedoc.search.data = {
       parent: "@tomato-js/request"
     },
     {
-      id: 159,
+      id: 197,
       kind: 64,
       name: "request",
       url: "modules/_tomato_js_request.html#request",
@@ -1205,7 +1509,7 @@ typedoc.search.data = {
       parent: "@tomato-js/request"
     },
     {
-      id: 160,
+      id: 198,
       kind: 64,
       name: "get",
       url: "modules/_tomato_js_request.html#get",
@@ -1213,16 +1517,16 @@ typedoc.search.data = {
       parent: "@tomato-js/request"
     },
     {
-      id: 161,
+      id: 199,
       kind: 64,
       name: "post",
       url: "modules/_tomato_js_request.html#post",
       classes: "tsd-kind-function tsd-parent-kind-external-module",
       parent: "@tomato-js/request"
     },
-    { id: 162, kind: 1, name: "@tomato-js/shared", url: "modules/_tomato_js_shared.html", classes: "tsd-kind-external-module" },
+    { id: 200, kind: 1, name: "@tomato-js/shared", url: "modules/_tomato_js_shared.html", classes: "tsd-kind-external-module" },
     {
-      id: 163,
+      id: 201,
       kind: 256,
       name: "ObjectType",
       url: "interfaces/_tomato_js_shared.objecttype.html",
@@ -1230,7 +1534,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 164,
+      id: 202,
       kind: 4194304,
       name: "HTMLSelector",
       url: "modules/_tomato_js_shared.html#htmlselector",
@@ -1238,7 +1542,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 165,
+      id: 203,
       kind: 4194304,
       name: "HTMLElementKey",
       url: "modules/_tomato_js_shared.html#htmlelementkey",
@@ -1246,7 +1550,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 166,
+      id: 204,
       kind: 4194304,
       name: "Eachable",
       url: "modules/_tomato_js_shared.html#eachable",
@@ -1254,7 +1558,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 167,
+      id: 205,
       kind: 4194304,
       name: "FunctionType",
       url: "modules/_tomato_js_shared.html#functiontype",
@@ -1262,7 +1566,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 168,
+      id: 206,
       kind: 65536,
       name: "__type",
       url: "modules/_tomato_js_shared.html#functiontype.__type",
@@ -1270,7 +1574,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared.FunctionType"
     },
     {
-      id: 169,
+      id: 207,
       kind: 4194304,
       name: "Falsy",
       url: "modules/_tomato_js_shared.html#falsy",
@@ -1278,7 +1582,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 170,
+      id: 208,
       kind: 4194304,
       name: "NonUndefined",
       url: "modules/_tomato_js_shared.html#nonundefined",
@@ -1286,7 +1590,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 171,
+      id: 209,
       kind: 4194304,
       name: "Methods",
       url: "modules/_tomato_js_shared.html#methods",
@@ -1294,7 +1598,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 172,
+      id: 210,
       kind: 4194304,
       name: "FunctionKeys",
       url: "modules/_tomato_js_shared.html#functionkeys",
@@ -1302,7 +1606,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 173,
+      id: 211,
       kind: 4194304,
       name: "NonFunctionKeys",
       url: "modules/_tomato_js_shared.html#nonfunctionkeys",
@@ -1310,7 +1614,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 174,
+      id: 212,
       kind: 4194304,
       name: "RequiredKeys",
       url: "modules/_tomato_js_shared.html#requiredkeys",
@@ -1318,7 +1622,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 175,
+      id: 213,
       kind: 4194304,
       name: "OptionalKeys",
       url: "modules/_tomato_js_shared.html#optionalkeys",
@@ -1326,7 +1630,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 176,
+      id: 214,
       kind: 4194304,
       name: "Optional",
       url: "modules/_tomato_js_shared.html#optional",
@@ -1334,7 +1638,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 177,
+      id: 215,
       kind: 4194304,
       name: "Intersection",
       url: "modules/_tomato_js_shared.html#intersection",
@@ -1342,7 +1646,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 178,
+      id: 216,
       kind: 4194304,
       name: "Diff",
       url: "modules/_tomato_js_shared.html#diff",
@@ -1350,7 +1654,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 179,
+      id: 217,
       kind: 4194304,
       name: "$Keys",
       url: "modules/_tomato_js_shared.html#_keys",
@@ -1358,7 +1662,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 180,
+      id: 218,
       kind: 4194304,
       name: "$Values",
       url: "modules/_tomato_js_shared.html#_values",
@@ -1366,7 +1670,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 181,
+      id: 219,
       kind: 64,
       name: "isType",
       url: "modules/_tomato_js_shared.html#istype",
@@ -1374,7 +1678,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 182,
+      id: 220,
       kind: 64,
       name: "isString",
       url: "modules/_tomato_js_shared.html#isstring",
@@ -1382,7 +1686,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 183,
+      id: 221,
       kind: 64,
       name: "isNumber",
       url: "modules/_tomato_js_shared.html#isnumber",
@@ -1390,7 +1694,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 184,
+      id: 222,
       kind: 64,
       name: "isArray",
       url: "modules/_tomato_js_shared.html#isarray",
@@ -1398,7 +1702,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 185,
+      id: 223,
       kind: 64,
       name: "isObject",
       url: "modules/_tomato_js_shared.html#isobject",
@@ -1406,7 +1710,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 186,
+      id: 224,
       kind: 64,
       name: "isFunction",
       url: "modules/_tomato_js_shared.html#isfunction",
@@ -1414,7 +1718,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 187,
+      id: 225,
       kind: 64,
       name: "isNull",
       url: "modules/_tomato_js_shared.html#isnull",
@@ -1422,7 +1726,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 188,
+      id: 226,
       kind: 64,
       name: "isUndefined",
       url: "modules/_tomato_js_shared.html#isundefined",
@@ -1430,7 +1734,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 189,
+      id: 227,
       kind: 64,
       name: "isNil",
       url: "modules/_tomato_js_shared.html#isnil",
@@ -1438,7 +1742,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 190,
+      id: 228,
       kind: 64,
       name: "isDef",
       url: "modules/_tomato_js_shared.html#isdef",
@@ -1446,7 +1750,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 191,
+      id: 229,
       kind: 64,
       name: "isNumberLike",
       url: "modules/_tomato_js_shared.html#isnumberlike",
@@ -1454,7 +1758,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 192,
+      id: 230,
       kind: 64,
       name: "isFalsy",
       url: "modules/_tomato_js_shared.html#isfalsy",
@@ -1462,7 +1766,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 193,
+      id: 231,
       kind: 64,
       name: "forEach",
       url: "modules/_tomato_js_shared.html#foreach",
@@ -1470,7 +1774,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 194,
+      id: 232,
       kind: 64,
       name: "isEmptyObject",
       url: "modules/_tomato_js_shared.html#isemptyobject",
@@ -1478,7 +1782,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 195,
+      id: 233,
       kind: 64,
       name: "isEmptyArray",
       url: "modules/_tomato_js_shared.html#isemptyarray",
@@ -1486,7 +1790,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 196,
+      id: 234,
       kind: 64,
       name: "isEmpty",
       url: "modules/_tomato_js_shared.html#isempty",
@@ -1494,7 +1798,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 197,
+      id: 235,
       kind: 64,
       name: "map",
       url: "modules/_tomato_js_shared.html#map",
@@ -1502,7 +1806,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 198,
+      id: 236,
       kind: 64,
       name: "noop",
       url: "modules/_tomato_js_shared.html#noop",
@@ -1510,7 +1814,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 199,
+      id: 237,
       kind: 64,
       name: "not",
       url: "modules/_tomato_js_shared.html#not",
@@ -1518,7 +1822,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 200,
+      id: 238,
       kind: 32,
       name: "blankReg",
       url: "modules/_tomato_js_shared.html#blankreg",
@@ -1526,7 +1830,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 201,
+      id: 239,
       kind: 32,
       name: "asReg",
       url: "modules/_tomato_js_shared.html#asreg",
@@ -1534,7 +1838,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 202,
+      id: 240,
       kind: 32,
       name: "integerReg",
       url: "modules/_tomato_js_shared.html#integerreg",
@@ -1542,7 +1846,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 203,
+      id: 241,
       kind: 32,
       name: "positiveNumReg",
       url: "modules/_tomato_js_shared.html#positivenumreg",
@@ -1550,7 +1854,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 204,
+      id: 242,
       kind: 32,
       name: "negativeNumReg",
       url: "modules/_tomato_js_shared.html#negativenumreg",
@@ -1558,7 +1862,7 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 205,
+      id: 243,
       kind: 32,
       name: "chineseReg",
       url: "modules/_tomato_js_shared.html#chinesereg",
@@ -1566,16 +1870,16 @@ typedoc.search.data = {
       parent: "@tomato-js/shared"
     },
     {
-      id: 206,
+      id: 244,
       kind: 32,
       name: "englishReg",
       url: "modules/_tomato_js_shared.html#englishreg",
       classes: "tsd-kind-variable tsd-parent-kind-external-module",
       parent: "@tomato-js/shared"
     },
-    { id: 207, kind: 1, name: "@tomato-js/string", url: "modules/_tomato_js_string.html", classes: "tsd-kind-external-module" },
+    { id: 245, kind: 1, name: "@tomato-js/string", url: "modules/_tomato_js_string.html", classes: "tsd-kind-external-module" },
     {
-      id: 208,
+      id: 246,
       kind: 64,
       name: "camelCase",
       url: "modules/_tomato_js_string.html#camelcase",
@@ -1583,7 +1887,7 @@ typedoc.search.data = {
       parent: "@tomato-js/string"
     },
     {
-      id: 209,
+      id: 247,
       kind: 64,
       name: "number2Chinese",
       url: "modules/_tomato_js_string.html#number2chinese",
@@ -1591,7 +1895,7 @@ typedoc.search.data = {
       parent: "@tomato-js/string"
     },
     {
-      id: 210,
+      id: 248,
       kind: 64,
       name: "isJson",
       url: "modules/_tomato_js_string.html#isjson",
@@ -1599,7 +1903,7 @@ typedoc.search.data = {
       parent: "@tomato-js/string"
     },
     {
-      id: 211,
+      id: 249,
       kind: 64,
       name: "kebabCase",
       url: "modules/_tomato_js_string.html#kebabcase",
@@ -1607,7 +1911,7 @@ typedoc.search.data = {
       parent: "@tomato-js/string"
     },
     {
-      id: 212,
+      id: 250,
       kind: 64,
       name: "random",
       url: "modules/_tomato_js_string.html#random",
@@ -1615,7 +1919,7 @@ typedoc.search.data = {
       parent: "@tomato-js/string"
     },
     {
-      id: 213,
+      id: 251,
       kind: 64,
       name: "reverse",
       url: "modules/_tomato_js_string.html#reverse",
@@ -1623,7 +1927,7 @@ typedoc.search.data = {
       parent: "@tomato-js/string"
     },
     {
-      id: 214,
+      id: 252,
       kind: 64,
       name: "substringFromChar",
       url: "modules/_tomato_js_string.html#substringfromchar",
@@ -1631,7 +1935,7 @@ typedoc.search.data = {
       parent: "@tomato-js/string"
     },
     {
-      id: 215,
+      id: 253,
       kind: 64,
       name: "substringToChar",
       url: "modules/_tomato_js_string.html#substringtochar",
@@ -1639,7 +1943,7 @@ typedoc.search.data = {
       parent: "@tomato-js/string"
     },
     {
-      id: 216,
+      id: 254,
       kind: 64,
       name: "trimAll",
       url: "modules/_tomato_js_string.html#trimall",
