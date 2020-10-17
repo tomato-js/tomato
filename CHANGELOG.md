@@ -1,3 +1,9 @@
+## [0.0.23](https://github.com/tomato-js/tomato/compare/v0.0.22...v0.0.23) (2020-10-17)
+
+### Features
+
+-   **api:** add gitlab handler ([d140986](https://github.com/tomato-js/tomato/commit/d1409869df76727cc9e281b6304dbe66c58c3c92))
+
 ## [0.0.22](https://github.com/tomato-js/tomato/compare/v0.0.21...v0.0.22) (2020-09-24)
 
 ### Features
