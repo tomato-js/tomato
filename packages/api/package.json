@@ -1,6 +1,6 @@
 {
   "name": "@tomato-js/api",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "simple, modular utils for web applications",
   "author": "brizer <brizer@163.com>",
   "homepage": "https://github.com/tomato-js/tomato/tree/master/packages/api#readme",
@@ -40,10 +40,10 @@
   "dependencies": {
     "@gitbeaker/browser": "^24.0.0",
     "@gitbeaker/node": "^24.0.0",
-    "@tomato-js/async": "^0.0.23",
-    "@tomato-js/env": "^0.0.23",
-    "@tomato-js/request": "^0.0.23",
-    "@tomato-js/shared": "^0.0.23",
+    "@tomato-js/async": "^0.0.24",
+    "@tomato-js/env": "^0.0.24",
+    "@tomato-js/request": "^0.0.24",
+    "@tomato-js/shared": "^0.0.24",
     "@tomato-node/process": "^0.0.7",
     "cheerio": "^1.0.0-rc.3"
   }
