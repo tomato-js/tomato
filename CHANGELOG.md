@@ -1,3 +1,10 @@
+## [0.0.24](https://github.com/tomato-js/tomato/compare/v0.0.23...v0.0.24) (2020-12-02)
+
+### Features
+
+-   **obejct:** deep-merge ([d6b30fb](https://github.com/tomato-js/tomato/commit/d6b30fbab0f289753531ef37302d211c6bfff9bb))
+-   **preload:** add preload image ([ac4b147](https://github.com/tomato-js/tomato/commit/ac4b1476f07cc6144fb432d163836d4b2c106dde))
+
 ## [0.0.23](https://github.com/tomato-js/tomato/compare/v0.0.22...v0.0.23) (2020-10-17)
 
 ### Features
