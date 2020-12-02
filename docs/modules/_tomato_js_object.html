@@ -74,6 +74,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_object.html#deepclone" class="tsd-kind-icon">deep<wbr>Clone</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_tomato_js_object.html#deepfreeze" class="tsd-kind-icon">deep<wbr>Freeze</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_object.html#deepget" class="tsd-kind-icon">deep<wbr>Get</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_object.html#deepmerge" class="tsd-kind-icon">deep<wbr>Merge</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tomato_js_object.html#lazy" class="tsd-kind-icon">lazy</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_tomato_js_object.html#omit" class="tsd-kind-icon">omit</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_tomato_js_object.html#pick" class="tsd-kind-icon">pick</a></li>
@@ -95,7 +96,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/34a950f/packages/object/src/deep-clone.ts#L22">object/src/deep-clone.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/d6b30fb/packages/object/src/deep-clone.ts#L22">object/src/deep-clone.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -132,7 +133,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/34a950f/packages/object/src/deep-freeze.ts#L25">object/src/deep-freeze.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/d6b30fb/packages/object/src/deep-freeze.ts#L25">object/src/deep-freeze.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -179,7 +180,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/34a950f/packages/object/src/deep-get.ts#L23">object/src/deep-get.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/d6b30fb/packages/object/src/deep-get.ts#L23">object/src/deep-get.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -212,6 +213,52 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="deepmerge" class="tsd-anchor"></a>
+					<h3>deep<wbr>Merge</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">deep<wbr>Merge<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>objects<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/d6b30fb/packages/object/src/deep-merge.ts#L32">object/src/deep-merge.ts:32</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>对对象进行深层merge</p>
+								</div>
+								<p>新增于v0.0.24</p>
+								<p>脚本举例</p>
+								<pre><code>  <span class="hljs-keyword">import</span> { deepMerge } from <span class="hljs-string">'@tomato-js/object'</span>
+  deepMerge(
+<span class="hljs-symbol">    a:</span> { <span class="hljs-string">b:</span>{ <span class="hljs-string">c:</span> <span class="hljs-string">'d'</span> } },
+<span class="hljs-symbol">    a:</span> { <span class="hljs-string">b:</span>{ <span class="hljs-string">e:</span> <span class="hljs-string">'f'</span> } },
+<span class="hljs-symbol">    a:</span> { <span class="hljs-string">g:</span> <span class="hljs-string">'h'</span> }
+  );
+<span class="hljs-comment">//{</span>
+<span class="hljs-comment">//  a: {</span>
+<span class="hljs-comment">//    b: {</span>
+<span class="hljs-comment">//      c: 'd',</span>
+<span class="hljs-comment">//      e: 'f'</span>
+<span class="hljs-comment">//    }</span>
+<span class="hljs-comment">//    g: 'h'</span>
+<span class="hljs-comment">//  }</span>
+<span class="hljs-comment">//}</span>
+</code></pre>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>objects: <span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ObjectType</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="lazy" class="tsd-anchor"></a>
 					<h3>lazy</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -221,7 +268,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/34a950f/packages/object/src/lazy.ts#L24">object/src/lazy.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/d6b30fb/packages/object/src/lazy.ts#L24">object/src/lazy.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -263,7 +310,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/34a950f/packages/object/src/omit.ts#L22">object/src/omit.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/d6b30fb/packages/object/src/omit.ts#L22">object/src/omit.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -315,7 +362,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/34a950f/packages/object/src/pick.ts#L27">object/src/pick.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/d6b30fb/packages/object/src/pick.ts#L27">object/src/pick.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -368,7 +415,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/34a950f/packages/object/src/pick-x.ts#L48">object/src/pick-x.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/tomato-js/tomato/blob/d6b30fb/packages/object/src/pick-x.ts#L48">object/src/pick-x.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -453,6 +500,9 @@
 						<a href="_tomato_js_path.html">@tomato-<wbr>js/path</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_tomato_js_preload.html">@tomato-<wbr>js/preload</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_tomato_js_queue.html">@tomato-<wbr>js/queue</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -476,6 +526,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_object.html#deepget" class="tsd-kind-icon">deep<wbr>Get</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tomato_js_object.html#deepmerge" class="tsd-kind-icon">deep<wbr>Merge</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tomato_js_object.html#lazy" class="tsd-kind-icon">lazy</a>
